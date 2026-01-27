@@ -139,7 +139,7 @@ class QuestionGenerator:
         )
         self.filename = self.document_path.name
 
-        print(f"📖 Loaded: {self.filename}")
+        print(f"Loaded: {self.filename}")
         print(f"   Size: {len(self.document_content):,} characters")
         print(f"   Provider: {self.provider_name.upper()}")
 
@@ -427,6 +427,7 @@ def main() -> None:
         ollama_model=env_ollama_model or args.ollama_model,
         ollama_url=env_ollama_url or args.ollama_url,
         base_url=args.base_url,
+        model=args.model
     )
 
     api_key: Optional[str] = None
@@ -448,6 +449,7 @@ def main() -> None:
             ollama_model=app_config.ollama_model,
             ollama_timeout=OLLAMA_TIMEOUT,
             base_url=app_config.base_url,
+            model=app_config.model,
         )
     except ValueError as exc:
         print(f"{exc}")

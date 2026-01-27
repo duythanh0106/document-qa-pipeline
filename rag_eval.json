@@ -1,6 +1,6 @@
 [
   {
-    "question": "Tổng số thương hiệu (dòng) trong danh sách là bao nhiêu?",
+    "question": "Tổng số dòng trong danh sách là bao nhiêu?",
     "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
     "chunk": "Tổng số dòng: 247 thương hiệu",
     "answer": "",
@@ -9,7 +9,7 @@
     "check": ""
   },
   {
-    "question": "Có bao nhiêu thương hiệu được phân loại là Tier 1?",
+    "question": "Có bao nhiêu thương hiệu thuộc Tier 1?",
     "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
     "chunk": "Tier 1: 90 thương hiệu",
     "answer": "",
@@ -18,7 +18,7 @@
     "check": ""
   },
   {
-    "question": "Có bao nhiêu thương hiệu được phân loại là Tier 2?",
+    "question": "Có bao nhiêu thương hiệu thuộc Tier 2?",
     "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
     "chunk": "Tier 2: 73 thương hiệu",
     "answer": "",
@@ -27,7 +27,7 @@
     "check": ""
   },
   {
-    "question": "Có bao nhiêu thương hiệu được phân loại là Tier 3?",
+    "question": "Có bao nhiêu thương hiệu thuộc Tier 3?",
     "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
     "chunk": "Tier 3: 83 thương hiệu",
     "answer": "",
@@ -36,16 +36,25 @@
     "check": ""
   },
   {
-    "question": "Có bao nhiêu thương hiệu không được phân loại Tier (N/A)?",
+    "question": "Danh mục mới (NEW CATEGORY) của thương hiệu Phố Chợ là gì?",
     "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Thương hiệu không phân Tier: 01 (STT 72).",
+    "chunk": "NEW CATEGORY (VN): Du lịch \\+ Khách sạn \\+ Dịch vụ sân bay",
     "answer": "",
     "evaluate": "",
     "score": "",
     "check": ""
   },
   {
-    "question": "Kể tên các sản phẩm hợp tác phổ biến được liệt kê trong tài liệu.",
+    "question": "Ngày bắt đầu hợp tác sớm nhất trong danh sách là ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2017-01-05",
+    "answer": "",
+    "evaluate": "",
+    "score": "",
+    "check": ""
+  },
+  {
+    "question": "Sản phẩm hợp tác phổ biến được liệt kê trong tài liệu là gì?",
     "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
     "chunk": "Sản phẩm hợp tác phổ biến: Cash voucher, Item voucher, Top-up, E-card, Promotion voucher.",
     "answer": "",
@@ -54,117 +63,9 @@
     "check": ""
   },
   {
-    "question": "Thương hiệu 'Phố Chợ' (STT 1) có Brand ID là gì?",
+    "question": "Tổng số dòng (thương hiệu) trong danh sách là bao nhiêu?",
     "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Brand ID: 496",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Thương hiệu 'Phố Chợ' (STT 1) có trạng thái (STATUS) là gì?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "STATUS: OFFSITE",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Thương hiệu 'Cuisine De SaiGon' (STT 2) có sản phẩm hợp tác là gì?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "ƯU ĐÃI/ SẢN PHẨM HỢP TÁC: Cash voucher",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Thương hiệu 'Sasco Shop' (STT 3) có mức chiết khấu là bao nhiêu?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "CHIẾT KHẤU: 8% trên tổng doanh thu THÁNG",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Thương hiệu 'VTC' (STT 5) thuộc nhóm ngành hàng (NEW CATEGORY) nào?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "NEW CATEGORY (VN): Dịch vụ Tiện ích",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Thương hiệu 'IOMEDIA' (STT 7) có sản phẩm hợp tác là gì?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "ƯU ĐÃI/ SẢN PHẨM HỢP TÁC: Cash voucher",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Thương hiệu 'IOMEDIA' (STT 8) có sản phẩm hợp tác là gì?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "ƯU ĐÃI/ SẢN PHẨM HỢP TÁC: Top-up",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Thương hiệu 'Vietlott' (STT 9) có thời hạn hợp tác bắt đầu từ ngày nào?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2021-02-01",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Thương hiệu 'Vietlott' (STT 9) có thời hạn hợp tác kết thúc vào ngày nào?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "THỜI HẠN HỢP TÁC (KẾT THÚC): 2023-02-01",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Tổng số thương hiệu (Merchant) được liệt kê trong danh sách là bao nhiêu?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Tổng số dòng: 247 thương hiệu",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Có bao nhiêu thương hiệu không được phân loại Tier (giá trị N/A)?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Thương hiệu không phân Tier: 01 (STT 72).",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Tổng số thương hiệu (dòng) được liệt kê trong danh sách này là bao nhiêu?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Tổng số dòng: 247 thương hiệu",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Danh sách này phân loại các thương hiệu theo bao nhiêu hạng (Tier) chính và số lượng mỗi hạng là bao nhiêu?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Phân phối theo Tier:  \n  * Tier 1: 90 thương hiệu  \n  * Tier 2: 73 thương hiệu  \n  * Tier 3: 83 thương hiệu  \n- Thương hiệu không phân Tier: 01 (STT 72).",
+    "chunk": "- Tổng số dòng: 247 thương hiệu",
     "answer": "",
     "evaluate": "",
     "score": "",
