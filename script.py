@@ -57,6 +57,7 @@ class AppConfig:
     preview: bool
     ollama_model: str
     ollama_url: str
+    base_url: Optional[str] = None
 
 
 def parse_json_list(response_text: str) -> List[Dict]:
@@ -148,11 +149,11 @@ class QuestionGenerator:
         attempt = 0
         valid_pairs: List[QAPair] = []
 
-        print(f"\n🤖 Target questions: {target}")
+        print(f"\nTarget questions: {target}")
 
         while len(valid_pairs) < target and attempt <= MAX_RETRY:
             attempt += 1
-            print(f"\n🔁 LLM attempt {attempt}")
+            print(f"\nLLM attempt {attempt}")
 
             prompt = self._build_prompt(target - len(valid_pairs))
             messages = self._build_messages(prompt)
@@ -166,13 +167,13 @@ class QuestionGenerator:
             print(f"   Raw generated: {len(generated)}")
 
             self._extend_valid_pairs(generated, target, valid_pairs)
-            print(f"   ✅ Valid so far: {len(valid_pairs)}")
+            print(f"   Valid so far: {len(valid_pairs)}")
 
             if len(valid_pairs) >= target:
                 break
 
         if len(valid_pairs) < target:
-            print(f"\n⚠️ Only generated {len(valid_pairs)}/{target} valid questions")
+            print(f"\nOnly generated {len(valid_pairs)}/{target} valid questions")
 
         self._print_statistics(valid_pairs)
         return valid_pairs
@@ -192,11 +193,11 @@ class QuestionGenerator:
     def _parse_questions(self, response_text: str) -> List[Dict]:
         questions = parse_json_list(response_text)
         if questions:
-            print(f"✅ Generated {len(questions)} questions from LLM")
+            print(f"Generated {len(questions)} questions from LLM")
             return questions
 
         if self.provider_name == "deepseek" and not self.provider.last_error:
-            print("⚠️  No valid JSON found in response")
+            print("No valid JSON found in response")
 
         return []
 
@@ -235,7 +236,7 @@ class QuestionGenerator:
             q_type = classify_question_type(pair.question)
             type_counts[q_type] = type_counts.get(q_type, 0) + 1
 
-        print("\n📊 Question Distribution:")
+        print("\nQuestion Distribution:")
         for q_type, count in sorted(type_counts.items(), key=lambda x: -x[1]):
             ratio = count / len(qa_pairs) * 100
             print(f"   {q_type:<10}: {count:2d} ({ratio:.1f}%)")
@@ -246,7 +247,7 @@ class QuestionGenerator:
 def classify_question_type(question: str) -> str:
     q = question.lower().strip()
 
-    if any(w in q for w in ["ai ", "ai là", "ai chịu", "ai có trách nhiệm"]):
+    if any(w in q for w in ["ai ", "ai là ", "ai chịu", "ai có trách nhiệm"]):
         return "who"
 
     if any(w in q for w in ["ở đâu", "tại đâu", "thuộc đâu", "áp dụng ở"]):
@@ -302,7 +303,25 @@ def build_arg_parser() -> argparse.ArgumentParser:
     provider_choices = sorted(PROVIDER_CONFIGS.keys()) + ["ollama", "api"]
 
     parser = argparse.ArgumentParser(
-        description="RAG Evaluation Generator - Vietnamese questions based on 4W1H"
+        description="RAG Evaluation Generator - Vietnamese questions based on 4W1H",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Basic usage
+  python script.py --input document.txt
+  
+  # With custom provider
+  python script.py --input doc.txt --provider openai --api-key YOUR_KEY
+  
+  # With custom base URL (OpenAI-compatible gateway)
+  python script.py --input doc.txt --provider openai --api-key YOUR_KEY --base-url https://mygateway.ubbox.service
+  
+  # DeepSeek with custom gateway
+  python script.py --input doc.txt --provider deepseek --api-key YOUR_KEY --base-url https://api.custom-gateway.com
+  
+  # Preview before saving
+  python script.py --input doc.txt --num-questions 30 --preview
+        """
     )
     parser.add_argument(
         "--input", required=True, help="Input document (.md, .txt, etc.)"
@@ -332,6 +351,10 @@ def build_arg_parser() -> argparse.ArgumentParser:
         help=f"Ollama base URL (default: {DEFAULT_OLLAMA_URL})",
     )
     parser.add_argument(
+        "--base-url",
+        help="Custom base URL for OpenAI-compatible APIs (e.g., https://mygateway.ubbox.service)",
+    )
+    parser.add_argument(
         "--preview",
         action="store_true",
         help="Preview questions without saving",
@@ -358,7 +381,7 @@ def preview_dataset(dataset: List[Dict]) -> bool:
         print(f"    Chunk: {chunk_preview}...")
         print("-" * 80)
 
-    save = input("\n💾 Save to file? (y/n): ").strip().lower()
+    save = input("\nSave to file? (y/n): ").strip().lower()
     return save == "y"
 
 
@@ -398,6 +421,7 @@ def main() -> None:
         preview=args.preview,
         ollama_model=env_ollama_model or args.ollama_model,
         ollama_url=env_ollama_url or args.ollama_url,
+        base_url=args.base_url,
     )
 
     api_key: Optional[str] = None
@@ -406,7 +430,7 @@ def main() -> None:
         api_key = resolve_api_key(app_config.provider, args.api_key)
         if not api_key:
             provider_env = f"{app_config.provider.upper()}_API_KEY"
-            print("❌ API key required!")
+            print("API key required!")
             print("   Use: --api-key YOUR_KEY")
             print(f"   Or set env: export {provider_env}=YOUR_KEY")
             return
@@ -418,9 +442,10 @@ def main() -> None:
             ollama_url=app_config.ollama_url,
             ollama_model=app_config.ollama_model,
             ollama_timeout=OLLAMA_TIMEOUT,
+            base_url=app_config.base_url,
         )
     except ValueError as exc:
-        print(f"❌ {exc}")
+        print(f"{exc}")
         return
 
     generator = QuestionGenerator(
@@ -431,7 +456,7 @@ def main() -> None:
 
     qa_pairs = generator.generate_questions(app_config.num_questions)
     if not qa_pairs:
-        print("❌ No questions generated")
+        print("No questions generated")
         return
 
     dataset = [asdict(pair) for pair in qa_pairs]
@@ -443,7 +468,7 @@ def main() -> None:
     with open(app_config.output_path, "w", encoding="utf-8") as f:
         json.dump(dataset, f, ensure_ascii=False, indent=2)
 
-    print(f"\n✅ Saved {len(dataset)} questions to: {app_config.output_path}")
+    print(f"\nSaved {len(dataset)} questions to: {app_config.output_path}")
 
 
 if __name__ == "__main__":

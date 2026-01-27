@@ -1,114 +1,6 @@
 [
   {
-    "question": "Tài liệu này là danh sách gồm tổng cộng bao nhiêu thương hiệu?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Tổng số dòng: 247 thương hiệu",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Trong danh sách, có bao nhiêu thương hiệu được phân loại là Tier 1?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Tier 1: 90 thương hiệu",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Trong danh sách, có bao nhiêu thương hiệu được phân loại là Tier 2?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Tier 2: 73 thương hiệu",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Trong danh sách, có bao nhiêu thương hiệu được phân loại là Tier 3?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Tier 3: 83 thương hiệu",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Có bao nhiêu thương hiệu không được phân loại Tier trong danh sách?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Thương hiệu không phân Tier: 01 (STT 72).",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Những sản phẩm hợp tác phổ biến nào được liệt kê trong tài liệu?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Sản phẩm hợp tác phổ biến: Cash voucher, Item voucher, Top-up, E-card, Promotion voucher.",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Thương hiệu 'Phố Chợ' (STT 1) có Brand ID là gì?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Brand ID: 496",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Thương hiệu 'Phố Chợ' (STT 1) có trạng thái (STATUS) là gì?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "STATUS: OFFSITE",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Thương hiệu 'VTC' (STT 5) có chiết khấu cho dịch vụ Vinaphone là bao nhiêu?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Vinaphone: 4,77% tổng doanh thu (đã VAT) (áp dụng từ 04/03/2022)",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Thương hiệu 'GrabBike-GrabCar' (STT 164) có mức chiết khấu nào áp dụng cho đơn hàng từ 500 triệu đến dưới 1 tỷ đồng?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "From VND 500M to below VND 1B: 5%",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Thương hiệu 'Golden Gate' (ví dụ STT 31) có lưu ý gì về thời điểm áp dụng mức chiết khấu mới?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Lưu ý: Mức chiết khấu này áp dụng từ 01/10/2025",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Thương hiệu 'VinID' (STT 155) có ghi chú gì về việc áp dụng chiết khấu?",
-    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
-    "chunk": "Check với OPS do chiết khấu thay đổi từng PO",
-    "answer": "",
-    "evaluate": "",
-    "score": "",
-    "check": ""
-  },
-  {
-    "question": "Tổng số thương hiệu (Merchant) được liệt kê trong danh sách là bao nhiêu?",
+    "question": "Tổng số thương hiệu (dòng) trong danh sách là bao nhiêu?",
     "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
     "chunk": "Tổng số dòng: 247 thương hiệu",
     "answer": "",
@@ -153,7 +45,97 @@
     "check": ""
   },
   {
-    "question": "Tổng số thương hiệu (dòng) trong danh sách đối tác là bao nhiêu?",
+    "question": "Kể tên các sản phẩm hợp tác phổ biến được liệt kê trong tài liệu.",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
+    "chunk": "Sản phẩm hợp tác phổ biến: Cash voucher, Item voucher, Top-up, E-card, Promotion voucher.",
+    "answer": "",
+    "evaluate": "",
+    "score": "",
+    "check": ""
+  },
+  {
+    "question": "Thương hiệu 'Phố Chợ' (STT 1) có Brand ID là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
+    "chunk": "Brand ID: 496",
+    "answer": "",
+    "evaluate": "",
+    "score": "",
+    "check": ""
+  },
+  {
+    "question": "Thương hiệu 'Phố Chợ' (STT 1) có trạng thái (STATUS) là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
+    "chunk": "STATUS: OFFSITE",
+    "answer": "",
+    "evaluate": "",
+    "score": "",
+    "check": ""
+  },
+  {
+    "question": "Thương hiệu 'Cuisine De SaiGon' (STT 2) có sản phẩm hợp tác là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
+    "chunk": "ƯU ĐÃI/ SẢN PHẨM HỢP TÁC: Cash voucher",
+    "answer": "",
+    "evaluate": "",
+    "score": "",
+    "check": ""
+  },
+  {
+    "question": "Thương hiệu 'Sasco Shop' (STT 3) có mức chiết khấu là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
+    "chunk": "CHIẾT KHẤU: 8% trên tổng doanh thu THÁNG",
+    "answer": "",
+    "evaluate": "",
+    "score": "",
+    "check": ""
+  },
+  {
+    "question": "Thương hiệu 'VTC' (STT 5) thuộc nhóm ngành hàng (NEW CATEGORY) nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
+    "chunk": "NEW CATEGORY (VN): Dịch vụ Tiện ích",
+    "answer": "",
+    "evaluate": "",
+    "score": "",
+    "check": ""
+  },
+  {
+    "question": "Thương hiệu 'IOMEDIA' (STT 7) có sản phẩm hợp tác là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
+    "chunk": "ƯU ĐÃI/ SẢN PHẨM HỢP TÁC: Cash voucher",
+    "answer": "",
+    "evaluate": "",
+    "score": "",
+    "check": ""
+  },
+  {
+    "question": "Thương hiệu 'IOMEDIA' (STT 8) có sản phẩm hợp tác là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
+    "chunk": "ƯU ĐÃI/ SẢN PHẨM HỢP TÁC: Top-up",
+    "answer": "",
+    "evaluate": "",
+    "score": "",
+    "check": ""
+  },
+  {
+    "question": "Thương hiệu 'Vietlott' (STT 9) có thời hạn hợp tác bắt đầu từ ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2021-02-01",
+    "answer": "",
+    "evaluate": "",
+    "score": "",
+    "check": ""
+  },
+  {
+    "question": "Thương hiệu 'Vietlott' (STT 9) có thời hạn hợp tác kết thúc vào ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
+    "chunk": "THỜI HẠN HỢP TÁC (KẾT THÚC): 2023-02-01",
+    "answer": "",
+    "evaluate": "",
+    "score": "",
+    "check": ""
+  },
+  {
+    "question": "Tổng số thương hiệu (Merchant) được liệt kê trong danh sách là bao nhiêu?",
     "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
     "chunk": "Tổng số dòng: 247 thương hiệu",
     "answer": "",
@@ -162,7 +144,25 @@
     "check": ""
   },
   {
-    "question": "Danh sách đối tác được phân loại theo bao nhiêu hạng thương hiệu (Tier) chính?",
+    "question": "Có bao nhiêu thương hiệu không được phân loại Tier (giá trị N/A)?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
+    "chunk": "Thương hiệu không phân Tier: 01 (STT 72).",
+    "answer": "",
+    "evaluate": "",
+    "score": "",
+    "check": ""
+  },
+  {
+    "question": "Tổng số thương hiệu (dòng) được liệt kê trong danh sách này là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
+    "chunk": "Tổng số dòng: 247 thương hiệu",
+    "answer": "",
+    "evaluate": "",
+    "score": "",
+    "check": ""
+  },
+  {
+    "question": "Danh sách này phân loại các thương hiệu theo bao nhiêu hạng (Tier) chính và số lượng mỗi hạng là bao nhiêu?",
     "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.md",
     "chunk": "Phân phối theo Tier:  \n  * Tier 1: 90 thương hiệu  \n  * Tier 2: 73 thương hiệu  \n  * Tier 3: 83 thương hiệu  \n- Thương hiệu không phân Tier: 01 (STT 72).",
     "answer": "",
