@@ -33,6 +33,7 @@ def create_provider(
     ollama_model: str = DEFAULT_OLLAMA_MODEL,
     ollama_timeout: int = OLLAMA_TIMEOUT,
     base_url: Optional[str] = None,
+    model: Optional[str] = None,
 ) -> LLMProvider:
     normalized = normalize_provider_name(provider_name)
     provider_kind = PROVIDER_KIND_MAP.get(normalized)
@@ -44,25 +45,28 @@ def create_provider(
         if normalized == "anthropic":
             if not api_key:
                 raise ValueError("API key required for anthropic provider")
-            return AnthropicProvider(api_key=api_key, model=config.model)
+            effective_model = model or config.model
+            return AnthropicProvider(api_key=api_key, model=effective_model)
         if normalized == "deepseek":
             if not api_key:
                 raise ValueError("API key required for deepseek provider")
             # Use custom base_url if provided, otherwise use config default
             effective_base_url = base_url or config.base_url
+            effective_model = model or config.model
             return DeepSeekProvider(
                 api_key=api_key,
-                model=config.model,
+                model=effective_model,
                 base_url=effective_base_url,
             )
         if not api_key:
             raise ValueError(f"API key required for {normalized} provider")
         # Use custom base_url if provided, otherwise use config default
         effective_base_url = base_url or config.base_url
+        effective_model = model or config.model
         return OpenAIProvider(
             provider_name=normalized,
             api_key=api_key,
-            model=config.model,
+            model=effective_model,
             base_url=effective_base_url,
         )
 

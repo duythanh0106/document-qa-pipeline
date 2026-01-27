@@ -58,6 +58,7 @@ class AppConfig:
     ollama_model: str
     ollama_url: str
     base_url: Optional[str] = None
+    model: Optional[str] = None
 
 
 def parse_json_list(response_text: str) -> List[Dict]:
@@ -358,6 +359,10 @@ Examples:
         "--preview",
         action="store_true",
         help="Preview questions without saving",
+    )
+    parser.add_argument(
+        "--model",
+        help="Model name to use (Overrides default for provider)",
     )
     return parser
 
