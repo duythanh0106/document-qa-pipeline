@@ -126,6 +126,15 @@ NGUYÊN TẮC RIÊNG THEO LOẠI TÀI LIỆU:
   • Ví dụ hoặc tình huống được nêu
 - Có thể hỏi kiểm tra hiểu bài
 
+
+YÊU CẦU NGÔN NGỮ (BẮT BUỘC - CỰC KỲ QUAN TRỌNG):
+- TẤT CẢ CÁC CÂU HỎI PHẢI ĐƯỢC VIẾT HOÀN TOÀN BẰNG TIẾNG VIỆT
+- TUYỆT ĐỐI KHÔNG được sử dụng tiếng Anh hoặc bất kỳ ngôn ngữ nào khác
+- Ngay cả khi tài liệu có nội dung tiếng Anh, câu hỏi vẫn PHẢI bằng tiếng Việt
+- Ví dụ SAI: "How many brands are there?"
+- Ví dụ ĐÚNG: "Có bao nhiêu thương hiệu trong danh sách?"
+- Nếu một câu hỏi không thể viết bằng tiếng Việt → KHÔNG tạo câu hỏi đó
+
 YÊU CẦU ĐẦU RA:
 - answer_location PHẢI là bản sao NGUYÊN VĂN từ tài liệu
 - Không chỉnh sửa, không diễn giải
@@ -152,6 +161,7 @@ OUTPUT:
 ]
 
 CHỈ trả về JSON.
+NHẮC LẠI: MỌI CÂU HỎI PHẢI BẰNG TIẾNG VIỆT.
 """
 
 

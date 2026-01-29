@@ -57,6 +57,7 @@ class AppConfig:
     preview: bool
     ollama_model: str
     ollama_url: str
+    use_sampling: bool = True
     base_url: Optional[str] = None
     model: Optional[str] = None
 
@@ -129,19 +130,28 @@ class QuestionGenerator:
         document_path: str,
         provider: LLMProvider,
         provider_name: str,
+        max_doc_tokens: int = 50000
     ):
         self.document_path = Path(document_path)
         self.provider = provider
         self.provider_name = provider_name
+        self.max_doc_tokens = max_doc_tokens
 
-        self.document_content = self.document_path.read_text(
+        raw_content = self.document_path.read_text(
             encoding="utf-8", errors="ignore"
         )
         self.filename = self.document_path.name
 
+        # Estimate tokens (rough: 1 token ≈ 4 chars for English, 2-3 for Vietnamese)
+        #estimated_tokens = len(raw_content) // 3
+        
         print(f"Loaded: {self.filename}")
-        print(f"   Size: {len(self.document_content):,} characters")
+        print(f"   Size: {len(raw_content):,} characters")
+        #print(f"   Estimated tokens: {estimated_tokens:,}")
         print(f"   Provider: {self.provider_name.upper()}")
+        
+        self.document_content = raw_content
+
 
     def generate_questions(
         self, num_questions: int = DEFAULT_NUM_QUESTIONS
@@ -149,6 +159,7 @@ class QuestionGenerator:
         target = num_questions
         attempt = 0
         valid_pairs: List[QAPair] = []
+        consecutive_failures = 0
 
         print(f"\nTarget questions: {target}")
 
@@ -156,7 +167,23 @@ class QuestionGenerator:
             attempt += 1
             print(f"\nLLM attempt {attempt}")
 
-            prompt = self._build_prompt(target - len(valid_pairs))
+            # Ask for more questions to compensate for rejections
+            remaining = target - len(valid_pairs)
+            
+            # Adaptive strategy: if previous attempt failed, be more conservative
+            if attempt == 1:
+                buffer_multiplier = 1.3  # Ask for 30% more
+            elif consecutive_failures > 0:
+                buffer_multiplier = 1.0  # No buffer after failure
+                print(f"   ⚠️  Previous attempt failed, reducing request size")
+            else:
+                buffer_multiplier = 1.5  # Ask for 50% more on retry
+            
+            ask_for = max(1, int(remaining * buffer_multiplier))
+            
+            print(f"   Requesting: {ask_for} questions (need {remaining} more)")
+
+            prompt = self._build_prompt(ask_for)
             messages = self._build_messages(prompt)
             response_text = self.provider.chat(
                 messages,
@@ -166,6 +193,11 @@ class QuestionGenerator:
 
             generated = self._parse_questions(response_text)
             print(f"   Raw generated: {len(generated)}")
+            
+            if len(generated) == 0:
+                consecutive_failures += 1
+            else:
+                consecutive_failures = 0
 
             self._extend_valid_pairs(generated, target, valid_pairs)
             print(f"   Valid so far: {len(valid_pairs)}")
@@ -174,9 +206,14 @@ class QuestionGenerator:
                 break
 
         if len(valid_pairs) < target:
-            print(f"\nOnly generated {len(valid_pairs)}/{target} valid questions")
+            print(f"\n⚠️  Only generated {len(valid_pairs)}/{target} valid questions")
+            print(f"   💡 Tips:")
+            print(f"      - Document may be too large (try splitting)")
+            print(f"      - Try different provider (--provider anthropic)")
+            print(f"      - Reduce number of questions (--num-questions 10)")
+        else:
+            print(f"\n✅ Successfully generated {len(valid_pairs)} questions")
 
-        self._print_statistics(valid_pairs)
         return valid_pairs
 
     def _build_prompt(self, remaining: int) -> str:
@@ -192,32 +229,55 @@ class QuestionGenerator:
         ]
 
     def _parse_questions(self, response_text: str) -> List[Dict]:
+        if not response_text:
+            print("   ❌ Empty response from LLM")
+            return []
+        
         questions = parse_json_list(response_text)
         if questions:
-            print(f"Generated {len(questions)} questions from LLM")
+            print(f"   ✅ Generated {len(questions)} questions from LLM")
             return questions
 
-        if self.provider_name == "deepseek" and not self.provider.last_error:
-            print("No valid JSON found in response")
+        # Debug: show first 500 chars of response
+        preview = response_text[:500].replace('\n', ' ')
+        print(f"   ⚠️  No valid JSON found in response")
+        print(f"   📝 Response preview: {preview}...")
+        
+        if self.provider.last_error:
+            print(f"   ❌ Provider error: {self.provider.last_error}")
 
         return []
 
     def _extend_valid_pairs(
         self, generated: List[Dict], target: int, valid_pairs: List[QAPair]
     ) -> None:
+        rejected_count = 0
+        rejected_reasons = {
+            'no_answer_location': 0,
+            'chunk_not_found': 0,
+            'duplicate': 0
+        }
+        
         for item in generated:
             if len(valid_pairs) >= target:
                 break
 
             answer_text = item.get("answer_location", "").strip()
             if not answer_text:
+                rejected_count += 1
+                rejected_reasons['no_answer_location'] += 1
                 continue
 
             chunk = extract_chunk_verbatim(self.document_content, answer_text)
             if not chunk:
+                rejected_count += 1
+                rejected_reasons['chunk_not_found'] += 1
+                print(f"   ⚠️  Rejected (chunk not found): {item.get('question', '')[:60]}...")
                 continue
 
             if any(q.question == item.get("question") for q in valid_pairs):
+                rejected_count += 1
+                rejected_reasons['duplicate'] += 1
                 continue
 
             valid_pairs.append(
@@ -227,6 +287,12 @@ class QuestionGenerator:
                     chunk=chunk,
                 )
             )
+        
+        if rejected_count > 0:
+            print(f"   ℹ️  Rejected: {rejected_count} questions")
+            for reason, count in rejected_reasons.items():
+                if count > 0:
+                    print(f"      - {reason}: {count}")
 
     def _print_statistics(self, qa_pairs: List[QAPair]) -> None:
         if not qa_pairs:
@@ -284,6 +350,16 @@ def classify_question_type(question: str) -> str:
     return "unknown"
 
 
+def normalize_text(text: str) -> str:
+    """Normalize text for fuzzy matching."""
+    import re
+    # Replace multiple spaces/newlines with single space
+    text = re.sub(r'\s+', ' ', text)
+    # Remove common punctuation variations
+    text = text.strip()
+    return text
+
+
 def extract_chunk_verbatim(document_text: str, answer_text: str) -> str:
     """
     Trả về đoạn trích NGUYÊN VĂN nếu answer_text xuất hiện trong document_text.
@@ -298,6 +374,7 @@ def extract_chunk_verbatim(document_text: str, answer_text: str) -> str:
         return ""
 
     return document_text[start : start + len(answer_text)]
+
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
@@ -460,11 +537,12 @@ def main() -> None:
         provider=provider,
         provider_name=app_config.provider,
     )
-
+    
     qa_pairs = generator.generate_questions(app_config.num_questions)
     if not qa_pairs:
         print("No questions generated")
         return
+    generator._print_statistics(qa_pairs)
 
     dataset = [asdict(pair) for pair in qa_pairs]
 
