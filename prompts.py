@@ -139,6 +139,11 @@ YÊU CẦU ĐẦU RA:
 - answer_location PHẢI là bản sao NGUYÊN VĂN từ tài liệu
 - Không chỉnh sửa, không diễn giải
 
+YÊU CẦU TÍNH DUY NHẤT (CRITICAL):
+- MỖI câu hỏi PHẢI hoàn toàn KHÁC BIỆT về ý nghĩa
+- KHÔNG được tạo câu hỏi trùng lặp hoặc tương tự nhau
+- Kiểm tra kỹ: 2 câu hỏi không được hỏi về CÙNG MỘT thông tin
+
 YÊU CẦU SỐ LƯỢNG (BẮT BUỘC):
 - PHẢI tạo CHÍNH XÁC {num_questions} câu hỏi
 - Mỗi câu hỏi PHẢI có answer_location tồn tại NGUYÊN VĂN trong tài liệu
