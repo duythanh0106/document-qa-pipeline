@@ -20,7 +20,7 @@ from providers.base import LLMProvider
 from providers.factory import create_provider, normalize_provider_name
 
 # Constants
-DEFAULT_TEMPERATURE = 0.0
+DEFAULT_TEMPERATURE = 0.3
 DEFAULT_SLEEP = 0.3
 ENV_FILE = ".env"
 
@@ -59,17 +59,19 @@ ENTAILED (Answer is supported by Chunk):
   * Answer kết hợp thông tin từ question và chunk một cách hợp lý
   * Phần bổ sung KHÔNG mâu thuẫn với chunk
   * Thiếu vài chi tiết nhỏ KHÔNG quan trọng
-  
-- ACCEPTABLE (7): Đúng ý chính nhưng thiếu thông tin phụ
-  * Trả lời đúng câu hỏi chính
-  * Thiếu một số chi tiết quan trọng có trong chunk
-  * Không có thông tin sai lệch
+  * Được phép diễn giải thêm ngắn gọn, giải thích lợi ích ngầm định hoặc business common sense **rất phổ biến và không thêm fact cụ thể mới** (ví dụ: chuyển khoản công ty → tăng tính minh bạch, giảm rủi ro cá nhân)
+  * Được phép paraphrase số thứ tự bước hoặc cấu trúc danh sách một cách tự nhiên (VD: chunk bắt đầu bằng "1.", answer gọi là "Bước 1") nếu không thay đổi ý nghĩa.  
 
-NOT_SUPPORTED (Chunk lacks information):
-- PARTIALLY_SUPPORTED (6): Một phần đúng, một phần không có bằng chứng
-  * Một phần thông tin có trong chunk
-  * Một phần thông tin KHÔNG THỂ suy luận được từ chunk VÀ không phải từ question context
-  * Không có mâu thuẫn rõ ràng
+- ACCEPTABLE (7): Đúng ý chính, có thể thiếu hoặc thêm một chút nhưng không đáng kể
+  * Trả lời đúng câu hỏi chính
+  * Có thể thiếu một số chi tiết phụ hoặc có thêm diễn giải ngắn không ảnh hưởng lớn
+  * Không có thông tin sai lệch hoặc hallucination rõ ràng
+
+- PARTIALLY_SUPPORTED (6): Có vấn đề faithfulness vừa phải
+  * Ý chính đúng, nhưng có thêm thông tin KHÔNG ĐƯỢC HỖ TRỢ và KHÔNG PHẢI trình tự ngầm định phổ biến trong quy trình
+  * Hoặc phần bổ sung mang tính suy diễn rủi ro, lệch hướng, hoặc có khả năng sai
+  → Dùng nhãn này CHỈ khi phần thêm rõ ràng nguy hiểm hoặc không hợp lý business-wise.
+  Nếu chỉ thêm trình tự phổ biến (như "sau khi giao", "sau xác nhận") → xếp ACCEPTABLE (7) hoặc GOOD (8).
   
 - UNCLEAR (5): Không đủ thông tin để xác định
   * Chunk quá mơ hồ hoặc không liên quan
@@ -113,7 +115,41 @@ Evaluation Rules:
 
 8. **Paraphrasing**: Diễn đạt khác nhau của cùng một ý vẫn được chấp nhận
 
-9. **Time/Location Specificity**: Thông tin về thời điểm cụ thể (VD: "sau khi giao") phải có bằng chứng rõ ràng trong chunk, KHÔNG được suy luận tùy tiện
+9. **Time/Location Specificity**: Thông tin thời điểm rất cụ thể và không phổ biến phải có bằng chứng rõ ràng trong chunk, KHÔNG được suy luận tùy tiện
+
+10. **Diễn giải hợp lý được chấp nhận ở mức độ vừa phải**:
+   - Được phép: paraphrase, diễn đạt tự nhiên hơn, thêm cụm từ giải thích ngắn gọn mang tính business common sense phổ biến ở Việt Nam (ví dụ: “giúp tăng tính minh bạch”, “đảm bảo tuân thủ quy định”, “giảm rủi ro cá nhân/doanh nghiệp”)
+   → Nếu phần bổ sung thuộc loại “được phép” → coi như GOOD (8) hoặc cao hơn
+   → Nếu phần bổ sung thuộc loại “không được phép” → PARTIALLY_SUPPORTED (6) hoặc thấp hơn
+
+11. **Xử lý thời gian / trình tự / điều kiện bổ sung** (ưu tiên áp dụng trước các rule khác):
+   - Nếu chunk KHÔNG đề cập thời điểm cụ thể (sau khi..., trước khi..., trong vòng X ngày...), thì:
+     → Answer THÊM cụm thời gian/trình tự → coi là PARTIALLY_SUPPORTED (6) HOẶC thấp hơn
+     → Answer KHÔNG thêm thời gian → được đánh giá bình thường theo các rule khác
+   - Ngoại lệ được chấp nhận ở mức GOOD (8) hoặc cao hơn nếu:
+     - Cụm từ mang tính **chung chung, ngầm định trong quy trình** (ví dụ: "sau khi hoàn tất", "sau bước xác nhận", "khi nhận được thông tin")
+     - KHÔNG phải thời điểm cụ thể (không có "sau khi giao", "trong 24h", "ngày hôm sau", "sau ngày X")
+
+QUAN TRỌNG - ƯU TIÊN CAO NHẤT (áp dụng trước mọi rule khác, override nếu xung đột):
+
+Trong ngữ cảnh doanh nghiệp Việt Nam (quy chế nội bộ, quy trình vận hành, pháp lý lao động, onboarding đối tác), các loại bổ sung sau được coi là SUY LUẬN HỢP LÝ, PHỔ BIẾN và KHÔNG CẦN bằng chứng trực tiếp trong chunk:
+
+A. Mốc thời gian bắt đầu thời hạn (time-bound clauses):
+   - kể từ ngày nhận thông báo / nhận quyết định / nhận lương / nhận bảng lương / phát sinh sự việc / vi phạm / kết thúc tháng/quý/năm
+
+B. Trình tự logic phổ biến trong quy trình:
+   - sau khi giao / sau khi hoàn tất giao / sau khi giao hàng / sau xác nhận từ client / sau bước kiểm tra / sau phê duyệt
+
+C. Diễn giải mục đích/lợi ích ngầm định (business elaboration):
+   - tăng tính minh bạch / đảm bảo an toàn tài chính / giảm rủi ro pháp lý / tránh tranh chấp cá nhân / chuyên nghiệp hóa quy trình / thuận tiện đối soát / quản lý dòng tiền công ty
+
+D. Paraphrase cấu trúc hoặc suy ra từ question:
+   - Thêm số thứ tự bước ("Bước 1", "Bước đầu tiên") nếu chunk nằm trong danh sách có thứ tự
+   - Liệt kê lại các tiêu chí/điều kiện từ chính Question nếu chunk đề cập "không đáp ứng 3 tiêu chí" hoặc tương tự → coi như kết hợp hợp lý từ question context
+
+→ Nếu phần bổ sung thuộc một trong các nhóm A/B/C/D ở trên → XẾP GOOD (8) hoặc ACCEPTABLE (7) nếu cốt lõi đúng 100% và không mâu thuẫn.
+→ Chỉ dùng PARTIALLY_SUPPORTED (6) khi bổ sung là fact cụ thể mới, không phổ biến, có khả năng sai (VD: "trong 48 giờ", "phải có 5 sao Google", "sau ngày 20 hàng tháng").
+
 
 Examples:
 
@@ -220,9 +256,9 @@ def call_llm(provider: LLMProvider, provider_name: str, item: Dict, temperature:
 
 def map_score_to_evaluate(score: int) -> str:
     """Map numeric score to evaluation category."""
-    if score >= 7:
+    if score >= 6:
         return "correct"
-    elif score >= 4:
+    elif score == 5:
         return "unclear"
     else:
         return "incorrect"
@@ -290,7 +326,7 @@ def run_evaluation(config: EvaluatorConfig, provider: LLMProvider, provider_name
     # Print summary
     print(f"\n{'='*80}")
     print_statistics(data)
-    print(f"\n Saved to: {output_path}")
+    print(f"\n✅ Saved to: {output_path}")
 
 
 def print_statistics(data: List[Dict]) -> None:
@@ -298,7 +334,9 @@ def print_statistics(data: List[Dict]) -> None:
     evaluate_counts = {"correct": 0, "incorrect": 0, "unclear": 0, "error": 0}
     score_sum = 0
     score_count = 0
-    label_counts = {"ENTAILED": 0, "NOT_SUPPORTED": 0, "CONTRADICTED": 0, "UNKNOWN": 0}
+    
+    # Score distribution
+    score_dist = {i: 0 for i in range(1, 11)}
 
     for item in data:
         evaluate = item.get("evaluate", "error")
@@ -308,17 +346,26 @@ def print_statistics(data: List[Dict]) -> None:
         if score > 0:
             score_sum += score
             score_count += 1
+            if 1 <= score <= 10:
+                score_dist[score] += 1
 
     total = len(data)
     avg_score = score_sum / score_count if score_count > 0 else 0
 
     print("Evaluation Summary:")
     print(f"   Total      : {total}")
-    print(f"   Correct    : {evaluate_counts['correct']:3d} ({evaluate_counts['correct']/total*100:5.1f}%)")
-    print(f"   Unclear    : {evaluate_counts['unclear']:3d} ({evaluate_counts['unclear']/total*100:5.1f}%)")
-    print(f"   Incorrect  : {evaluate_counts['incorrect']:3d} ({evaluate_counts['incorrect']/total*100:5.1f}%)")
+    print(f"   Correct    : {evaluate_counts['correct']:3d} ({evaluate_counts['correct']/total*100:5.1f}%) [score ≥ 6]")
+    print(f"   Unclear    : {evaluate_counts['unclear']:3d} ({evaluate_counts['unclear']/total*100:5.1f}%) [score = 5]")
+    print(f"   Incorrect  : {evaluate_counts['incorrect']:3d} ({evaluate_counts['incorrect']/total*100:5.1f}%) [score ≤ 4]")
     print(f"   Error      : {evaluate_counts['error']:3d} ({evaluate_counts['error']/total*100:5.1f}%)")
     print(f"   Avg Score  : {avg_score:.2f}/10")
+    
+    print("\nScore Distribution:")
+    for score in range(10, 0, -1):
+        count = score_dist[score]
+        if count > 0:
+            bar = "█" * int(count / total * 50)
+            print(f"   {score:2d}: {count:3d} {bar}")
 
 
 def load_env_file(env_path: str = ENV_FILE) -> None:
@@ -376,6 +423,11 @@ Examples:
   # With Ollama (local)
   python evaluate.py --input qa_data.json --provider ollama \\
       --ollama-model qwen2.5:7b
+
+Scoring:
+  Score ≥ 6: PASS (answer can be used)
+  Score = 5: BORDERLINE (unclear, don't use)
+  Score ≤ 4: FAIL (answer is wrong or problematic)
         """,
     )
     parser.add_argument(
@@ -460,7 +512,7 @@ def main() -> None:
         api_key = resolve_api_key(config.provider, args.api_key)
         if not api_key:
             provider_env = f"{config.provider.upper()}_API_KEY"
-            print("API key required!")
+            print("❌ API key required!")
             print(f"   Use: --api-key YOUR_KEY")
             print(f"   Or set env: export {provider_env}=YOUR_KEY")
             return
@@ -477,7 +529,7 @@ def main() -> None:
             model=config.model,
         )
     except ValueError as exc:
-        print(f"{exc}")
+        print(f"❌ {exc}")
         return
 
     # Run evaluation
