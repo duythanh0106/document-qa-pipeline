@@ -290,7 +290,7 @@ def run_evaluation(config: EvaluatorConfig, provider: LLMProvider, provider_name
     # Print summary
     print(f"\n{'='*80}")
     print_statistics(data)
-    print(f"\n✅ Saved to: {output_path}")
+    print(f"\n Saved to: {output_path}")
 
 
 def print_statistics(data: List[Dict]) -> None:
