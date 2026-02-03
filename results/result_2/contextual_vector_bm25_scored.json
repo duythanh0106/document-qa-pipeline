@@ -1,0 +1,1138 @@
+[
+  {
+    "question": "Tổng số thương hiệu có trong danh sách là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "247 thương hiệu",
+    "answer": "Để trả lời chính xác, tôi cần biết danh sách các thương hiệu mà bạn đang đề cập. Bạn có thể cung cấp danh sách (hoặc mô tả nơi chứa danh sách) để tôi đếm số lượng thương hiệu được không?",
+    "evaluate": "incorrect",
+    "score": 3,
+    "check": "Chunk đã cung cấp số lượng thương hiệu là 247, nhưng câu trả lời lại yêu cầu thêm thông tin và khẳng định không có dữ liệu, mâu thuẫn với nội dung chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Có bao nhiêu thương hiệu thuộc Tier 1?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "90 thương hiệu",
+    "answer": "Số lượng thương hiệu thuộc Tier 1: 10\n\n(Thông tin dựa trên tài liệu “Phân loại thương hiệu theo Tier” trong hệ thống kiến thức nội bộ của UrBox, trong đó Tier 1 liệt kê 10 thương hiệu.)",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ đề cập rằng có 90 thương hiệu, không có thông tin nào về số lượng thương hiệu trong Tier 1. Câu trả lời đưa ra con số 10, mâu thuẫn với dữ liệu trong chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Có bao nhiêu thương hiệu thuộc Tier 2?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "73 thương hiệu",
+    "answer": "Số lượng thương hiệu thuộc Tier 2: 15\n\n(Thông tin được trích từ tài liệu “Phân loại thương hiệu theo Tier” trong hệ thống kiến thức nội bộ của UrBox, nơi liệt kê 15 thương hiệu thuộc Tier 2.)",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ đề cập tới số lượng 73 thương hiệu, không có thông tin nào cho thấy Tier 2 chỉ có 15 thương hiệu; câu trả lời mâu thuẫn với dữ liệu trong chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Có bao nhiêu thương hiệu thuộc Tier 3?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "83 thương hiệu",
+    "answer": "Số lượng thương hiệu thuộc Tier 3: 20\n\n(Thông tin được trích từ tài liệu “Phân loại thương hiệu theo Tier” trong hệ thống kiến thức nội bộ của UrBox, nơi liệt kê 20 thương hiệu thuộc Tier 3.)",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ cung cấp thông tin \"83 thương hiệu\" mà không đề cập số lượng thương hiệu thuộc Tier 3, trong khi câu trả lời đưa ra con số 20 không có trong chunk, do đó không được hỗ trợ.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Số thương hiệu không được phân Tier là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "01 (STT 72)",
+    "answer": "Số thương hiệu không được phân Tier: 15\n\nDựa trên tài liệu “Phân loại thương hiệu” trong hệ thống kiến thức nội bộ của UrBox, danh sách tổng cộng có 60 thương hiệu. Trong đó 10 thương hiệu thuộc Tier 1, 15 thương hiệu thuộc Tier 2 và 20 thương hiệu thuộc Tier 3 (10 + 15 + 20 = 45). Vì vậy, số thương hiệu chưa được gán Tier là 60 − 45 = 15.",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Chunk chỉ chứa \"01 (STT 72)\" và không cung cấp bất kỳ thông tin nào về số thương hiệu không được phân Tier. Câu trả lời đưa ra các số liệu (60, 10, 15, 20) không có trong chunk, do đó không được hỗ trợ.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Các nhóm ngành hàng chính (New Category) được liệt kê trong danh sách là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "○ Dịch vụ ăn uống, ○ Nhu cầu thiết yếu, ○ Thời trang - Mỹ phẩm - Sách, ○ Dịch vụ Tiện ích, ○ Làm đẹp - Sức khỏe, ○ Du lịch + Khách sạn + Dịch vụ sân bay, ○ Mua sắm trực tuyến, ○ Vàng - Bạc - Trang sức, ○ Giải trí.",
+    "answer": "Các nhóm ngành hàng chính (New Category) được liệt kê trong danh sách UrBox\n\nSTT\n\t\nNEW CATEGORY (NHÓM NGÀNH HÀNG)\n\n\n1\n\t\nThời trang & Phụ kiện\n\n\n2\n\t\nMỹ phẩm & Chăm sóc sức khỏe\n\n\n3\n\t\nĐồ gia dụng & Nội thất\n\n\n4\n\t\nThực phẩm & Đồ uống\n\n\n5\n\t\nĐồ điện tử & Công nghệ\n\n\n6\n\t\nMẹ &",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk liệt kê các nhóm ngành: Dịch vụ ăn uống, Nhu cầu thiết yếu, Thời trang‑Mỹ phẩm‑Sách, …; answer lại đưa ra một danh sách hoàn toàn khác (Thời trang & Phụ kiện, Mỹ phẩm & Chăm sóc sức khỏe, Đồ gia dụng & Nội thất, …) không khớp với nội dung trong chunk, vì vậy trả lời sai nghiêm trọng.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Các sản phẩm hợp tác phổ biến được liệt kê là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "Cash voucher, Item voucher, Top-up, E-card, Promotion voucher.",
+    "answer": "**Sản",
+    "evaluate": "incorrect",
+    "score": 1,
+    "check": "Câu trả lời không liệt kê bất kỳ sản phẩm nào; nội dung không phản ánh danh sách trong chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Tên thương hiệu ở mục STT 1 là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "Phố Chợ",
+    "answer": "Tên thương hiệu ở mục STT 1: Apple\n\n(Thông tin được trích xuất từ tài liệu “Danh sách thương hiệu – Bảng phân loại theo STT” trong hệ thống kiến thức nội bộ của UrBox – CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ.)",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cho biết thương hiệu ở mục STT 1 là “Phố Chợ”, trong khi Answer khẳng định là “Apple”, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Mã số thuế (MST) của thương hiệu ở STT 1 là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "0301123125",
+    "answer": "Mã số thuế (MST) của thương hiệu ở STT 1 (Apple): 0101234567\n\nThông tin này được trích xuất từ tài liệu “Danh sách thương hiệu – Mã số thuế” trong hệ thống kiến thức nội bộ của UrBox (CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp MST là 0301123125, trong khi câu trả lời đưa ra MST khác (0101234567) và thêm thông tin thương hiệu không có trong chunk, nên nội dung trả lời mâu thuẫn với dữ liệu gốc.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Tier của thương hiệu ở STT 5 là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "Tier 2",
+    "answer": "Thought for 1 seconds\n\n**Tier của thương hiệu ở STT 5 là Tier 1.\n\nThông tin được trích xuất từ tài liệu “Danh sách thương hiệu – Phân loại theo Tier” trong hệ thống kiến thức nội bộ của UrBox (CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cho biết Tier là 2, trong khi Answer khẳng định Tier là 1, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Chiết khấu của VTC cho Vietnammobile là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "5,9% tổng giá trị PO",
+    "answer": "Tìm kiếm trong cơ sở tri thức nội bộ không cho thấy bất kỳ mục nào liên quan đến “chiết khấu của VTC cho Vietnammobile”.\n\nNếu bạn cần thông tin chi tiết về mức chiết khấu, vui lòng liên hệ trực tiếp với bộ phận kinh doanh hoặc hỗ trợ của VTC để được cung cấp mức giá hiện hành.\n\n(Thông tin trên dựa trên kết quả tìm kiếm nội bộ; không có dữ liệu có sẵn trong hệ thống.)",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp mức chiết khấu 5,9% tổng giá trị PO, trong khi Answer khẳng định không có thông tin và đề nghị liên hệ, mâu thuẫn hoàn toàn với dữ liệu trong Chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Ngày bắt đầu hợp tác của thương hiệu Phố Chợ (STT 1) là ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "2020-09-24",
+    "answer": "Kết quả tìm kiếm trong cơ sở tri thức nội bộ không có mục nào ghi lại “ngày bắt đầu hợp tác của thương hiệu Phố Chợ (STT 1)”.\n\nNếu bạn cần biết ngày khởi đầu cụ thể, vui lòng:\n\nLiên hệ trực tiếp với bộ phận Quản lý Đối tác / Hợp tác của công ty để yêu cầu hồ sơ hợp đồng hoặc biên bản ký kết.\nKiểm tra trong hệ thống quản lý hợp đồng nội bộ (ví dụ: ERP, CRM) bằng cách tìm kiếm theo tên thương hiệu Phố Chợ và STT 1.\n\n(Thông tin trên dựa trên kết quả tìm kiếm nội bộ; không có dữ liệu có sẵn trong hệ thống.)",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp ngày bắt đầu hợp tác là 2020‑09‑24, nhưng Answer khẳng định không có thông tin và đề nghị liên hệ, mâu thuẫn với dữ liệu trong Chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Hình thức vận hành thực tế của thương hiệu Phố Chợ (STT 1) là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "UrBox sinh code - Trang NCC",
+    "answer": "**Kết quả tìm",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk không chứa thông tin nào về hình thức vận hành của thương hiệu Phố Chợ, còn câu trả lời chỉ là một đoạn không liên quan và không cung cấp thông tin yêu cầu.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Tên thương hiệu nào có trạng thái Onboarding và thuộc Tier 3?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "Phòng khám quốc tế Careplus",
+    "answer": "Kết quả tìm kiếm trong cơ sở tri thức nội bộ không có mục nào liệt kê các thương hiệu có “trạng thái Onboarding” và “Tier 3”.\n\nNếu bạn cần xác định thương hiệu đáp ứng cả hai tiêu chí này, hãy thực hiện các",
+    "evaluate": "incorrect",
+    "score": 3,
+    "check": "Chunk cung cấp một thương hiệu (Phòng khám quốc tế Careplus) trong khi câu trả lời khẳng định không có thương hiệu nào đáp ứng tiêu chí, nên câu trả lời mâu thuẫn với thông tin có trong chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Chiết khấu của Careplus (STT 12) cho gói tiêm ngừa là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "5% doanh thu Gói tiêm ngừa",
+    "answer": "Kết quả tìm kiếm trong cơ sở tri thức nội bộ không có mục nào ghi lại “chiết khấu của Careplus (STT 12) cho gói tiêm ngừa”.\n\nĐể biết mức chiết khấu hiện tại, bạn có thể:\n\nLiên hệ trực tiếp với bộ phận Kinh doanh / Hợp đồng của Careplus – họ sẽ cung cấp bảng giá và chiết khấu cho gói tiêm ngừa.\nKiểm tra trong hệ thống quản lý hợp đồng (ERP/CRM):\nTìm theo Tên thương hiệu = Careplus và STT = 12.\nXem các trường “Discount” hoặc “Commission” liên quan đến “gói tiêm ngừa”.\nYêu cầu báo cáo “Discount Summary” từ phòng Tài chính hoặc Bộ phận Đối tác, nếu có.\n\n(Thông tin trên dựa trên kết quả tìm kiếm nội bộ; không có dữ liệu có sẵn trong hệ thống.)",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp chiết khấu 5% cho gói tiêm ngừa, nhưng câu trả lời khẳng định không có thông tin và đề nghị liên hệ, mâu thuẫn với dữ liệu có sẵn.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Chiết khấu của thương hiệu Phố Chợ (STT 1) là bao nhiêu phần trăm?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "10% trên tổng doanh thu",
+    "answer": "Kết quả tìm kiếm trong cơ sở tri thức nội bộ không có mục nào ghi lại “chiết khấu của thương hiệu Phố Chợ (STT 1)”.\n\nNếu bạn cần biết mức chiết khấu phần trăm hiện tại, hãy thực hiện một trong các cách sau:\n\nLiên hệ bộ phận Kinh doanh / Hợp đồng của Phố Chợ – họ có bảng giá và tỷ lệ chiết khấu chi tiết.\nTra cứu trong hệ thống quản lý hợp đồng (ERP/CRM):\nTìm theo Tên thương hiệu = Phố Chợ và STT = 1",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp thông tin chiết khấu là 10% trên tổng doanh thu, trong khi câu trả lời khẳng định không có thông tin nào và đề nghị liên hệ, mâu thuẫn với dữ liệu đã cho.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Chiết khấu của thương hiệu Sasco Shop (STT 3) là bao nhiêu phần trăm?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "8% trên tổng doanh thu",
+    "answer": "Kết quả tìm kiếm trong cơ sở tri thức nội bộ không có mục nào ghi lại “chiết khấu của thương hiệu Sasco Shop (STT 3)”.\n\nĐể biết mức chiết khấu phần trăm hiện tại, bạn có thể:\n\nLiên hệ trực tiếp với bộ phận Kinh doanh / Hợp đồng của Sasco Shop – họ sẽ cung cấp bảng giá và tỷ lệ chiết khấu chi tiết.\nTra cứu trong hệ thống quản lý hợp đồng (ERP/CRM):\nLọc theo Tên thương hiệu = Sasco Shop và STT = 3.\nKiểm tra các trường “Discount”, “Commission” hoặc “Chiết khấu (%)”.\nYêu cầu báo cáo “Discount Summary” từ phòng Tài chính hoặc Bộ phận Đối tác, nếu công ty có báo cáo tổng hợp các mức chiết khấu theo thương hiệu.\n\n(Thông tin trên dựa trên kết quả tìm kiếm nội bộ; không có dữ liệu có sẵn trong hệ thống.)",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp thông tin chiết khấu là 8% trên tổng doanh thu, trong khi Answer khẳng định không có thông tin và đề nghị liên hệ để biết mức chiết khấu, mâu thuẫn hoàn toàn với dữ liệu trong Chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Chiết khấu của thương hiệu iSushi (STT 31) là bao nhiêu phần trăm?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "2% tổng doanh thu THÁNG",
+    "answer": "Kết quả tìm kiếm trong cơ sở tri thức nội bộ không có mục nào ghi lại “chiết khấu của thương hiệu iSushi (STT 31)”.\n\nNếu bạn cần biết mức chiết khấu phần trăm hiện tại, hãy thực hiện một",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp chiết khấu là 2%, trong khi câu trả lời khẳng định không có thông tin nào, mâu thuẫn với dữ liệu được truy xuất.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Chiết khấu của The Coffee House (STT 70) theo doanh thu năm là bao nhiêu phần trăm cho doanh thu dưới 360 triệu đồng?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "5%",
+    "answer": "Kết quả tìm kiếm trong cơ sở tri thức nội bộ không có mục nào ghi lại “chiết khấu của The Coffee House (STT 70) cho doanh thu dưới 360 triệu đồng”.\n\nĐể biết mức chiết khấu phần trăm cụ thể, bạn có thể:\n\nLiên hệ bộ phận Kinh doanh / Hợp đồng của The Coffee House – họ sẽ cung cấp bảng chiết khấu theo các ngưỡng doanh thu.\nTra cứu trong hệ thống quản lý hợp đồng (ERP/CRM):\nLọc theo Tên thương hiệu = The Coffee House và STT = 70.\nKiểm tra các trường “Discount”, “Commission” hoặc “Chiết khấu (%)” và lọc theo Doanh thu năm < 360 triệu đồng.\nYêu cầu báo cáo “Discount Summary” từ phòng Tài chính hoặc Bộ phận Đối tác, nếu công ty có báo cáo tổng hợp các mức chiết khấu theo ngưỡng doanh thu.\n\n(Thông tin trên dựa trên kết quả tìm kiếm nội bộ; không có dữ liệu có sẵn trong hệ thống.)",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp mức chiết khấu 5%, trong khi câu trả lời khẳng định không có thông tin nào và đề nghị liên hệ để biết, mâu thuẫn trực tiếp với nội dung chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Chiết khấu của Totoro 1988 (STT 96) cho doanh thu từ 30 triệu đến 50 triệu đồng là bao nhiêu phần trăm?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final_Mới_Văn_Hoàng_Công_được_cập_nhật_khoảng_2_giờ_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "15%",
+    "answer": "**Kết quả tìm kiếm trong cơ sở tri thức nội bộ không có mục nào ghi lại “chiết khấu của Totoro 1988 (STT 96) cho doanh thu từ 30 triệu đến",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp chiết khấu là 15%, trong khi câu trả lời khẳng định không có thông tin nào, mâu thuẫn hoàn toàn với nội dung chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Tổng số thương hiệu trong danh sách là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "Tổng số: 90 thương hiệu",
+    "answer": "I’m unable to determine the total number of brands because the list you’re referring to wasn’t included in your message. Please provide the list (or a reference to the specific document), and I’ll count the brands for you.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp rõ ràng rằng tổng số thương hiệu là 90, trong khi Answer lại khẳng định không thể xác định và yêu cầu thêm thông tin, mâu thuẫn hoàn toàn với nội dung Chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Ngành hàng chính của các đối tác chiến lược là gì?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "Ngành hàng chính: F&B chuỗi lớn, E-commerce, Di chuyển, Siêu thị",
+    "answer": "Kết quả tìm kiếm trong Knowledge Base:\n\nKhông có mục nào trong cơ sở tri thức của UrBox (tìm kiếm với các từ khóa “đối tác chiến lược”, “strategic partners”, “ngành hàng chính”) chứa danh sách các đối tác chiến lược mà bạn đang đề cập.\n\nHướng giải quyết:\nĐể trả lời chính xác “ngành hàng chính của các đối tác chiến lược”, tôi cần xem danh sách cụ thể các đối tác mà bạn đang nói tới (ví dụ: tên công ty, bảng dữ liệu, tài liệu liên kết). Vui lòng cung cấp danh sách hoặc tài liệu liên quan, tôi sẽ ngay lập tức xác định và liệt kê ngành hàng chính cho từng đối tác.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk đã liệt kê rõ ràng các ngành hàng chính (F&B chuỗi lớn, E‑commerce, Di chuyển, Siêu thị) nhưng Answer lại khẳng định không có thông tin và yêu cầu thêm dữ liệu, mâu thuẫn hoàn toàn với nội dung Chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thương hiệu nào trong danh sách có danh mục mới là “Thời trang - Mỹ phẩm - Sách” và trạng thái Onboarding?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "THƯƠNG HIỆU: Guardian",
+    "answer": "Kết quả tìm kiếm trong Knowledge Base\n\nKhông tìm thấy bất kỳ mục nào liên quan đến “Thời trang - Mỹ phẩm - Sách” kết hợp với trạng thái **On",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ cung cấp thương hiệu Guardian mà không đề cập đến danh mục “Thời trang - Mỹ phẩm - Sách” hay trạng thái Onboarding, nên câu trả lời “không tìm thấy” không được hỗ trợ bởi thông tin trong chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Chiết khấu cho UrBox khi doanh thu tháng từ 0‑500 triệu đồng là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "Chiết khấu cho UrBox 0-500tr: 3%",
+    "answer": "Kết quả tìm kiếm trong Knowledge Base (UrBox / CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ)\n\nTài liệu “Bảng mức chiết khấu cho đối tác” liệt kê các mức chiết khấu dựa trên doanh thu hàng tháng.\nĐối với **doanh thu",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Câu trả lời không cung cấp giá trị chiết khấu (3%) được nêu trong chunk, chỉ mô tả tài liệu mà không đưa ra thông tin cụ thể, nên không được hỗ trợ bởi chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thời gian bắt đầu hợp tác của Guardian là ngày nào?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2020-11-05",
+    "answer": "Kết quả tìm kiếm trong Knowledge Base (UrBox / CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ)\n\nTài liệu “Danh sách đối tác chiến lược – Thông tin hợp đồng” (phiên bản 2024‑02) ghi rõ Guardian đã ký hợp đồng hợp tác với UrBox và ngày bắt đầu thực hiện hợp tác là ngày 15 tháng 3 năm 2023.\n\nNguồn: “Danh sách đối tác chiến lược – Thông tin hợp đồng”, mục Guardian – Ngày bắt đầu hợp tác. \n\nNếu bạn cần thêm chi tiết về điều khoản hợp đồng hoặc các mốc thời gian liên quan, vui lòng cho biết.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cho ngày bắt đầu hợp tác là 2020‑11‑05, trong khi Answer đưa ra ngày 15 / 3 / 2023, mâu thuẫn hoàn toàn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thời gian kết thúc hợp tác của Guardian là ngày nào?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "THỜI HẠN HỢP TÁC (KẾT THÚC): 2021-11-04",
+    "answer": "Kết quả tìm kiếm trong Knowledge Base (UrBox / CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ)\n\nTài liệu **“Danh sách",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Câu trả lời không cung cấp ngày kết thúc hợp tác (2021-11-04) được nêu trong chunk, do đó không được hỗ trợ bởi nội dung đã cho.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Hình thức vận hành theo hợp đồng của Guardian là gì?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "HÌNH THỨC VẬN HÀNH THEO HỢP ĐỒNG: UrBox sinh code - API",
+    "answer": "Kết quả tìm kiếm trong Knowledge Base (UrBox / CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ)\n\nTrong tài liệu “Danh sách đối tác chiến lược – Thông tin hợp đồng” (phiên bản 2024‑02",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Câu trả lời không nêu ra hình thức vận hành theo hợp đồng (UrBox sinh code - API) như trong chunk, chỉ liệt kê tài liệu tham khảo nên không được hỗ trợ.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Hình thức vận hành thực tế của Guardian là gì?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "HÌNH THỨC VẬN HÀNH THỰC TẾ: UrBox sinh code - API",
+    "answer": "Thought for 1 seconds\n\nKết quả tìm kiếm trong Knowledge Base (UrBox / CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ)\n\nTài liệu “Báo cáo thực tế vận hành – Đối tác Guardian” (phiên bản 2024‑09) mô tả cách Guardian đang hoạt động trên nền tảng UrBox hiện tại.\n\nTheo mục “Hình thức vận hành thực tế”, Guardian được triển khai theo mô hình “Marketplace – Fulfillment by UrBox (FBU)”:\n\nMarketplace – Guardian đăng tải danh mục sản phẩm, giá bán và mô tả",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Câu trả lời đưa ra thông tin về mô hình “Marketplace – Fulfillment by UrBox (FBU)” không có trong đoạn trích “UrBox sinh code - API”, chỉ một phần thông tin (các chi tiết bổ sung) không được hỗ trợ bởi chunk, vì vậy không hoàn toàn được chứng thực.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Công ty chủ quản của thương hiệu iSushi là công ty nào?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "CÔNG TY CHỦ QUẢN: GGG - CÔNG TY CỔ PHẦN TẬP ĐOÀN GOLDEN GATE",
+    "answer": "Kết quả tìm kiếm trong Knowledge Base (UrBox / CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ)\n\nTài liệu “Danh sách thương hiệu – Thông tin công ty chủ quản” (phiên bản 2024‑03) liệt kê iSushi và công ty chủ quản của nó.\nTheo mục iSushi – Công ty chủ quản, thương hiệu iSushi thuộc Công ty Cổ phần iSushi Việt Nam (trụ sở tại Hà Nội, mã số doanh nghiệp 0101234567).\n\nNguồn: “Danh sách thương hiệu – Thông tin công ty chủ quản”, mục iSushi. \n\nNếu bạn cần thêm thông tin về địa chỉ, người đại diện hoặc các thương hiệu liên quan khác, vui lòng cho biết.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk xác định công ty chủ quản của iSushi là GGG - Công ty Cổ phần Tập đoàn Golden Gate, trong khi Answer khẳng định là Công ty Cổ phần iSushi Việt Nam, mâu thuẫn hoàn toàn với thông tin trong Chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thời gian bắt đầu hợp tác của iSushi là ngày nào?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2023-03-01",
+    "answer": "Kết quả tìm kiếm trong Knowledge Base (UrBox / CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ)\n\nTài liệu “Danh sách đối tác chiến lược – Thông tin hợp đồng” (phiên bản 2024‑02) ghi rõ thời gian bắt đầu hợp tác của iSushi với UrBox là ngày 01 tháng 6 năm 2022.\n\nNguồn: “Danh sách đối tác chiến lược – Thông tin hợp đồng”, mục iSushi – Ngày bắt đầu hợp tác. \n\nNếu cần thêm chi tiết về các điều khoản hợp đồng hoặc các mốc thời gian liên quan, vui lòng cho biết.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cho biết ngày bắt đầu hợp tác là 2023‑03‑01, trong khi Answer khẳng định ngày 01/06/2022, mâu thuẫn với thông tin cốt lõi trong Chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thương hiệu Cowboy Jack's thuộc công ty nào?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "CÔNG TY CHỦ QUẢN: GGG - CÔNG TY CỔ PHẦN TẬP ĐOÀN GOLDEN GATE",
+    "answer": "Cowboy Jack’s là thương hiệu thuộc CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ (UrBox).\n\nThông tin này được trích từ cơ sở dữ liệu nội bộ của UrBox.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cho biết thương hiệu Cowboy Jack's thuộc Công ty Cổ phần Tập đoàn Golden Gate, trong khi Answer khẳng định thuộc UrBox, mâu thuẫn hoàn toàn với thông tin trong Chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Tên thương hiệu nào trong danh sách có trạng thái OFFSITE?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "THƯƠNG HIỆU: Cowboy Jack's",
+    "answer": "Thương hiệu có trạng thái OFFSITE: Cowboy Jack’s\n\n(Thông tin được trích từ cơ sở dữ liệu nội bộ của UrBox – danh sách thương hiệu và trạng thái.)",
+    "evaluate": "unclear",
+    "score": 5,
+    "check": "Chunk chỉ cung cấp tên thương hiệu Cowboy Jack's mà không đề cập đến trạng thái OFFSITE, vì vậy câu trả lời thêm thông tin trạng thái không được hỗ trợ bởi chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thương hiệu nào có chiết khấu 8% tổng doanh thu tháng?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "THƯƠNG HIỆU: Phúc Long",
+    "answer": "Thương hiệu có chiết khấu 8 % tổng doanh thu tháng: Cowboy Jack’s\n\nThông tin này được lấy trực tiếp từ cơ sở dữ liệu nội bộ của UrBox (bảng “Chiết khấu thương hiệu – mức % theo doanh thu tháng”).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ đề cập thương hiệu Phúc Long, không có thông tin về chiết khấu 8% và không nhắc tới Cowboy Jack’s. Câu trả lời đưa ra thương hiệu Cowboy Jack’s là sai hoàn toàn so với nội dung chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thời gian bắt đầu hợp tác của Phúc Long là ngày nào?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2021-06-26",
+    "answer": "Ngày bắt đầu hợp tác của Phúc Long: 15 tháng 3 năm 2023\n\nThông tin này được trích từ cơ sở dữ liệu nội bộ của UrBox (hồ sơ hợp đồng đối tác Phúc Long).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk xác định ngày bắt đầu hợp tác là 2021-06-26, trong khi câu trả lời đưa ra ngày 15/03/2023, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thương hiệu nào có chiết khấu 5% cho doanh thu từ 360 tr đến 720 tr đồng?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "THƯƠNG HIỆU: The Coffee House",
+    "answer": "Thought for 1 seconds\n\nThương hiệu có chiết khấu 5 % cho doanh thu từ 360 triệu đến 720 triệu đồng: Phúc Long\n\nThông tin này được trích từ cơ sở dữ liệu nội bộ của UrBox (bảng “Chiết khấu thương hiệu – mức % theo doanh thu tháng”).",
+    "evaluate": "incorrect",
+    "score": 1,
+    "check": "Chunk chỉ đề cập thương hiệu The Coffee House, không có thông tin về chiết khấu 5% hay doanh thu 360‑720 triệu, trong khi câu trả lời đưa ra thương hiệu Phúc Long, hoàn toàn không dựa trên nội dung chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Chiết khấu cho The Coffee House ở mức doanh thu 360 tr‑720 tr đồng là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "360tr - 720tr: 7%",
+    "answer": "Chiết khấu cho The Coffee House ở mức doanh thu 360 tr – 720 tr đồng: 6 %\n\nThông tin này được trích từ cơ sở dữ liệu nội bộ của UrBox (bảng “Chiết khấu thương hiệu – mức % theo doanh thu tháng”).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk xác định chiết khấu cho doanh thu 360‑720 tr là 7%, trong khi Answer đưa ra 6%, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thời gian bắt đầu hợp tác của The Coffee House là ngày nào?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2020-06-29",
+    "answer": "Ngày bắt đầu hợp tác của The Coffee House: 01 tháng 5 năm 2022\n\nThông tin này được trích từ cơ sở dữ liệu nội bộ của UrBox (hồ sơ hợp đồng đối tác The Coffee House).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk xác định ngày bắt đầu hợp tác là 29‑06‑2020, trong khi câu trả lời đưa ra ngày 01‑05‑2022, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thương hiệu nào có chiết khấu 1% tổng doanh thu tháng và thời gian hợp tác bắt đầu 2023‑05‑30?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "THƯƠNG HIỆU: Circle K",
+    "answer": "Thương hiệu: Mì Gõ\n\nChiết khấu: 1 % tổng doanh thu tháng\nNgày bắt đầu hợp tác: 30 tháng 5 năm 2023\n\nThông tin này được trích từ cơ sở dữ liệu nội bộ của UrBox (bảng “Chiết khấu thương hiệu – mức % theo doanh thu tháng” và hồ sơ hợp đồng đối tác).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ nêu thương hiệu là Circle K, trong khi câu trả lời đưa ra thương hiệu Mì Gõ và thông tin chiết khấu, ngày bắt đầu không có trong chunk, gây mâu thuẫn với nội dung được truy xuất.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Chiết khấu cho Circle K khi doanh thu tháng là 1% là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "CHIẾT KHẤU: * 1% tổng doanh thu THÁNG",
+    "answer": "Thought for 2 seconds\n\nCircle K – Chiết khấu khi doanh thu tháng nằm trong mức “1 %”\n\nMức chiết khấu: 1 % tổng doanh thu tháng\nÁp dụng cho: Doanh thu tháng dưới 360 triệu đồng (đây là ngưỡng mà UrBox ghi nhận mức chiết khấu 1 % cho Circle K).\n\nThông tin được trích từ cơ sở dữ liệu nội bộ của UrBox – bảng “Chiết khấu thương hiệu – mức % theo doanh thu tháng”.",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Câu trả lời đúng về mức chiết khấu 1% tổng doanh thu tháng, nhưng thêm thông tin cụ thể \"Doanh thu tháng dưới 360 triệu đồng\" không có trong chunk và không phải là suy luận chung, vì vậy chỉ phần lớn được hỗ trợ.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thương hiệu nào có chiết khấu 3.3% tổng doanh thu tháng?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1_Mới_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Chưa_bao_giờ_xem.md",
+    "chunk": "THƯƠNG HIỆU: FamilyMart",
+    "answer": "Thương hiệu có chiết khấu 3.3 % tổng doanh thu tháng: Highlands Coffee\n\nThông tin này được trích từ cơ sở dữ liệu nội bộ của UrBox (bảng “Chiết khấu thương hiệu – mức % theo doanh thu tháng”).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ đề cập đến thương hiệu FamilyMart và không cung cấp thông tin về chiết khấu 3.3%; câu trả lời đưa ra Highlands Coffee là thương hiệu có chiết khấu 3.3%, mâu thuẫn hoàn toàn với nội dung chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Ai thực hiện khởi tạo đơn hàng trong quy trình?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "BD Deploy deal qua Hubspot và yêu cầu KAM Tạo PO.",
+    "answer": "Thought for 1 seconds\n\nThông tin từ tài liệu nội bộ UrBox (Quy trình tạo đơn hàng – SOP 2023)\n\nNgười thực hiện khởi tạo đơn hàng: **Nhân viên Kinh doanh (Sales Representative) hoặc Nhân viên",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ rõ KAM (Key Account Manager) tạo PO, còn câu trả lời lại khẳng định nhân viên kinh doanh (Sales Representative) hoặc nhân viên khác, không khớp và thậm chí thiếu thông tin, gây mâu thuẫn với nội dung chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Ai chịu trách nhiệm xuất code và cung cấp thông số đơn hàng?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "KAM Order OP xuất code và cung cấp thông số đơn hàng.",
+    "answer": "**Thông tin từ tài liệu nội bộ",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Câu trả lời chỉ nói 'Thông tin từ tài liệu nội bộ' mà không nêu ai chịu trách nhiệm, trong khi chunk rõ ràng chỉ ra KAM Order OP là người xuất code và cung cấp thông số đơn hàng. Do đó câu trả lời không được hỗ trợ bởi chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Khi kho đáp ứng, quy trình sẽ chuyển sang bước nào?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "Trường hợp 1 (Kho đáp ứng): Chuyển thẳng đến [Bước 4].",
+    "answer": "Thông tin từ Knowledge Base UrBox – “Quy trình xử lý đơn hàng” (từ khóa: “kho đáp ứng”, “bước tiếp theo”)\n\nKhi kho đáp ứng (Warehouse →",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Câu trả lời không nêu được bước tiếp theo (Bước 4) như trong chunk; chỉ có phần mở đầu không đầy đủ, nên hầu hết nội dung không được hỗ trợ.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Khi kho không đáp ứng và số lượng yêu cầu lớn, ai được thông báo và hành động gì?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "OP Báo KAM/BD chia đợt bàn giao hoặc kéo dài SLA thực hiện in bổ sung.",
+    "answer": "Thông tin từ Knowledge Base UrBox – “Quy trình xử lý đơn hàng khi kho không đáp ứng” (từ khóa: “kho không đáp ứng”, “số lượng lớn”, “thông báo”)\n\nTRƯỜNG HỢP\n\t\nNGƯỜI/ BỘ PHẬN ĐƯỢC THÔNG BÁO\n\t\nHÀNH ĐỘNG THỰC HIỆN\n\n\nKho không đáp ứng và **s",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Câu trả lời không nêu ra thông tin trong đoạn trích (OP báo KAM/BD, chia đợt bàn giao hoặc kéo dài SLA). Nội dung trả lời chỉ là tiêu đề và bảng chưa hoàn chỉnh, không hỗ trợ câu hỏi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "OP thực hiện những công việc gì trong bước Xử lý nghiệp vụ kho?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "OP Kiểm đếm, Xuất kho, Topup tiền vào Voucher.",
+    "answer": "Thông tin từ Knowledge Base UrBox – “Quy trình Xử lý nghiệp vụ kho” (từ khóa: “OP”, “xử lý nghiệp vụ kho”, “Urbox”)\n\nCÔNG VIỆC\n\t\nMÔ TẢ NGẮN GỌN\n\t\nKHI THỰC HIỆN\n\n\nKiểm tra tồn kho thực tế\n\t\nĐối chiếu số lượng thực tế với hệ thống ERP, ghi nhận chênh lệch.\n\t\nBắt đầu mỗi ca làm việc.\n\n\nTạo và xác nhận Pick‑List\n\t\nSinh danh sách picking dựa trên đơn hàng đã duyệt, xác nhận các SKU có",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Chunk chỉ liệt kê ba công việc của OP (Kiểm đếm, Xuất kho, Topup tiền vào Voucher). Câu trả lời đưa ra nhiều công việc khác không có trong chunk, chỉ có một phần thông tin trùng khớp, phần còn lại không được hỗ trợ.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "OP thực hiện gì trong bước Giao hàng?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "OP Đóng gói, Bàn giao đơn vị vận chuyển.",
+    "answer": "Thông tin từ Knowledge Base UrBox – “Quy trình Giao hàng” (từ khóa: “OP”, “bước Giao hàng”, “Urbox”)\n\nCÔNG VIỆC CỦA OP (OPERATIONS PERSONNEL / OPERATOR) TRONG BƯỚC GIAO HÀNG\n\t\nMÔ TẢ CHI TIẾT\n\n\n1. Nhận lệnh giao hàng từ hệ thống ERP\n\t\nKiểm tra trạng thái “Đang giao” và mã vận đơn (tracking number) được tạo bởi bộ phận Logistics.\n\n\n2. Kiểm tra và xác nhận hàng hoá\n\t\n- Đối chiếu danh sách hàng (Packing List) với đơn",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Câu trả lời bổ sung nhiều bước chi tiết (nhận lệnh, kiểm tra trạng thái, đối chiếu) không có trong đoạn trích, trong khi đoạn trích chỉ nói OP đóng gói và bàn giao cho đơn vị vận chuyển; do đó phần lớn nội dung không được hỗ trợ và không mâu thuẫn trực tiếp.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Bước cuối cùng của quy trình là gì?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "KAM Làm Hồ sơ nghiệm thu, Thanh toán PO.",
+    "answer": "Bước cuối cùng của quy trình – “Hoàn thành đơn hàng” (Order Completion)\n\nMô tả: Khi nhà vận chuyển xác nhận đã giao hàng thành công (có chữ ký/ảnh xác nhận), OP cập nhật trạng thái “Completed” trong hệ thống ERP, lưu lại chứng từ giao hàng và tạo báo cáo tổng kết.\nHành động chính:\nNhập ngày‑giờ giao, mã vận đơn và chữ ký khách hàng.\nĐánh dấu đơn hàng là Hoàn thành.\nLưu trữ biên bản giao hàng, gửi báo cáo cho Warehouse Manager và Operations Director.\nKết thúc vòng đời đơn hàng; dữ liệu sẽ được dùng cho báo cáo doanh thu và phân tích KPI.\n\nNguồn: Tài liệu SOP “Quy trình Giao hàng & Đóng đơn” của UrBox (Knowledge Base, phiên bản 2023). \n\nLink tham khảo:\n\nUrBox – SOP Đóng đơn hàng (PDF)",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Chunk chỉ nói KAM làm hồ sơ nghiệm thu và thanh toán PO, không đề cập đến bước “Hoàn thành đơn hàng” hay các chi tiết mô tả trong câu trả lời. Vì vậy câu trả lời bổ sung thông tin không được hỗ trợ bởi chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thời gian xử lý SLA cho Phiếu quà tặng dưới 1.000 đơn vị là bao nhiêu ngày?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "Thời gian xử lý: 1 ngày làm việc",
+    "answer": "SLA xử lý Phiếu quà tặng (đơn vị < 1.000): 2 ngày làm việc\n\nThời gian bắt đầu tính từ khi phiếu quà tặng được nhận và nhập vào hệ thống.\nNếu trong 2 ngày làm việc chưa hoàn thành, phiếu sẽ được chuyển lên Giám đốc Kinh doanh để xem xét ưu tiên.\n\nNguồn: Tài liệu “SLA – Phiếu quà tặng” của UrBox (Knowledge Base, tìm kiếm bằng các từ khóa “SLA phiếu quà tặng”, “đơn vị <1000”). \n\nBạn có thể xem chi tiết trong file PDF: UrBox – SLA Phiếu quà tặng (PDF).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk nêu thời gian xử lý là 1 ngày làm việc, trong khi Answer khẳng định 2 ngày làm việc, mâu thuẫn với thông tin cốt lõi và thêm chi tiết không được hỗ trợ.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thời gian xử lý SLA cho Phiếu quà tặng từ 5.000 đến 10.000 đơn vị là bao nhiêu ngày?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "Thời gian xử lý: 3–4 ngày làm việc",
+    "answer": "**SLA xử lý Phiếu quà tặng (số lượng 5.000 – 10.000 đơn vị",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Câu trả lời không đưa ra thời gian xử lý SLA (3–4 ngày làm việc) được nêu trong chunk, chỉ lặp lại tiêu đề câu hỏi nên không được hỗ trợ.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Khi đơn hàng vượt quá công suất in nội bộ (2.500 bản/ngày), quy trình sẽ chuyển sang luồng nào?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "chuyển sang luồng xưởng JOMO hoặc thuê ngoài (Purchasing)",
+    "answer": "**Khi đơn hàng vượt quá công suất in nội bộ (2 500 bản/ngày), quy trình sẽ chuyển sang luồng “In ngoài (External Printing)”.\n\nCác bước chính của luồng này\n\n| Bước | Người thực hiện | Nội dung",
+    "evaluate": "correct",
+    "score": 7,
+    "check": "Câu trả lời đúng về việc chuyển sang in ngoài (thuê ngoài) như trong chunk, nhưng không đề cập đến lựa chọn thứ hai là xưởng JOMO, nên chỉ đáp ứng mức chấp nhận được, chưa đầy đủ.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Nếu giao trên 3 địa điểm, SLA được cộng thêm bao nhiêu ngày làm việc?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "Nếu giao trên 3 địa điểm, cộng thêm +1 đến +2 ngày làm việc.",
+    "answer": "Answer (based on UrBox knowledge‑base):\nWhen a shipment must be delivered to 3 different locations, the service‑level agreement (SLA) is extended by 2 working days (i.e., +1 day for each additional location beyond the first).\n\nSource: UrBox “Delivery SLA – Multi‑location handling” documentation.",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Câu trả lời đúng phần cốt lõi (cộng thêm ngày làm việc khi giao trên 3 địa điểm) nhưng khẳng định cụ thể 2 ngày và đưa ra quy tắc “+1 ngày cho mỗi địa điểm thêm” không có trong đoạn trích, chỉ nằm trong khoảng +1 đến +2 ngày. Do đó chỉ được xem là hỗ trợ một phần.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Công suất in nội bộ tối đa là bao nhiêu Voucher giấy mỗi ngày?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "Công suất in nội bộ: Tối đa 2.500 Voucher giấy/đơn/ngày",
+    "answer": "Answer (from UrBox knowledge‑base):\nThe internal printing line can produce up to 10,000 paper vouchers per day under normal operating conditions.\n\nSource: UrBox “Internal Printing Capacity – Paper Vouchers” documentation.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk nêu công suất tối đa là 2.500 voucher giấy/đơn/ngày, trong khi Answer khẳng định 10.000 voucher/ngày, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thời gian xử lý SLA cho Voucher giấy từ 1.000 đến 5.000 đơn vị là bao nhiêu ngày?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "Thời gian xử lý: 2–3 ngày làm việc",
+    "answer": "Answer (UrBox knowledge‑base):\nFor paper vouchers with a quantity from 1,000 – 5,000 units, the standard SLA processing time is 3 working days.\n\nSource: UrBox “Voucher – Paper SLA Processing Times” documentation.",
+    "evaluate": "correct",
+    "score": 7,
+    "check": "Câu trả lời khớp với thông tin cốt lõi trong chunk (thời gian xử lý là 3 ngày làm việc, nằm trong khoảng 2–3 ngày). Tuy nhiên, câu trả lời không đề cập đến giới hạn dưới (2 ngày), nên thiếu một chi tiết nhỏ so với chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Ai thực hiện kiểm đếm và QC tại xưởng JOMO?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "OP - Xưởng JOMO In ấn và OP - Paper VC Kiểm đếm & QC.",
+    "answer": "Answer (UrBox knowledge‑base):\nAt the JOMO plant, the counting of vouchers is performed by the JOMO Counting Team (Counting Operators), while the quality‑check (QC) is carried out by the JOMO Quality Assurance (QA) team, overseen by the JOMO QA Manager.\n\nSource: UrBox “JOMO Plant – Counting & QC Process” documentation.",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Chunk chỉ nói rằng OP - Xưởng JOMO In ấn và OP - Paper VC thực hiện kiểm đếm & QC, không đề cập đến các đội \"JOMO Counting Team\" hay \"JOMO QA team\" và quản lý QA. Câu trả lời bổ sung thông tin chi tiết không có trong chunk, vì vậy chỉ phần cốt lõi (kiểm đếm và QC tại xưởng JOMO) được hỗ trợ, các chi tiết bổ sung không được chứng minh.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Khi BD/KAM nhận bàn giao trực tiếp để tự giao cho Client, cần làm gì trước khi đóng hàng?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "Trường hợp: KAM/ BD nhận bàn giao trực tiếp để tự giao cho Client cần báo trước khi đóng hàng để tránh OP khai báo Mã vận đơn với Đơn vị Vận chuyển.",
+    "answer": "Answer (UrBox knowledge‑base):\n\nWhen a **BD",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Câu trả lời chỉ là một phần không hoàn chỉnh và không đề cập đến việc cần báo trước khi đóng hàng như trong đoạn trích; do đó không được hỗ trợ bởi chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Ai chịu trách nhiệm bảo quản khi BD/KAM nhận hàng trực tiếp?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "Trách nhiệm bảo quản vận chuyển chuyển từ OP sang BD/KAM trong TH này.",
+    "answer": "Answer (UrBox knowledge‑base):\n\nKhi BD/KAM nhận hàng trực tiếp để tự giao cho Client, người BD/KAM là người chịu trách nhiệm bảo quản toàn bộ hàng hoá (voucher giấy, voucher điện tử, tài liệu kèm theo) từ thời điểm nhận cho tới khi hoàn thành giao hàng và ký biên bản bàn giao.\n\nTrước khi ký “Close Shipment”, BD/KAM phải thực hiện kiểm kê, kiểm tra chất lượng và lưu trữ hàng hoá trong khu vực",
+    "evaluate": "correct",
+    "score": 8,
+    "check": "Câu trả lời đúng về người chịu trách nhiệm (BD/KAM) dựa trên chunk. Các chi tiết bổ sung về kiểm kê, kiểm tra chất lượng và lưu trữ là suy luận hợp lý, phổ biến trong quy trình bảo quản, không mâu thuẫn với chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Mỗi lô Phiếu quà tặng (PQT) gồm bao nhiêu phiếu?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "Các PQT của UrBox được đóng gói thành 100 phiếu/1 lô",
+    "answer": "Answer (UrBox knowledge‑base):\n\nMỗi lô Phiếu quà tặng (PQT) chuẩn của UrBox bao gồm 500 phiếu (voucher) – đây là số lượng tối thiểu và tiêu chuẩn cho một lô khi in và đóng gói.\n\nSource: UrBox “Gift Voucher – Batch (PQT) Specification” documentation, version 3.1 (2025).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk nêu rõ mỗi lô PQT gồm 100 phiếu, trong khi Answer khẳng định 500 phiếu, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Khi số lượng sản phẩm PQT/Voucher giấy dưới 200, UrBox sử dụng gì để đóng gói?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "Với SL sản phẩm PQT/ Voucher Giấy <200, UrBox sử dụng bì thư của Đơn vị vận chuyển",
+    "answer": "Answer (UrBox knowledge‑base):\n\nKhi số lượng PQT / voucher giấy < 200 (từ 1‑199 phiếu), UrBox không dùng thùng carton tiêu chuẩn 500 phiếu mà đóng gói bằng túi nhựa PE 30 µm (size A5) kèm nhãn barcode và đặt trong hộp giấy cứng mini để bảo vệ.\n\nSource: UrBox “Packaging Guidelines – Small‑Batch ( <200 vouchers )” SOP, version 3.2 (2025).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk nêu rõ UrBox dùng bì thư của đơn vị vận chuyển cho <200 sản phẩm, trong khi answer mô tả cách đóng gói bằng túi nhựa PE và hộp giấy mini, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Khi số lượng sản phẩm PQT/Voucher giấy từ 200 trở lên, UrBox sử dụng gì để đóng gói?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "Với SL sản phẩm PQT/ Voucher Giấy từ 200 trở lên, UrBox sử dụng thùng carton để đóng gói đơn hàng, trên mỗi đơn hàng có kèm ghi chú theo yêu cầu",
+    "answer": "Answer (UrBox knowledge‑base):\n\nKhi số lượng PQT / voucher giấy ≥ 200 (từ 200 phiếu trở lên), UrBox đóng gói bằng thùng carton tiêu chuẩn 500 phiếu (có ngăn ngừa va đập, lót bọt khí) và đánh dấu barcode trên mỗi thùng.\n\nSource: UrBox “Packaging Guidelines – Standard Batch (≥200 vouchers)” SOP, version 3.2 (2025).",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Câu trả lời đúng về việc dùng thùng carton cho ≥200 voucher, nhưng thêm các chi tiết cụ thể như \"tiêu chuẩn 500 phiếu\", \"có ngăn ngừa va đập, lót bọt khí\" và \"đánh dấu barcode\" không có trong đoạn trích, vì vậy không được hỗ trợ đầy đủ.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Máy in cần đáp ứng gì để in Voucher giấy từ 1.000 đến 5.000 đơn vị?",
+    "file": "20260127_BD_OPS_BD_Training__QuyTrinh_SLA_process_đơn_hàng_của_BD_Admin+KAM_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_41_phút_trước.md",
+    "chunk": "Máy in thông số đáp ứng đơn hàng < 3.000 Voucher Giấy.",
+    "answer": "Answer (UrBox knowledge‑base – “Printer Requirements for Paper‑Voucher Production (1 000‑5 000 units)”)\n\nYÊU CẦU\n\t\nCHI TIẾT KỸ THUẬT\n\n\nTốc độ in\n\t\n≥ 30 tờ/phút (tối thiểu 1 800 tờ/giờ) để đáp ứng SLA 3 ngày làm việc cho 1 000‑5 000 voucher.\n\n\nĐộ phân giải\n\t\n300 dpi tối thiểu, hỗ trợ 600 dpi để đảm bảo nét chữ và mã QR/Barcode sắc nét.\n\n\nKích thước giấy\n\t\nHỗ trợ giấy A5 (148",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Chunk chỉ đề cập rằng máy in đáp ứng đơn hàng < 3.000 voucher giấy, không cung cấp bất kỳ chi tiết kỹ thuật nào như tốc độ in, độ phân giải hay kích thước giấy. Câu trả lời đưa ra nhiều yêu cầu kỹ thuật chi tiết không được hỗ trợ bởi chunk, vì vậy phần lớn nội dung không có căn cứ.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thông báo này nói về việc thay đổi gì?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Nội dung chính là chấm dứt việc sử dụng tài khoản cá nhân để nhận tiền từ khách hàng và chuyển sang sử dụng hệ thống tài khoản định danh của CÔNG TY CỔ PHẦN TIẾP THỊ SỐ QUÀ.",
+    "answer": "Để trả lời chính xác, tôi cần xem nội dung của thông báo mà bạn đang đề cập. Bạn có thể sao chép hoặc mô tả ngắn gọn nội dung thông báo đó được không?",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Câu trả lời không cung cấp thông tin về thay đổi được nêu trong đoạn trích mà chỉ yêu cầu người dùng cung cấp thêm nội dung, vì vậy không được hỗ trợ bởi chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Tài khoản cá nhân nào đang được ngưng sử dụng để nhận thanh toán?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Chủ tài khoản: Trưởng Cổng Hiếu Số tài khoản: 02324849001 Ngân hàng: LPB",
+    "answer": "Thông tin từ tài liệu UrBox (CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ):",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Câu trả lời chỉ nêu nguồn tài liệu mà không cung cấp thông tin tài khoản cá nhân (chủ tài khoản, số tài khoản, ngân hàng) được nêu trong đoạn trích, vì vậy không được hỗ trợ bởi chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Tên công ty sẽ là chủ tài khoản nhận thanh toán mới là gì?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Tên chủ tài khoản: CÔNG TY CỔ PHẦN TIẾP THỊ SỐ QUÀ",
+    "answer": "Tên công ty sẽ là chủ tài khoản nhận thanh toán mới:\nCÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ (thương hiệu hoạt động là UrBox).\n\nThông tin này được trích từ tài liệu UrBox – “Thông báo ngưng sử dụng tài khoản cá nhân để nhận thanh toán” (cập nhật 01/05/2024).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp tên chính xác là “CÔNG TY CỔ PHẦN TIẾP THỊ SỐ QUÀ”, trong khi câu trả lời đưa ra “CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ”, sai lệch so với thông tin gốc và không được suy luận hợp lý.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thời gian thực hiện giai đoạn chuyển giao là từ ngày nào đến ngày nào?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Giai đoạn chuyển giao (20/05 - 31/05/2024): Team Business Development (BD) và Team Key Account Management (KAM) thực hiện Cập nhật tài liệu đào tạo và thông báo cho Khách hàng.",
+    "answer": "Thời gian thực hiện giai đoạn chuyển giao:\n\nBắt đầu: 01/05/2024\nKết thúc: 30/06/2024\n\nNguồn: Tài liệu UrBox – “Thông báo ngưng sử dụng tài khoản cá nhân để nhận thanh toán” (cập nhật 01/05/2024).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk xác định thời gian giai đoạn chuyển giao là 20/05‑31/05/2024, trong khi Answer đưa ra thời gian 01/05‑30/06/2024, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Ngày nào bắt đầu áp dụng 100% việc chuyển khoản vào tài khoản công ty?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Giai đoạn áp dụng 100% (Từ 01/06/2024): Tất cả đơn hàng bắt buộc chuyển khoản vào tài khoản công ty.",
+    "answer": "Ngày bắt đầu áp dụng 100 % việc chuyển khoản vào tài khoản công ty: 01 / 07 / 2024.\n\nSau khi kết thúc giai đoạn chuyển giao (30 / 06 / 2024), từ ngày 01 / 07 / 2024 mọi giao dịch nhận tiền trên nền tảng UrBox phải được thực hiện đầy đủ qua tài khoản doanh nghiệp (Corporate Account) hoặc ví điện tử UrBox liên kết với tài khoản doanh nghiệp.\n\nNguồn: Tài liệu UrBox – “Thông báo ngưng sử dụng tài khoản cá nhân để nhận thanh toán” (cập nhật 01/05/2024).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk nêu rõ giai đoạn áp dụng 100% bắt đầu từ 01/06/2024, trong khi câu trả lời đưa ra ngày 01/07/2024, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Yêu cầu thanh toán của đơn hàng phải được gửi tới đâu?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Mọi yêu cầu thanh toán đơn hàng (ngoại trừ khách lẻ mua dịch vụ PS) phải được Gửi yêu cầu chuyển khoản vào các tài khoản sau:",
+    "answer": "**Yêu",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Câu trả lời chỉ là một phần không đầy đủ \"**Yêu\" và không cung cấp thông tin các tài khoản chuyển khoản như trong chunk, do đó không được hỗ trợ bởi nội dung đã cho.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Khách hàng phải thực hiện thanh toán theo cú pháp nào?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Khách hàng thực hiện thanh toán theo đúng cú pháp định chuẩn: \"Công ty … thanh toán cho HĐ/đơn hàng số/ Mã đơn/…\"",
+    "answer": "Cú pháp thanh toán mà khách hàng phải tuân thủ (theo tài liệu UrBox",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Câu trả lời chỉ khẳng định tồn tại cú pháp và đề cập tài liệu UrBox, nhưng không nêu ra nội dung cụ thể của cú pháp như trong chunk, do đó không đáp ứng yêu cầu câu hỏi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Nếu giao dịch sau ngày 01/06/2024 vẫn gửi vào tài khoản cá nhân, Phòng Kế toán sẽ làm gì?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Các giao dịch sau ngày 01/06/2024 vào tài khoản cá nhân sẽ được Phòng Kế toán hỗ trợ Hoàn tiền nhưng sẽ làm chậm tiến độ giao hàng.",
+    "answer": "Phòng Kế toán sẽ:\n\nTừ chối/đánh dấu giao dịch – mọi khoản tiền chuyển vào tài khoản",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk nói Phòng Kế toán sẽ hỗ trợ hoàn tiền cho các giao dịch sau 01/06/2024 vào tài khoản cá nhân, còn Answer lại nói Phòng Kế toán sẽ từ chối/đánh dấu giao dịch, thông tin trái ngược và không được hỗ trợ.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Đội ngũ nào chịu trách nhiệm cập nhật tài liệu đào tạo và thông báo cho khách hàng?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Team Business Development (BD) và Team Key Account Management (KAM) thực hiện Cập nhật tài liệu đào tạo và thông báo cho Khách hàng.",
+    "answer": "Đội ngũ chịu trách nhiệm:\n\n**Bộ phận Đào tạo & Tr",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk nêu rõ trách nhiệm thuộc Team Business Development (BD) và Team Key Account Management (KAM), trong khi câu trả lời lại đưa ra một bộ phận khác (Bộ phận Đào tạo) và không khớp với thông tin trong chunk, gây mâu thuẫn.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Lý do ngưng sử dụng tài khoản cá nhân được nêu trong phần Insights là gì?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Ngưng sử dụng tài khoản cá nhân là chuyên nghiệp hóa khâu thanh toán, tránh rủi ro pháp lý và tranh chấp tài chính cá nhân",
+    "answer": "**Lý",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Câu trả lời chỉ là “**Lý” không cung cấp bất kỳ thông tin nào về lý do ngưng sử dụng tài khoản cá nhân, trong khi chunk nêu rõ các lý do: chuyên nghiệp hoá thanh toán, tránh rủi ro pháp lý và tranh chấp tài chính cá nhân.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Việc chuyển sang tài khoản công ty giúp đạt được mục tiêu gì về tài chính?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "đảm bảo tính minh bạch, an toàn tài chính và thuận tiện trong việc đối soát, quản lý dòng tiền của doanh nghiệp.",
+    "answer": "Thought for 2 seconds\n\nTheo tài liệu nội bộ UrBox (CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ), việc chuyển sang tài khoản công ty giúp doanh nghiệp đạt được các mục tiêu tài chính chính sau:\n\nMỤC TIÊU\n\t\nLỢI ÍCH CỤ THỂ\n\n\nQuản lý chi phí tập trung",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Câu trả lời không nêu các mục tiêu tài chính được nêu trong chunk (minh bạch, an toàn tài chính, thuận tiện đối soát, quản lý dòng tiền) mà chỉ đưa ra thông tin không có trong chunk, do đó phần lớn nội dung không được hỗ trợ.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Có bao nhiêu ngân hàng được liệt kê để nhận thanh toán?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Cung cấp đa dạng tài khoản tại 4 ngân hàng lớn (VCB, ACB, VP Bank, MB).",
+    "answer": "Theo tài liệu UrBox – “Danh sách ngân hàng hỗ trợ nhận thanh toán” (cập nhật 2024), có 13 ngân hàng được liệt kê để khách hàng doanh nghiệp có thể nhận tiền vào tài khoản công ty.\n\nSTT\n\t\nNGÂN HÀNG\n\n\n1\n\t\nVietcombank\n\n\n2\n\t\nBIDV\n\n\n3\n\t\nAgribank\n\n\n4\n\t\nTechcombank\n\n\n5\n\t\nSacombank\n\n\n6\n\t\nMB Bank\n\n\n7\n\t\nACB\n\n\n8\n\t\nVPBank\n\n\n9\n\t\nTPBank\n\n\n10\n\t\nEximBank\n\n\n11\n\t\nHDBank\n\n\n12\n\t\nOceanBank\n\n\n13\n\t\nSCB (Saigon‑Bank)\n\nNguồn: UrBox",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ đề cập tới 4 ngân hàng (VCB, ACB, VP Bank, MB) trong khi Answer khẳng định có 13 ngân hàng và liệt kê danh sách khác, mâu thuẫn với thông tin cốt lõi trong Chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Chi nhánh nào của ngân hàng VCB được chỉ định để nhận thanh toán?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Ngân hàng: TMCP Ngoại Thương Việt Nam (VCB) – Chi nhánh Hòa Bình",
+    "answer": "Ngân hàng Vietcombank (VCB) – Chi nhánh được chỉ định để nhận thanh toán:\n\nChi nhánh Hà Nội – Phòng Giao dịch Số 1\n\nThông tin này được trích từ tài liệu nội bộ UrBox – “Hướng dẫn thiết lập tài khoản doanh nghiệp > Ngân hàng nhận thanh toán” (phần “Chi nhánh ngân hàng VCB”).\n\nNếu cần xem chi tiết số tài khoản, mã SWIFT và các hướng dẫn nộp tiền, bạn có thể truy cập tài liệu gốc tại:\nUrBox – Danh sách ngân hàng nhận thanh toán (VCB).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ định chi nhánh Hòa Bình của VCB, trong khi Answer đưa ra chi nhánh Hà Nội – Phòng Giao dịch Số 1, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Chi nhánh nào của ngân hàng ACB được chỉ định để nhận thanh toán?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Ngân hàng: TMCP Á Châu (ACB) – Chi nhánh Thăng Long",
+    "answer": "Ngân hàng ACB – Chi nhánh được chỉ định để nhận thanh toán:\n\nChi nhánh Hà Nội – Phòng Giao dịch Số 2\n\nThông tin này được trích từ tài liệu nội bộ UrBox – “Hướng dẫn thiết lập tài khoản doanh nghiệp > Ngân hàng nhận thanh toán” (phần “Chi nhánh ngân hàng ACB”).\n\nBạn có thể xem chi tiết số tài khoản, mã SWIFT và các hướng dẫn nộp tiền tại:\nUrBox – Danh sách ngân hàng nhận thanh toán (ACB).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ rõ chi nhánh ACB được chỉ định là Chi nhánh Thăng Long, trong khi Answer nêu chi nhánh Hà Nội – Phòng Giao dịch Số 2, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Chi nhánh nào của ngân hàng VP Bank được chỉ định để nhận thanh toán?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Ngân hàng: Việt Nam Thịnh Vượng (VP Bank) – Chi nhánh Kinh Đô",
+    "answer": "Ngân hàng VPBank – Chi nhánh được chỉ định để nhận thanh toán:\n\nChi nhánh Hà Nội – Phòng Giao dịch Số 3\n\nThông tin này được trích từ tài liệu nội bộ UrBox – “Hướng dẫn thiết lập tài khoản doanh nghiệp > Ngân hàng nhận thanh toán” (phần “Chi nhánh ngân hàng VPBank”).\n\nBạn có thể xem chi tiết số tài khoản, mã SWIFT và hướng dẫn nộp tiền tại:\nUrBox – Danh sách ngân hàng nhận thanh toán (VPBank).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ định chi nhánh Kinh Đô của VP Bank, trong khi Answer nêu chi nhánh Hà Nội – Phòng Giao dịch Số 3, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Chi nhánh nào của ngân hàng MB được chỉ định để nhận thanh toán?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Ngân hàng: TMCP Quân Đội (MB) – Chi nhánh Điện Biên Phủ – PGD Hà Thành",
+    "answer": "Ngân hàng MB – Chi nhánh được chỉ định để nhận thanh toán:\n\nChi nhánh Hà Nội – Phòng Giao dịch Số 4\n\nThông tin này được trích từ tài liệu nội bộ UrBox – “Hướng dẫn thiết lập tài khoản doanh nghiệp > Ngân hàng nhận thanh toán” (phần “Chi nhánh ngân hàng MB”).\n\nBạn có thể xem chi tiết số tài khoản, mã SWIFT và hướng dẫn nộp tiền tại:\nUrBox – Danh sách ngân hàng nhận thanh toán (MB Bank).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ định chi nhánh \"Điện Biên Phủ – PGD Hà Thành\" của ngân hàng MB, trong khi Answer đưa ra chi nhánh \"Hà Nội – Phòng Giao dịch Số 4\" không khớp và mâu thuẫn với thông tin trong Chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Ai là chủ tài khoản cũ của tài khoản cá nhân đã ngưng sử dụng?",
+    "file": "20260128_BD_OPS_BD_Training__Thongbao_Thong_bao_chuyen_doi_tai_khoan_nhan_thanh_toan_Văn_Hoàng_Công_được_cập_nhật_4_ngày_trước_Đã_xem_42_phút_trước.md",
+    "chunk": "Chủ tài khoản: Trưởng Cổng Hiếu",
+    "answer": "Theo tài liệu nội bộ UrBox – “Quy trình ngưng sử dụng tài khoản cá nhân và chuyển đổi sang tài khoản doanh nghiệp” (phần “Chủ tài khoản cũ”):\n\nChủ tài khoản cũ là người dùng (cá nhân) đã đăng ký và sở hữu tài khoản cá nhân ban đầu, tức là **tên thật và mã số khách hàng (Customer ID) được ghi trong hồ sơ KYC của tài",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ định chủ tài khoản cũ là \"Trưởng Cổng Hiếu\" nhưng câu trả lời chỉ đưa ra định nghĩa chung về chủ tài khoản cũ, không nhắc tới tên cụ thể, vì vậy không được hỗ trợ bởi chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Sau khi kiểm tra dữ liệu code, quyết định gì được đưa ra về việc sử dụng lại code cũ?",
+    "file": "QUY_TRÌNH_CHUYỂN_ĐỔI_VẬN_HÀNH_TỪ_MC_XUẤT_CODE_SANG_URBOX_XUẤT_CODE_20251212_032831_Bạn_đã_cập_nhật_4_phút_trước_Đã_xem_4_phút_trước.md",
+    "chunk": "Quyết định tái sử dụng code cũ hay tạo mới trên hệ thống UrBox.",
+    "answer": "Quyết định: Sau khi kiểm tra dữ liệu code, chúng tôi kết luận rằng code cũ không đáp ứng các tiêu chuẩn hiện hành (vấn đề về bảo mật, hiệu năng, và khả năng bảo trì). Do đó, không được sử dụng lại; thay vào đó sẽ triển khai viết lại hoặc cập nhật mới để đáp ứng yêu cầu hiện tại.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ đề cập đến việc quyết định tái sử dụng code cũ hay tạo mới, không cung cấp kết luận cụ thể. Câu trả lời đưa ra chi tiết về lý do và quyết định không dùng lại code cũ, thông tin này không được hỗ trợ bởi chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Trong quá trình xử lý dữ liệu code, cần thực hiện đối soát dữ liệu như thế nào?",
+    "file": "QUY_TRÌNH_CHUYỂN_ĐỔI_VẬN_HÀNH_TỪ_MC_XUẤT_CODE_SANG_URBOX_XUẤT_CODE_20251212_032831_Bạn_đã_cập_nhật_4_phút_trước_Đã_xem_4_phút_trước.md",
+    "chunk": "Đối soát dữ liệu giữa luồng cũ và mới.",
+    "answer": "**Các bước thực",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Câu trả lời chỉ là phần mở đầu \"Các bước thực\" và không cung cấp thông tin nào về việc đối soát dữ liệu giữa luồng cũ và mới như trong chunk, do đó không được hỗ trợ bởi nội dung đã cho.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Phương án nào đề xuất yêu cầu Merchant xuất code bàn giao để hủy hoặc deactivate voucher đang chạy?",
+    "file": "QUY_TRÌNH_CHUYỂN_ĐỔI_VẬN_HÀNH_TỪ_MC_XUẤT_CODE_SANG_URBOX_XUẤT_CODE_20251212_032831_Bạn_đã_cập_nhật_4_phút_trước_Đã_xem_4_phút_trước.md",
+    "chunk": "Phương án 1 (5.1): Yêu cầu Merchant xuất code bàn giao để hủy/deactivate.",
+    "answer": "**Đề xuất",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Câu trả lời chỉ là \"Đề xuất\" mà không nêu ra phương án nào, không phản ánh nội dung trong chunk về \"Phương án 1 (5.1): Yêu cầu Merchant xuất code bàn giao để hủy/deactivate\".",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Phòng ban nào chịu trách nhiệm chính trong việc tích hợp API với Merchant?",
+    "file": "QUY_TRÌNH_CHUYỂN_ĐỔI_VẬN_HÀNH_TỪ_MC_XUẤT_CODE_SANG_URBOX_XUẤT_CODE_20251212_032831.md",
+    "chunk": "Phòng ban: Relevant Depts (Phòng ban liên quan, chủ yếu là Engineer)",
+    "answer": "Thought for 1 seconds\n\nTrả lời (theo tài liệu nội bộ UrBox):\n\nPhòng chịu trách nhiệm chính: Phòng Công nghệ – Đội Phát triển API (còn gọi là API Integration Team).\nVai trò: Thiết kế, triển khai, kiểm thử và bảo trì các API kết nối với Merchant; đồng thời phối hợp chặt chẽ với Phòng Kinh doanh / Đối tác để thu thập yêu cầu và xác nhận tính năng.\n\nLiên hệ nhanh:\n\nTrưởng đội API Integration: nguyễn.thi.api@urbox.vn\nKênh Slack: #api‑integration\n\n(Thông tin dựa trên mục “API Integration with Merchants – Responsible Department” trong hệ thống Knowledge Base của UrBox.)",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Câu trả lời đúng về phòng ban chịu trách nhiệm chính (Engineer/Technology) được hỗ trợ bởi chunk, nhưng các chi tiết bổ sung như email và kênh Slack không có trong chunk, nên chỉ đạt mức PARTIALLY_SUPPORTED.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Mục tiêu của bước \"Xác nhận Ngày Chuyển đổi\" là gì?",
+    "file": "QUY_TRÌNH_CHUYỂN_ĐỔI_VẬN_HÀNH_TỪ_MC_XUẤT_CODE_SANG_URBOX_XUẤT_CODE_20251212_032831.md",
+    "chunk": "Mô tả: Xác nhận chính thức ngày mà Merchant sẵn sàng chuyển đổi hoàn toàn.",
+    "answer": "Mục tiêu của bước “Xác nhận Ngày Chuyển đổi” (Confirm Conversion Date)\n\n**Xác định thời điểm chính thức chuyển dữ liệu/đơn hàng từ hệ thống hiện",
+    "evaluate": "correct",
+    "score": 9,
+    "check": "Câu trả lời nêu mục tiêu là xác định thời điểm chính thức chuyển dữ liệu/đơn hàng, phù hợp với mô tả trong chunk rằng bước này xác nhận ngày mà Merchant sẵn sàng chuyển đổi hoàn toàn. Không có thông tin nào mâu thuẫn hoặc thiếu sót quan trọng.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Các bên nào tham gia xác nhận ngày chuyển đổi chính thức?",
+    "file": "QUY_TRÌNH_CHUYỂN_ĐỔI_VẬN_HÀNH_TỪ_MC_XUẤT_CODE_SANG_URBOX_XUẤT_CODE_20251212_032831.md",
+    "chunk": "Phòng ban: Partnership, Merchant",
+    "answer": "**Các bên tham gia xác nhận ngày chuyển đổi chính thức (theo tài liệu “Quy trình Xác",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk nêu rõ các bên là phòng Ban Partnership và Merchant, nhưng câu trả lời không liệt kê hoặc đề cập đến các bên này mà chỉ có phần mở đầu chưa hoàn chỉnh, nên không được hỗ trợ bởi Chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Bộ phận nào chịu trách nhiệm thông báo cho khách hàng (Client) về việc chuyển đổi?",
+    "file": "QUY_TRÌNH_CHUYỂN_ĐỔI_VẬN_HÀNH_TỪ_MC_XUẤT_CODE_SANG_URBOX_XUẤT_CODE_20251212_032831.md",
+    "chunk": "Phòng ban: KAM",
+    "answer": "Bộ phận chịu trách nhiệm thông báo cho khách hàng (Client) về việc chuyển đổi: Phòng Kinh doanh – Đội Quản lý Đối tác / Account Management (Client Success).\n\nNhiệm vụ chính:\n\nGửi thông báo chính thức (email, portal notice) tới khách hàng về ngày chuyển đổi, quy trình cut‑over và các bước chuẩn bị phía khách hàng.\nPhối hợp với Phòng Công nghệ – Đội API Integration để lấy thông tin kỹ thuật (ngày giờ, thời gian downtime dự kiến).\nCập nhật tài liệu hướng dẫn và FAQ cho khách hàng trên hệ thống Knowledge Base.\nTheo dõi phản hồi, giải đáp thắc mắc và thu thập xác nhận đồng ý từ khách hàng trước ngày chuyển đổi.\n\nLiên hệ nhanh:\n\nTrưởng nhóm Account Management: tran.minh.bm@urbox.vn\nKênh Slack: #account‑management\n\n(Thông tin dựa trên mục “Stakeholder Responsibilities – Client Notification” trong Knowledge Base UrBox.)",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Câu trả lời đúng phần chính (bộ phận KAM) nhưng bổ sung nhiều thông tin chi tiết (nhiệm vụ, liên hệ, kênh Slack) không có trong đoạn trích, vì vậy chỉ được hỗ trợ một phần.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Merchant phải thông báo ngừng hợp tác ít nhất bao nhiêu ngày?",
+    "file": "QUY_TRÌNH_ON_-_OFF_ĐỐI_TÁC_20251212_033226.md",
+    "chunk": "ít nhất 30 ngày",
+    "answer": "Thời gian thông báo chấm dứt hợp tác tối thiểu: 30 ngày làm việc trước ngày dự kiến ngừng hợp tác.\n\nNguồn: Điều khoản “Notice of Termination” trong hợp đồng dịch vụ và tài liệu “Quy trình Ngừng Hợp tác – Merchant” của UrBox (Knowledge Base).\nLưu ý: Thông báo phải được gửi bằng email chính thức tới Phòng Kinh doanh – Account Manager và Phòng Pháp chế để được ghi nhận và xử lý.",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Câu trả lời đúng về thời gian tối thiểu (30 ngày) nhưng bổ sung chi tiết \"ngày làm việc\" và quy trình gửi email không có trong đoạn trích, vì vậy chỉ phần cốt lõi được hỗ trợ, phần bổ sung không được chứng minh.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Trong trường hợp ngoại lệ, điều kiện nào cho phép ON một Merchant không đáp ứng 3 tiêu chí chuẩn?",
+    "file": "QUY_TRÌNH_ON_-_OFF_ĐỐI_TÁC_20251212_033226.md",
+    "chunk": "Có thể ON nếu theo nhu cầu từ Client và có cam kết doanh thu đầu ra cố định (áp dụng cho Merchant không đáp ứng 3 tiêu chí trên).",
+    "answer": "Điều kiện cho phép “ngoại lệ” (exception) khi một Merchant không đáp ứng 3 tiêu chí chuẩn để ON (On‑boarding)\n(theo tài liệu “Onboarding Exception Policy – Section 4.2” trong Knowledge Base UrBox)\n\nĐIỀU KIỆN\n\t\nMÔ TẢ CHI TIẾT\n\t\nPHÊ DUYỆT CẦN THIẾT\n\n\n1. Merchant là đối tác chiến lược / tiềm năng doanh thu cao\n\t\nĐược xác định bởi Business Development (BD) dựa trên dự báo doanh thu",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk nêu điều kiện ON chỉ khi có nhu cầu từ Client và cam kết doanh thu cố định; câu trả lời lại đưa ra điều kiện khác (đối tác chiến lược, tiềm năng doanh thu cao) không được hỗ trợ và mâu thuẫn với nội dung chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Quy trình ON Merchant gồm bao nhiêu bước?",
+    "file": "QUY_TRÌNH_ON_-_OFF_ĐỐI_TÁC_20251212_033226.md",
+    "chunk": "Quy trình ON Merchant (9 bước): Bao gồm từ thống nhất điều khoản thương mại, review hợp đồng, tạo quà/banner, training/tích hợp API, đến hoàn tất hợp đồng, thiết lập UrCard Portal, golive và truyền thông.",
+    "answer": "Quy trình ON (On‑boarding) Merchant của UrBox gồm 7 bước (nguồn: “Merchant On‑boarding Process” trong Knowledge Base).",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk nêu quy trình ON Merchant có 9 bước, trong khi Answer khẳng định chỉ có 7 bước, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Quy trình OFF Merchant bao gồm bao nhiêu bước?",
+    "file": "QUY_TRÌNH_ON_-_OFF_ĐỐI_TÁC_20251212_033226.md",
+    "chunk": "Quy trình OFF Merchant (6 bước): Bao gồm thống nhất ngày offsite, thông báo, truy xuất code đã đổi nhưng chưa dùng, thông báo Client, hỗ trợ khách hàng và xử lý thanh lý/công nợ.",
+    "answer": "**Quy trình OFF (Off‑boarding) Merchant của UrBox gồm 6 bước **",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khẳng định quy trình OFF Merchant có 6 bước, đúng với thông tin trong chunk và đáp ứng đầy đủ câu hỏi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Tiêu chuẩn Offboarding (OFF) yêu cầu Merchant phải thông báo trước bao nhiêu ngày?",
+    "file": "QUY_TRÌNH_ON_-_OFF_ĐỐI_TÁC_20251212_033226.md",
+    "chunk": "Merchant phải thông báo đề nghị ngừng hợp tác ít nhất 30 ngày theo quy định trong Hợp đồng nguyên tắc.",
+    "answer": "Tiêu chuẩn Off‑boarding (OFF) yêu cầu Merchant phải thông báo trước 30 ngày làm việc (theo mục “Notice of Termination” trong tài liệu Off‑boarding của UrBox).",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Câu trả lời đúng về yêu cầu 30 ngày, nhưng thêm cụm “ngày làm việc” và tham chiếu tài liệu không có trong đoạn trích, là thông tin không được hỗ trợ bởi chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Quy trình ON Merchant bao gồm bao nhiêu bước?",
+    "file": "QUY_TRÌNH_ON_-_OFF_ĐỐI_TÁC_20251212_033226.md",
+    "chunk": "Quy trình ON Merchant (9 bước):",
+    "answer": "Quy trình ON (On‑boarding) Merchant gồm 7 bước.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk nêu rõ quy trình ON Merchant có 9 bước, trong khi câu trả lời khẳng định có 7 bước, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Trong trường hợp Merchant không đáp ứng 3 tiêu chí ON, điều kiện nào cho phép vẫn được ON?",
+    "file": "QUY_TRÌNH_ON_-_OFF_ĐỐI_TÁC_20251212_033226.md",
+    "chunk": "Có thể ON nếu theo nhu cầu từ Client và có cam kết doanh thu đầu ra cố định (áp dụng cho Merchant không đáp ứng 3 tiêu chí trên).",
+    "answer": "Thought for 1 seconds\n\nĐiều kiện cho phép Merchant vẫn được “ON” khi không đáp ứng đủ 3 tiêu chí chuẩn\n\nTheo tài liệu nội bộ UrBox (tìm kiếm bằng các từ khóa “merchant ON tiêu chí”, “điều kiện ON đặc biệt”), nếu Merchant không thỏa mãn cả ba tiêu chí bắt buộc (đăng ký tài khoản ngân",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Câu trả lời không nêu được điều kiện \"theo nhu cầu từ Client và có cam kết doanh thu đầu ra cố định\" được nêu trong chunk, chỉ đưa thông tin mơ hồ và bị cắt ngắn, không được hỗ trợ bởi nội dung chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thời gian thông báo tối thiểu để OFF Merchant là bao nhiêu ngày?",
+    "file": "QUY_TRÌNH_ON_-_OFF_ĐỐI_TÁC_20251212_033226.md",
+    "chunk": "Merchant phải thông báo đề nghị ngừng hợp tác ít nhất 30 ngày theo quy định trong Hợp đồng nguyên tắc.",
+    "answer": "Thời gian thông báo tối thiểu để OFF Merchant: 7 ngày làm việc trước ngày dự kiến OFF.\n\n**",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk nêu rõ thời gian thông báo tối thiểu là 30 ngày, trong khi Answer đưa ra 7 ngày làm việc, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Tiêu chuẩn địa lý tối thiểu cho Merchant để được ON là gì?",
+    "file": "QUY_TRÌNH_ON_-_OFF_ĐỐI_TÁC_20251212_033226.md",
+    "chunk": "Merchant phải có mặt ở ít nhất 2 thành phố (HCM & HN)",
+    "answer": "Tiêu chuẩn địa lý tối thiểu để Merchant được “ON”\n\nYÊU CẦU\n\t\nNỘI DUNG CHI TIẾT\n\t\nNGUỒN TÀI LIỆU\n\n\nVị trí đăng ký\n\t\nMerchant phải có địa chỉ kinh doanh hợp pháp tại Việt Nam (địa chỉ trụ sở hoặc",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Câu trả lời không đề cập đến yêu cầu \"có mặt ở ít nhất 2 thành phố (HCM & HN)\" trong chunk mà lại đưa ra yêu cầu khác về địa chỉ kinh doanh hợp pháp, thông tin này không được hỗ trợ bởi chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  }
+]
+
+Evaluation Summary:
+   Total      : 93
+   Correct    :  14 ( 15.1%) [score ≥ 6]
+   Unclear    :   1 (  1.1%) [score = 5]
+   Incorrect  :  78 ( 83.9%) [score ≤ 4]
+   Error      :   0 (  0.0%)
+   Avg Score  : 3.08/10
+
+Score Distribution:
+   10:   1
+    9:   1
+    8:   1
+    7:   2 █
+    6:   9 ████
+    5:   1
+    4:  15 ████████
+    3:   2 █
+    2:  59 ███████████████████████████████
+    1:   2 █
