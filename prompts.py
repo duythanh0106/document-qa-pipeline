@@ -156,6 +156,11 @@ TÀI LIỆU:
 {document_content}
 ---
 
+YÊU CẦU ĐỊNH VỊ NGỮ CẢNH (CRITICAL):
+- "answer_location" PHẢI nằm SAU anchor và trong CÙNG block logic
+- KHÔNG được dùng anchor quá ngắn hoặc mơ hồ
+- Nếu không xác định được anchor rõ ràng → KHÔNG tạo câu hỏi đó
+
 OUTPUT:
 [
   {{

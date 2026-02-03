@@ -142,12 +142,8 @@ class QuestionGenerator:
         )
         self.filename = self.document_path.name
 
-        # Estimate tokens (rough: 1 token ≈ 4 chars for English, 2-3 for Vietnamese)
-        #estimated_tokens = len(raw_content) // 3
-        
         print(f"Loaded: {self.filename}")
         print(f"   Size: {len(raw_content):,} characters")
-        #print(f"   Estimated tokens: {estimated_tokens:,}")
         print(f"   Provider: {self.provider_name.upper()}")
         
         self.document_content = raw_content
@@ -167,17 +163,15 @@ class QuestionGenerator:
             attempt += 1
             print(f"\nLLM attempt {attempt}")
 
-            # Ask for more questions to compensate for rejections
             remaining = target - len(valid_pairs)
             
-            # Adaptive strategy: if previous attempt failed, be more conservative
             if attempt == 1:
-                buffer_multiplier = 1.3  # Ask for 30% more
+                buffer_multiplier = 1.3
             elif consecutive_failures > 0:
-                buffer_multiplier = 1.0  # No buffer after failure
+                buffer_multiplier = 1.0
                 print(f"   ⚠️  Previous attempt failed, reducing request size")
             else:
-                buffer_multiplier = 1.5  # Ask for 50% more on retry
+                buffer_multiplier = 1.5
             
             ask_for = max(1, int(remaining * buffer_multiplier))
             
@@ -238,7 +232,6 @@ class QuestionGenerator:
             print(f"   ✅ Generated {len(questions)} questions from LLM")
             return questions
 
-        # Debug: show first 500 chars of response
         preview = response_text[:500].replace('\n', ' ')
         print(f"   ⚠️  No valid JSON found in response")
         print(f"   📝 Response preview: {preview}...")
@@ -352,10 +345,7 @@ def classify_question_type(question: str) -> str:
 
 def normalize_text(text: str) -> str:
     """Normalize text for fuzzy matching."""
-    import re
-    # Replace multiple spaces/newlines with single space
     text = re.sub(r'\s+', ' ', text)
-    # Remove common punctuation variations
     text = text.strip()
     return text
 
@@ -376,7 +366,6 @@ def extract_chunk_verbatim(document_text: str, answer_text: str) -> str:
     return document_text[start : start + len(answer_text)]
 
 
-
 def build_arg_parser() -> argparse.ArgumentParser:
     provider_choices = sorted(PROVIDER_CONFIGS.keys()) + ["ollama", "api"]
 
@@ -385,31 +374,29 @@ def build_arg_parser() -> argparse.ArgumentParser:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Basic usage
+  # Single file
   python script.py --input document.txt
   
+  # Nhiều files
+  python script.py --input file1.md file2.md file3.md
+  
+  # Truyền cả thư mục (tự scan .md/.txt bên trong)
+  python script.py --input kb_files/
+  
   # With custom provider
-  python script.py --input doc.txt --provider openai --api-key YOUR_KEY
-  
-  # With custom base URL (OpenAI-compatible gateway)
-  python script.py --input doc.txt --provider openai --api-key YOUR_KEY --base-url https://mygateway.ubbox.service
-  
-  # DeepSeek with custom gateway
-  python script.py --input doc.txt --provider deepseek --api-key YOUR_KEY --base-url https://api.custom-gateway.com
-  
-  # Preview before saving
-  python script.py --input doc.txt --num-questions 30 --preview
+  python script.py --input kb_files/ --provider openai --api-key YOUR_KEY
         """
     )
     parser.add_argument(
-        "--input", required=True, help="Input document (.md, .txt, etc.)"
+        "--input", required=True, nargs="+",
+        help="Input: 1+ files hoặc 1 thư mục (ví dụ: --input kb_files/)"
     )
     parser.add_argument("--output", default=DEFAULT_OUTPUT, help="Output JSON file")
     parser.add_argument(
         "--num-questions",
         type=int,
         default=DEFAULT_NUM_QUESTIONS,
-        help="Number of questions to generate (default: 20)",
+        help="Number of questions per file (default: 20)",
     )
     parser.add_argument("--api-key", help="LLM API key")
     parser.add_argument(
@@ -430,7 +417,7 @@ Examples:
     )
     parser.add_argument(
         "--base-url",
-        help="Custom base URL for OpenAI-compatible APIs (e.g., https://mygateway.ubbox.service)",
+        help="Custom base URL for OpenAI-compatible APIs",
     )
     parser.add_argument(
         "--preview",
@@ -486,6 +473,50 @@ def load_env_file(env_path: str = ENV_FILE) -> None:
             os.environ[key] = value
 
 
+# ============================
+# MULTI-FILE SUPPORT
+# ============================
+
+def resolve_input_paths(inputs: List[str]) -> List[str]:
+    """
+    Nếu input là thư mục → scan .md/.txt bên trong.
+    Nếu là file → dùng trực tiếp.
+    """
+    paths: List[str] = []
+    for inp in inputs:
+        p = Path(inp)
+        if p.is_dir():
+            for f in sorted(p.iterdir()):
+                if f.is_file() and f.suffix in (".md", ".txt") and not f.name.startswith("_"):
+                    paths.append(str(f))
+        elif p.is_file():
+            paths.append(str(p))
+        else:
+            print(f"⚠️  Skipping: {inp} (not found)")
+    return paths
+
+
+PROCESSED_TRACKER = ".processed.json"
+
+def load_processed() -> Dict[str, int]:
+    """Load danh sách file đã process + số câu hỏi generated."""
+    if not Path(PROCESSED_TRACKER).exists():
+        return {}
+    try:
+        return json.loads(Path(PROCESSED_TRACKER).read_text(encoding="utf-8"))
+    except:
+        return {}
+
+def save_processed(processed: Dict[str, int]):
+    Path(PROCESSED_TRACKER).write_text(
+        json.dumps(processed, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+
+# ============================
+# MAIN
+# ============================
+
 def main() -> None:
     parser = build_arg_parser()
     args = parser.parse_args()
@@ -495,24 +526,14 @@ def main() -> None:
     env_ollama_model = os.getenv("OLLAMA_MODEL")
 
     provider_name = normalize_provider_name(args.provider)
-    app_config = AppConfig(
-        input_path=args.input,
-        output_path=args.output,
-        num_questions=args.num_questions,
-        provider=provider_name,
-        preview=args.preview,
-        ollama_model=env_ollama_model or args.ollama_model,
-        ollama_url=env_ollama_url or args.ollama_url,
-        base_url=args.base_url,
-        model=args.model
-    )
 
+    # ── Setup provider 1 lần ──
     api_key: Optional[str] = None
-    provider_kind = PROVIDER_KIND_MAP.get(app_config.provider)
+    provider_kind = PROVIDER_KIND_MAP.get(provider_name)
     if provider_kind == "api":
-        api_key = resolve_api_key(app_config.provider, args.api_key)
+        api_key = resolve_api_key(provider_name, args.api_key)
         if not api_key:
-            provider_env = f"{app_config.provider.upper()}_API_KEY"
+            provider_env = f"{provider_name.upper()}_API_KEY"
             print("API key required!")
             print("   Use: --api-key YOUR_KEY")
             print(f"   Or set env: export {provider_env}=YOUR_KEY")
@@ -520,40 +541,95 @@ def main() -> None:
 
     try:
         provider = create_provider(
-            provider_name=app_config.provider,
+            provider_name=provider_name,
             api_key=api_key,
-            ollama_url=app_config.ollama_url,
-            ollama_model=app_config.ollama_model,
+            ollama_url=env_ollama_url or args.ollama_url,
+            ollama_model=env_ollama_model or args.ollama_model,
             ollama_timeout=OLLAMA_TIMEOUT,
-            base_url=app_config.base_url,
-            model=app_config.model,
+            base_url=args.base_url,
+            model=args.model,
         )
     except ValueError as exc:
         print(f"{exc}")
         return
 
-    generator = QuestionGenerator(
-        app_config.input_path,
-        provider=provider,
-        provider_name=app_config.provider,
-    )
-    
-    qa_pairs = generator.generate_questions(app_config.num_questions)
-    if not qa_pairs:
-        print("No questions generated")
+    # ── Resolve input files ──
+    input_files = resolve_input_paths(args.input)
+    if not input_files:
+        print("❌ No valid input files found.")
         return
-    generator._print_statistics(qa_pairs)
 
-    dataset = [asdict(pair) for pair in qa_pairs]
+    print(f"📂 Found {len(input_files)} input files:")
+    for f in input_files:
+        print(f"   📄 {f}")
 
-    if app_config.preview and not preview_dataset(dataset):
+    # ── Resume: load đã process ──
+    processed = load_processed()
+
+    # ── Load existing output nếu có ──
+    all_questions: List[Dict] = []
+    if Path(args.output).exists():
+        try:
+            all_questions = json.loads(Path(args.output).read_text(encoding="utf-8"))
+            print(f"📌 Loaded {len(all_questions)} existing questions from {args.output}")
+        except:
+            all_questions = []
+
+    # ── Loop từng file ──
+    skipped = 0
+    total_new = 0
+
+    for idx, file_path in enumerate(input_files):
+        file_name = Path(file_path).name
+        print(f"\n{'=' * 50}")
+        print(f"📄 [{idx + 1}/{len(input_files)}] {file_name}")
+        print(f"{'=' * 50}")
+
+        # Skip nếu đã process
+        if file_name in processed:
+            print(f"   ⏭️  Already processed ({processed[file_name]} questions). Skipping.")
+            skipped += 1
+            continue
+
+        # Generate questions cho file này
+        generator = QuestionGenerator(
+            file_path,
+            provider=provider,
+            provider_name=provider_name,
+        )
+
+        qa_pairs = generator.generate_questions(args.num_questions)
+        if not qa_pairs:
+            print(f"   ❌ No questions generated for {file_name}")
+            continue
+
+        generator._print_statistics(qa_pairs)
+
+        new_questions = [asdict(pair) for pair in qa_pairs]
+        all_questions.extend(new_questions)
+        total_new += len(new_questions)
+
+        # Mark processed + save output incremental sau mỗi file
+        processed[file_name] = len(new_questions)
+        save_processed(processed)
+
+        with open(args.output, "w", encoding="utf-8") as f:
+            json.dump(all_questions, f, ensure_ascii=False, indent=2)
+
+        print(f"   ✅ +{len(new_questions)} questions. Total: {len(all_questions)}")
+
+    # ── Preview nếu cần ──
+    if args.preview and not preview_dataset(all_questions):
         print("Cancelled.")
         return
 
-    with open(app_config.output_path, "w", encoding="utf-8") as f:
-        json.dump(dataset, f, ensure_ascii=False, indent=2)
-
-    print(f"\nSaved {len(dataset)} questions to: {app_config.output_path}")
+    # ── Final summary ──
+    print(f"\n{'=' * 50}")
+    print(f"✅ Done!")
+    print(f"   📥 New questions:  {total_new}")
+    print(f"   ⏭️  Skipped files: {skipped}")
+    print(f"   📁 Total in {args.output}: {len(all_questions)}")
+    print(f"{'=' * 50}")
 
 
 if __name__ == "__main__":
