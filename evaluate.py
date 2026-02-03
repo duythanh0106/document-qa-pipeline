@@ -132,7 +132,7 @@ Evaluation Rules:
 
 QUAN TRỌNG - ƯU TIÊN CAO NHẤT (áp dụng trước mọi rule khác, override nếu xung đột):
 
-Trong ngữ cảnh doanh nghiệp của công ty Urbox (quy chế nội bộ, quy trình vận hành, pháp lý lao động, onboarding đối tác), các loại bổ sung sau được coi là SUY LUẬN HỢP LÝ, PHỔ BIẾN và KHÔNG CẦN bằng chứng trực tiếp trong chunk:
+Trong ngữ cảnh doanh nghiệp của CÔNG TY URBOX (quy chế nội bộ, quy trình vận hành, pháp lý lao động, onboarding đối tác), các loại bổ sung sau được coi là SUY LUẬN HỢP LÝ, PHỔ BIẾN và KHÔNG CẦN bằng chứng trực tiếp trong chunk:
 
 A. Mốc thời gian bắt đầu thời hạn (time-bound clauses):
    - kể từ ngày nhận thông báo / nhận quyết định / nhận lương / nhận bảng lương / phát sinh sự việc / vi phạm / kết thúc tháng/quý/năm
