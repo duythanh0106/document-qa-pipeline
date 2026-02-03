@@ -1,0 +1,1316 @@
+[
+  {
+    "question": "Chiết khấu cho thương hiệu Guardian được tính như thế nào?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1.txt",
+    "chunk": "CHIẾT KHẤU: Tổng doanh thu THÁNG = (1) + (2)\n         * (1) Chiết khấu cho UrBox\n0-500tr: 3%\nTrên 500tr: 3% (phần doanh thu 500tr) + 5% (phần doanh thu vượt trên 500tr)\n         * (2) Tổng chi phí UrBox phân phối voucher qua sàn TMĐT\nGuardian thanh toán 1 khoản chi phí cố định tương đương 4% tổng giá trị cash voucher mà UrBox đã phân phối cho KH trên các sản TMĐT",
+    "answer": "Thought for 2 seconds\n\nTheo tài liệu “Chính sách chiết khấu thương hiệu Guardian” của UrBox (CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ):\n\nĐIỀU KIỆN\n\t\nTỶ LỆ CHIẾT KHẤU\n\n\nCơ bản – mọi đơn hàng Guardian\n\t\n5 % trên giá bán lẻ (trước VAT)\n\n\nSố lượng – đơn hàng ≥ 100 sản phẩm\n\t\n+2 % (tổng 7 %)\n\n\nThanh toán – thanh toán trước 30 ngày\n\t\n+2 % (tổng 9 % nếu đã đạt mức số lượng)\n\n\nKhách hàng VIP – đã được phân loại VIP trong hệ thống\n\t\nTối đa 10 % (áp dụng sau khi đã đáp ứng các điều kiện trên)\n\nCách tính thực tế\n\nXác định giá bán lẻ (net price) của sản phẩm Guardian.\nÁp dụng **",
+    "evaluate": "incorrect",
+    "score": 1,
+    "check": "Câu trả lời đưa ra các mức chiết khấu (5%, +2%, +2%, tối đa 10%) không có trong đoạn trích. Đoạn trích chỉ nói Guardian trả 4% chi phí cố định và chiết khấu UrBox dựa trên doanh thu 0‑500tr 3% và trên 500tr 3%+5%. Vì vậy câu trả lời hoàn toàn không được hỗ trợ và mâu thuẫn với nội dung chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Tài khoản cá nhân nào sẽ ngưng sử dụng để nhận thanh toán?",
+    "file": "20260128_BD_OPS_BD_Training_Thongbao_Thong_bao_chuyen_doi_tai_khoan.md",
+    "chunk": "Chủ tài khoản: Trưởng Cổng Hiếu Số tài khoản: 02324849001 Ngân hàng: LPB",
+    "answer": "Theo quy định mới của UrBox (CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ)\n\nTất cả các tài khoản cá nhân (ngân hàng cá nhân, ví điện tử cá nhân – Momo, ZaloPay, VNPAY, PayPal cá nhân, …) được ngưng sử dụng để nhận thanh toán.\nThời gian thực thi: 01/07/2024.\nSau ngày này, chỉ",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ cung cấp thông tin về một tài khoản cá nhân cụ thể (chủ tài khoản, số tài khoản, ngân hàng) mà không đề cập đến quy định ngưng sử dụng các loại tài khoản cá nhân hay thời gian thực thi. Câu trả lời đưa ra danh sách các loại tài khoản và thời gian, thông tin này không được hỗ trợ bởi chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Mục đích của việc thay đổi thông tin tài khoản nhận thanh toán là gì?",
+    "file": "20260128_BD_OPS_BD_Training_Thongbao_Thong_bao_chuyen_doi_tai_khoan.md",
+    "chunk": "Để thuận tiện hơn trong việc trao đổi với Khách hàng cũng như kiểm tra và quản lý khoản tiền KH đã thanh toán, Phòng Kế toán thông báo về việc thay đổi thông tin tài khoản nhận thanh toán của KH",
+    "answer": "**Mục đích của việc thay đổi thông tin tài khoản",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Câu trả lời chỉ lặp lại phần đầu của câu hỏi và không nêu ra mục đích được nêu trong đoạn trích (để thuận tiện trong trao đổi, kiểm tra và quản lý khoản tiền khách hàng).",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Những phòng ban, bộ phận nào chịu trách nhiệm thực hiện quy chế lương và thu nhập?",
+    "file": "6-quy-che-luong-va-thu-nhap-240325_legal-revised_20251212_033301.md",
+    "chunk": "Ban Giám đốc, Người đại diện theo pháp luật, Quản lý phòng ban, Phòng Nhân sự và Phòng Tài chính Kế toán",
+    "answer": "Theo Quy",
+    "evaluate": "incorrect",
+    "score": 1,
+    "check": "Câu trả lời không liệt kê bất kỳ phòng ban, bộ phận nào và chỉ là một đoạn không hoàn chỉnh, không có thông tin nào được hỗ trợ bởi chunk.",
+    "source": [
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Mức giảm trừ gia cảnh thuế thu nhập cá nhân cho bản thân và người phụ thuộc là bao nhiêu?",
+    "file": "6-quy-che-luong-va-thu-nhap-240325_legal-revised_20251212_033301.md",
+    "chunk": "Mức giảm trừ gia cảnh TNCN: Bản thân 11 triệu/tháng, người phụ thuộc 4.4 triệu/tháng.",
+    "answer": "Mức giảm trừ gia cảnh thuế thu nhập cá nhân là:\n\nBản thân: 11 triệu VND mỗi tháng.\nMỗi người phụ thuộc: 4,4 triệu VND mỗi tháng.\n\n6 Quy chế lương...11lz7ys.md",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác mức giảm trừ gia cảnh cho bản thân (11 triệu/tháng) và người phụ thuộc (4,4 triệu/tháng) như trong chunk, không có thông tin mâu thuẫn.",
+    "source": [
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Các phòng ban nào tham gia vào việc kiểm tra và xử lý dữ liệu code?",
+    "file": "quy-trinh-chuyen-doi-van-hanh-tu-mc-xuat-code-sang-urbox-xuat-code_20251212_032831.md",
+    "chunk": "4. **Kiểm tra & Xử lý Dữ liệu Code:**\n   * **Phòng ban:** Data, Operation, Engineer, Kế toán\n   * **Mô tả:**\n     * Kiểm tra số lượng code còn tồn trong kho của Merchant.\n     * Quyết định tái sử dụng code cũ hay tạo mới trên hệ thống UrBox.\n     * Đối soát dữ liệu giữa luồng cũ và mới.",
+    "answer": "Trong quy trình Kiểm tra & Xử lý Dữ liệu Code, các phòng ban chịu trách nhiệm thực hiện gồm:\n\nData\nOperation\nEngineer\nKế toán\n\n(Thông tin dựa trên tài liệu quy trình UrBox – mục “Kiểm tra & Xử lý Dữ liệu Code”【1】)",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời liệt kê đúng các phòng ban (Data, Operation, Engineer, Kế toán) như trong đoạn trích, không có thông tin sai hay thừa.",
+    "source": [
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md",
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md",
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Khi xử lý voucher đang chạy, có những phương án nào được đề xuất?",
+    "file": "quy-trinh-chuyen-doi-van-hanh-tu-mc-xuat-code-sang-urbox-xuat-code_20251212_032831.md",
+    "chunk": "5. **Thống nhất Phương án Xử lý Voucher Đang Chạy:**\n   * **Phòng ban:** Partnership\n   * **Mô tả:** Quyết định cách xử lý các voucher đã phát hành nhưng chưa dùng:\n     * **Phương án 1 (5.1):** Yêu cầu Merchant xuất code bàn giao để hủy/deactivate.\n     * **Phương án 2 (6):** Chạy song song cả hai hệ thống trong một thời gian.",
+    "answer": "Các phương án đề xuất khi đang xử lý voucher (theo tài liệu “Quy trình xử lý voucher” của UrBox – CÔNG TY CỔ PHẦN TIẾP THỊ SỐ TÔ QUÀ)",
+    "evaluate": "incorrect",
+    "score": 4,
+    "check": "Câu trả lời chỉ nhắc tới tài liệu mà không liệt kê các phương án xử lý voucher như trong đoạn trích (Yêu cầu Merchant xuất code để hủy, hoặc chạy song song hai hệ thống). Do đó phần lớn nội dung không được hỗ trợ bởi chunk.",
+    "source": [
+      "❌ No Source button found"
+    ]
+  },
+  {
+    "question": "Thời gian xử lý (SLA) cho Phiếu quà tặng với số lượng từ 5.000 đến 10.000 là bao nhiêu ngày làm việc?",
+    "file": "20260127_BD_OPS_BD_Training_QuyTrinh_SLA_process_đơn_hàng_của_BD.md",
+    "chunk": "* Số lượng: Từ 5.000 đến 10.000\n* Thời gian xử lý: **3–4 ngày làm việc**",
+    "answer": "Thought for 1 seconds\n\nTheo quy trình SLA của UrBox, đối với Phiếu quà tặng (PQT) số lượng từ 5.000 – 10.000, thời gian xử lý là 3 – 4 ngày làm việc【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp hoàn toàn với thông tin trong chunk: thời gian xử lý cho Phiếu quà tặng 5.000‑10.000 là 3‑4 ngày làm việc, không có thông tin nào sai hoặc thiếu.",
+    "source": [
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md"
+    ]
+  },
+  {
+    "question": "Thời gian xử lý (SLA) cho Voucher giấy dưới 1.000 đơn là bao nhiêu ngày làm việc?",
+    "file": "20260127_BD_OPS_BD_Training_QuyTrinh_SLA_process_đơn_hàng_của_BD.md",
+    "chunk": "* Số lượng: Dưới 1.000\n* Thời gian xử lý: **1–2 ngày làm việc**",
+    "answer": "Đối với Voucher giấy có số lượng dưới 1.000 đơn, thời gian xử lý",
+    "evaluate": "incorrect",
+    "score": 3,
+    "check": "Câu trả lời chỉ lặp lại điều kiện số lượng mà không cung cấp giá trị thời gian xử lý (1–2 ngày làm việc) được nêu trong chunk, vì vậy không đáp ứng yêu cầu câu hỏi.",
+    "source": [
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md"
+    ]
+  },
+  {
+    "question": "Ai là người theo dõi đơn hàng và thông báo cho OP kích hoạt đơn hàng sau khi giao?",
+    "file": "20260127_BD_OPS_BD_Training_QuyTrinh_SLA_process_đơn_hàng_của_BD.md",
+    "chunk": "* **KAM/BD** **Theo dõi** đơn hàng cùng **Client**.\n* **KAM/BD** thông báo **OP** **Kích hoạt** đơn hàng.",
+    "answer": "Theo quy trình, KAM (Key Account Manager) và BD (Business Development) là những người theo dõi tiến độ đơn hàng cùng khách hàng và sau khi giao hàng sẽ thông báo cho OP (Operation) kích hoạt đơn hàng【1】.",
+    "evaluate": "correct",
+    "score": 8,
+    "check": "Câu trả lời khớp với nội dung cốt lõi trong chunk (KAM/BD theo dõi đơn hàng và thông báo cho OP kích hoạt). Thêm cụm “sau khi giao hàng” là một trình tự logic phổ biến trong quy trình, được chấp nhận mà không mâu thuẫn, nên đánh giá GOOD.",
+    "source": [
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md",
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md"
+    ]
+  },
+  {
+    "question": "Thời gian xử lý SLA cho đơn hàng Phiếu quà tặng có số lượng từ 5.000 đến 10.000 là bao nhiêu ngày làm việc?",
+    "file": "20260127_BD_OPS_BD_Training_QuyTrinh_SLA_process_đơn_hàng_của_BD.md",
+    "chunk": "* Số lượng: Từ 5.000 đến 10.000\n* Thời gian xử lý: **3–4 ngày làm việc**",
+    "answer": "Thời gian xử lý SLA cho đơn hàng Phiếu quà tặng với số lượng từ 5.000 – 10.000 là 3 – 4 ngày làm việc【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác thông tin trong chunk: thời gian xử lý 3–4 ngày làm việc cho đơn hàng Phiếu quà tặng từ 5.000 đến 10.000, không có thông tin nào sai hoặc thiếu.",
+    "source": [
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md"
+    ]
+  },
+  {
+    "question": "Điều kiện nào sẽ khiến thời gian SLA được cộng thêm 1‑2 ngày làm việc?",
+    "file": "20260127_BD_OPS_BD_Training_QuyTrinh_SLA_process_đơn_hàng_của_BD.md",
+    "chunk": "* Nếu giao **trên 3 địa điểm**, cộng thêm **+1 đến +2 ngày làm việc**.",
+    "answer": "Thời gian SLA sẽ được cộng thêm 1‑2 ngày làm việc khi đơn hàng phải giao trên hơn 3 địa điểm (số điểm giao > 3) — điều này áp dụng cho cả Phiếu quà tặng và Voucher giấy【1】.",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Câu trả lời đúng về điều kiện (giao trên hơn 3 địa điểm) so với chunk, nhưng phần bổ sung \"áp dụng cho cả Phiếu quà tặng và Voucher giấy\" không có trong chunk, nên chỉ được hỗ trợ một phần.",
+    "source": [
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md"
+    ]
+  },
+  {
+    "question": "Vai trò nào kiểm tra tồn kho thực tế và thực hiện đơn hàng?",
+    "file": "20260127_BD_OPS_BD_Training_QuyTrinh_SLA_process_đơn_hàng_của_BD.md",
+    "chunk": "* **OP** **Check tồn kho thực tế** và **Thực hiện đơn hàng**.",
+    "answer": "Kiểm tra tồn kho thực tế và thực hiện đơn hàng là trách nhiệm của OP (Operation)【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại đúng thông tin trong chunk: OP chịu trách nhiệm kiểm tra tồn kho thực tế và thực hiện đơn hàng, không có thông tin sai lệch hay thừa.",
+    "source": [
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md"
+    ]
+  },
+  {
+    "question": "Công suất tối đa nội bộ cho việc in Voucher giấy mỗi đơn mỗi ngày là bao nhiêu?",
+    "file": "20260127_BD_OPS_BD_Training_QuyTrinh_SLA_process_đơn_hàng_của_BD.md",
+    "chunk": "* Công suất tối đa: **2500 Voucher giấy / đơn / ngày**",
+    "answer": "Công suất tối đa nội bộ cho việc in Voucher giấy là 2 500 voucher mỗi đơn mỗi ngày【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác thông tin \"2500 Voucher giấy / đơn / ngày\" được nêu trong chunk, không có sai lệch hay thông tin thừa.",
+    "source": [
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md"
+    ]
+  },
+  {
+    "question": "Điều kiện nào phải được đáp ứng để sử dụng máy in nội bộ cho Voucher giấy?",
+    "file": "20260127_BD_OPS_BD_Training_QuyTrinh_SLA_process_đơn_hàng_của_BD.md",
+    "chunk": "Máy in thông số đáp ứng đơn hàng **< 3.000 Voucher Giấy**.",
+    "answer": "Thought for 1 seconds\n\nĐể có thể in Voucher giấy bằng máy in nội bộ, đơn hàng phải đáp ứng hai điều kiện:\n\nSố lượng không vượt quá khả năng của máy – máy in nội bộ chỉ xử lý được **dư",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Câu trả lời chỉ khớp một phần với thông tin trong chunk (điều kiện số lượng < 3.000), nhưng lại khẳng định có hai điều kiện mà không có trong chunk và nội dung bị cắt ngắn, thiếu chi tiết, do đó chỉ được hỗ trợ một phần.",
+    "source": [
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md"
+    ]
+  },
+  {
+    "question": "Thời gian xử lý SLA cho đơn hàng Voucher giấy có số lượng từ 1.000 đến 5.000 là bao nhiêu ngày làm việc?",
+    "file": "20260127_BD_OPS_BD_Training_QuyTrinh_SLA_process_đơn_hàng_của_BD.md",
+    "chunk": "* Số lượng: Từ 1.000 đến 5.000\n* Thời gian xử lý: **2–3 ngày làm việc**",
+    "answer": "Đối với Voucher giấy có số lượng từ 1.000 đến 5.000, thời gian xử lý SLA là 2 – 3 ngày làm việc【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác thông tin trong chunk: thời gian xử lý SLA cho Voucher giấy 1.000‑5.000 là 2‑3 ngày làm việc, không có thông tin sai lệch hay bổ sung không được hỗ trợ.",
+    "source": [
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md"
+    ]
+  },
+  {
+    "question": "Tổng số dòng trong danh sách là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "- Tổng số dòng: 247 thương hiệu",
+    "answer": "Tổng số dòng trong danh sách là 247 dòng【2】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp chính xác với thông tin trong chunk: tổng số dòng là 247, không có thông tin nào sai hoặc thiếu.",
+    "source": [
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_gut8eogq.md"
+    ]
+  },
+  {
+    "question": "Có bao nhiêu thương hiệu thuộc Tier 1?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "○ Tier 1: 90 thương hiệu",
+    "answer": "Theo tài liệu danh sách Tier 1, tổng số thương hiệu thuộc Tier 1 là 90 thương hiệu【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp hoàn toàn với thông tin trong chunk: Tier 1 có 90 thương hiệu. Không có thông tin sai lệch hay thừa.",
+    "source": [
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Có bao nhiêu thương hiệu thuộc Tier 2?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "○ Tier 2: 73 thương hiệu",
+    "answer": "Theo tài liệu danh sách Tier 2, có 73 thương hiệu thuộc Tier 2【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp hoàn toàn với thông tin trong chunk: Tier 2 có 73 thương hiệu. Không có thông tin nào sai hoặc thiếu.",
+    "source": [
+      "DANH SÁCH MERCHARNT TIER 2_pdk4e66g.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Có bao nhiêu thương hiệu thuộc Tier 3?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "○ Tier 3: 83 thương hiệu",
+    "answer": "Theo các thông tin trong tài liệu hiện có, không có số liệu tổng hợp cho số lượng thương hiệu thuộc Tier 3. Nếu bạn có danh sách đầy đủ hoặc muốn tôi đếm từ một nguồn cụ thể, vui lòng cung cấp thêm chi tiết.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp số liệu rõ ràng: Tier 3 có 83 thương hiệu, trong khi Answer khẳng định không có số liệu, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Thời gian bắt đầu hợp tác của thương hiệu Phố Chợ là ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2020-09-24",
+    "answer": "The provided data does not contain information about the cooperation start date for the brand Phố Chợ. Therefore, I cannot determine that date from the available context.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk clearly cung cấp ngày bắt đầu hợp tác (2020‑09‑24) nhưng Answer khẳng định không có thông tin, mâu thuẫn với nội dung chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Thời gian kết thúc hợp tác của thương hiệu Phố Chợ là ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (KẾT THÚC): 2021-09-24",
+    "answer": "Trong dữ liệu mà bạn cung cấp không có thông tin về thời gian kết thúc hợp tác của thương hiệu Phố Chợ. Vì vậy, hiện tại tôi không thể xác định ngày kết thúc hợp tác cho thương hiệu này. Nếu bạn có thêm chi tiết hoặc tài liệu liên quan, vui lòng cung cấp để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk đã cung cấp ngày kết thúc hợp tác là 2021‑09‑24, nhưng Answer lại khẳng định không có thông tin và không thể xác định, mâu thuẫn với dữ liệu có sẵn.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Chiết khấu của thương hiệu Phố Chợ là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "CHIẾT KHẤU: 10% trên tổng doanh thu THÁNG",
+    "answer": "Theo nội dung mà bạn cung cấp, không có mục nào đề cập đến thương hiệu Phố Chợ, vì vậy không thể xác định mức chiết khấu cho thương hiệu này từ dữ liệu hiện có. Nếu bạn có thêm thông tin hoặc tài liệu liên quan, vui lòng chia sẻ để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp chiết khấu 10% trên tổng doanh thu tháng, trong khi câu trả lời khẳng định không có thông tin nào về thương hiệu Phố Chợ, mâu thuẫn với dữ liệu đã cho.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Trạng thái (STATUS) của thương hiệu Phố Chợ hiện tại là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "STATUS: OFFSITE",
+    "answer": "Trong dữ liệu mà bạn cung cấp không có mục nào liên quan đến thương hiệu Phố Chợ, vì vậy không thể xác định được trạng thái (STATUS) hiện tại của thương hiệu này. Nếu bạn có thêm thông tin hoặc tài liệu liên quan, vui lòng chia sẻ để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp rõ ràng STATUS của thương hiệu Phố Chợ là OFFSITE, trong khi Answer khẳng định không có thông tin và không thể xác định, mâu thuẫn với nội dung chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Trạng thái (STATUS) của thương hiệu Cuisine De SaiGon là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "STATUS: OFFSITE",
+    "answer": "Trong dữ liệu mà bạn cung cấp không có mục nào liên quan đến thương hiệu Cuisine De SaiGon, vì vậy không thể xác định được trạng thái (STATUS) của thương hiệu này từ nguồn hiện có. Nếu bạn có thêm thông tin hoặc tài liệu liên quan, vui lòng chia sẻ để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp rõ ràng STATUS của thương hiệu là OFFSITE, trong khi Answer khẳng định không có thông tin và không thể xác định, mâu thuẫn với dữ liệu.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Công ty chủ quản của thương hiệu VTC là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "CÔNG TY CHỦ QUẢN: TCT TRUYỀN THÔNG ĐA PHƯƠNG TIỆN - CÔNG TY TNHH 1TV (VTC)",
+    "answer": "Trong các tài liệu mà bạn cung cấp không có thông tin về công ty chủ quản của thương hiệu VTC. Vì vậy, dựa trên dữ liệu hiện có mình không thể xác định được công ty chủ quản của thương hiệu này. Nếu bạn có thêm chi tiết hoặc tài liệu liên quan, vui lòng cung cấp để mình hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk rõ ràng cung cấp tên công ty chủ quản của VTC, trong khi Answer khẳng định không có thông tin và không thể xác định, mâu thuẫn hoàn toàn với nội dung Chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md",
+      "DANH SÁCH MERCHARNT TIER 2_pdk4e66g.md"
+    ]
+  },
+  {
+    "question": "Các Brand ID của thương hiệu VTC gồm những mã nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "Brand ID: \n- 40\n- 41\n- 42\n- 206\n- 207",
+    "answer": "Thương hiệu VTC có các Brand ID sau: 40, 41, 42, 206, 207 \n20251225_PRT_Da...ut8eogq.md\n.",
+    "evaluate": "correct",
+    "score": 8,
+    "check": "Câu trả lời đưa ra đúng các Brand ID được liệt kê trong chunk, đáp ứng câu hỏi. Tuy nhiên có thêm một chuỗi không liên quan (tên file) không được hỗ trợ trong chunk, nên không đạt mức PERFECT/EXCELLENT.",
+    "source": [
+      "DANH SÁCH MERCHARNT TIER 2_pdk4e66g.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_gut8eogq.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Thời gian bắt đầu hợp tác của thương hiệu VTC là ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2022-02-04",
+    "answer": "Trong dữ liệu mà bạn cung cấp không có thông tin về “thời gian bắt đầu hợp tác” của thương hiệu VTC. Vì vậy hiện tại mình không thể xác định ngày bắt đầu hợp tác cho thương hiệu này. Nếu bạn có tài liệu hoặc chi tiết bổ sung, vui lòng chia sẻ để mình hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp ngày bắt đầu hợp tác là 2022-02-04, nhưng Answer khẳng định không có thông tin và không thể xác định, mâu thuẫn với dữ liệu thực tế.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Thời gian kết thúc hợp tác của thương hiệu VTC là ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (KẾT THÚC): 2022-12-31",
+    "answer": "Trong dữ liệu mà bạn cung cấp không có thông tin về “",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp ngày kết thúc hợp tác là 2022-12-31, nhưng câu trả lời khẳng định không có thông tin, mâu thuẫn với nội dung chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Chiết khấu của Viettel trong hợp đồng VTC cho mệnh giá 10.000đ - 30.000đ là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "- Viettel: Tổng giá trị PO:\n - Mệnh giá 10,000đ - 30,000đ: 2,5%",
+    "answer": "Trong dữ liệu mà bạn cung cấp không có thông tin về chiết khấu của Viettel trong hợp đồng VTC cho mệnh giá 10.000 đ – 30.000 đ. Vì vậy mình không thể trả lời câu hỏi này dựa trên nội dung hiện có. Nếu bạn có tài liệu chi tiết hơn hoặc các mục liên quan, vui lòng chia sẻ để mình hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp chiết khấu 2,5% cho mệnh giá 10.000‑30.000đ, nhưng Answer khẳng định không có thông tin và không thể trả lời, mâu thuẫn trực tiếp với nội dung chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Chiết khấu của Gmobile trong hợp đồng VTC là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "- Gmobile: 6,4% tổng giá trị PO",
+    "answer": "Xin lỗi, trong tài liệu được cung cấp không có thông tin về chiết khấu của Gmobile trong hợp đồng VTC. Nếu bạn có tài liệu khác hoặc chi tiết bổ sung, vui lòng cung cấp để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp chiết khấu Gmobile là 6,4% tổng giá trị PO, trong khi câu trả lời khẳng định không có thông tin, mâu thuẫn với nội dung chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Chiết khấu của Vinaphone trong hợp đồng VTC (từ 04/03/2022) là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "- Vinaphone: 4,77% tổng doanh thu (đã VAT) (áp dụng từ 04/03/2022)",
+    "answer": "Xin lỗi, trong tài liệu mà bạn cung cấp không có thông tin về chiết khấu của Vinaphone trong hợp đồng VTC (từ ngày 04/03/2022). Nếu bạn có tài liệu hoặc chi tiết bổ sung, vui lòng chia sẻ để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp chiết khấu Vinaphone là 4,77% áp dụng từ 04/03/2022, trong khi Answer khẳng định không có thông tin, mâu thuẫn hoàn toàn với nội dung Chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Trạng thái (STATUS) của thương hiệu IMEDIA là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "STATUS: OFFSITE",
+    "answer": "Thương hiệu IMEDIA có trạng thái OFFSITE【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp chính xác với thông tin trong chunk: trạng thái của thương hiệu IMEDIA là OFFSITE, không có thông tin sai lệch hay thừa.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Thời gian bắt đầu hợp tác của thương hiệu IMEDIA là ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2019-05-21",
+    "answer": "Thời gian bắt đầu hợp tác của thương hiệu IMEDIA là 21 / 05 / 2019【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời cung cấp đúng ngày bắt đầu hợp tác (21/05/2019) như trong chunk, không có thông tin sai lệch hay thừa.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Thời gian kết thúc hợp tác của thương hiệu IMEDIA là ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (KẾT THÚC): 2020-05-21",
+    "answer": "Thời gian kết thúc hợp tác của thương hiệu IMEDIA là 21 / 05 / 2020【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời cung cấp đúng ngày kết thúc hợp tác (21/05/2020) như trong chunk, chỉ thay đổi định dạng ngày và thêm tham chiếu, không sai lệch.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Chiết khấu của thương hiệu IOMEDIA (Brand ID 460, 461, 462) cho Cash voucher là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "CHIẾT KHẤU: Chi tiết - https://docs.google.com/spreadsheets/d/1hv0Pf8T_qARKZcz8wqtj4Dj2fym5vOUUQlifiiE5xCo/edit?gid=1379524854#",
+    "answer": "Xin lỗi, trong dữ liệu mà bạn cung cấp không có thông tin về chiết khấu của thương hiệu IOMEDIA (Brand ID 460, 461, 462) cho loại Cash voucher. Nếu bạn có tài liệu hoặc chi tiết bổ sung liên quan đến IOMEDIA, vui lòng chia sẻ để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 3,
+    "check": "Chunk chứa liên kết tới bảng chi tiết chiết khấu, cho biết có thông tin. Answer khẳng định không có thông tin, mâu thuẫn với chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Trạng thái (STATUS) của thương hiệu IOMEDIA (Cash voucher) là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "STATUS: OFFSITE",
+    "answer": "Theo dữ liệu trong tài liệu bạn cung cấp, mục IOMEDIA (Brand ID 460, 461) không có thông tin về trường STATUS được liệt kê, vì vậy trạng thái hiện tại của thương hiệu này không được xác định trong nguồn này. Nếu bạn có tài liệu khác chứa thông tin này, vui lòng cung cấp để tôi có thể hỗ trợ thêm.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp STATUS: OFFSITE, trong khi Answer khẳng định không có thông tin và không xác định được trạng thái, mâu thuẫn với dữ liệu trong Chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Thời gian bắt đầu hợp tác của thương hiệu IOMEDIA (Cash voucher) là ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2019-09-19",
+    "answer": "Trong dữ liệu hiện có không có thông tin về thời gian bắt đầu hợp tác của thương hiệu IOMEDIA (Cash voucher). Nếu bạn có tài liệu hoặc chi tiết bổ sung, vui lòng cung cấp để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp ngày bắt đầu hợp tác là 2019-09-19, nhưng Answer khẳng định không có thông tin, mâu thuẫn với nội dung Chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Thời gian kết thúc hợp tác của thương hiệu IOMEDIA (Cash voucher) là ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (KẾT THÚC): 2020-09-19",
+    "answer": "Xin lỗi, trong dữ liệu hiện có không có thông tin về thời gian kết thúc hợp tác của thương hiệu IOMEDIA (Cash voucher). Nếu bạn có tài liệu khác chứa thông tin này, vui lòng cung cấp để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chứa ngày kết thúc hợp tác (2020-09-19) nhưng Answer khẳng định không có thông tin, mâu thuẫn với nội dung chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Trạng thái (STATUS) của thương hiệu Vietlott là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "STATUS: OFFSITE",
+    "answer": "Thương hiệu Vietlott có trạng thái OFFSITE【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp chính xác với thông tin trong chunk: trạng thái của Vietlott là OFFSITE, không có thông tin sai lệch hay thừa.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Chiết khấu của thương hiệu Vietlott cho Cash voucher là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "CHIẾT KHẤU: 3% tổng doanh thu THÁNG",
+    "answer": "Xin lỗi, trong cơ sở dữ liệu hiện có không có thông tin về mức chiết khấu của thương hiệu Vietlott cho Cash voucher. Nếu bạn có thêm chi tiết hoặc tài liệu liên quan, vui lòng cung cấp để tôi có thể hỗ trợ tốt hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk đã cung cấp mức chiết khấu 3% cho Vietlott, trong khi Answer lại khẳng định không có thông tin, mâu thuẫn hoàn toàn với nội dung Chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Thời gian bắt đầu hợp tác của thương hiệu Vietlott là ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2021-02-01",
+    "answer": "Xin lỗi, trong dữ liệu hiện có không có thông tin về ngày bắt đầu hợp tác của thương hiệu Vietlott. Nếu bạn có tài liệu hoặc chi tiết bổ sung, vui lòng cung cấp để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chứa ngày bắt đầu hợp tác (2021‑02‑01) nhưng Answer khẳng định không có thông tin, mâu thuẫn với dữ liệu.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Thời gian kết thúc hợp tác của thương hiệu Vietlott là ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (KẾT THÚC): 2023-02-01",
+    "answer": "Xin lỗi, trong dữ liệu hiện có không có thông tin về ngày kết thúc hợp tác của thương hiệu Vietlott. Nếu bạn có tài liệu hoặc chi tiết bổ sung, vui lòng cung cấp để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk rõ ràng cung cấp ngày kết thúc hợp tác (2023-02-01) nhưng Answer lại khẳng định không có thông tin, mâu thuẫn với nội dung chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Thương hiệu Chi tiết (STT 10) có trạng thái gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "STATUS: Onboarding",
+    "answer": "Xin lỗi, trong dữ liệu hiện có không có thông tin về mục STT 10, vì vậy tôi không thể xác định trạng thái của thương hiệu này. Nếu bạn có thêm chi tiết hoặc tài liệu liên quan, vui lòng cung cấp để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp trạng thái \"Onboarding\" cho STT 10, nhưng câu trả lời khẳng định không có thông tin và không thể xác định, mâu thuẫn với nội dung trong chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Thời gian hợp đồng của thương hiệu Chi tiết (STT 10) bắt đầu từ ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2023-03-15",
+    "answer": "Xin lỗi, trong dữ liệu mà tôi đã nhận được không có thông tin về mục STT 10 của thương hiệu “Chi tiết”, vì vậy tôi không thể xác định ngày bắt đầu hợp đồng cho mục này. Nếu bạn có thêm chi tiết (ví dụ như nội dung mô tả hoặc tài liệu liên quan) vui lòng cung cấp để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp ngày bắt đầu hợp đồng là 2023-03-15, trong khi câu trả lời khẳng định không có thông tin và không thể xác định, mâu thuẫn với dữ liệu.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Chiết khấu của thương hiệu Chi tiết (STT 10) cho Top‑up là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "CHIẾT KHẤU: Chi tiết - https://docs.google.com/spreadsheets/d/1hv0Pf8T_qARKZcz8wqtj4Dj2fym5vOUUQlifiiE5xCo/edit?gid=1379524854#",
+    "answer": "Xin lỗi, trong dữ liệu hiện có không có thông tin về mục STT 10 của thương hiệu “Chi tiết”, vì vậy tôi không thể xác định mức chiết khấu cho Top‑up. Nếu bạn có thêm chi tiết (ví dụ như nội dung mô tả hoặc tài liệu liên quan) vui lòng cung cấp để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 3,
+    "check": "Chunk chứa liên kết tới tài liệu chiết khấu, cho biết có thông tin; câu trả lời lại khẳng định không có thông tin về STT 10, mâu thuẫn với chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Thương hiệu Kii Dental (STT 14) thuộc Tier nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "TIER: Tier 3",
+    "answer": "Thương hiệu Kii Dental (STT 14) thuộc Tier 3. 【1】",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp hoàn toàn với thông tin trong chunk: Tier 3, và lặp lại đúng thực thể Kii Dental (STT 14) từ câu hỏi.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Chiết khấu Cash voucher của Kii Dental (STT 14) là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "CHIẾT KHẤU: 10% tổng doanh thu tháng",
+    "answer": "Kii Dental (STT 14) áp dụng chiết khấu 10 % tổng doanh thu tháng cho Cash voucher【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp chính xác với thông tin trong chunk (chiết khấu 10% tổng doanh thu tháng) và nhắc lại thực thể Kii Dental (STT 14) từ câu hỏi, không có thông tin sai lệch hay bổ sung không được hỗ trợ.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Thời gian hợp đồng của Kii Dental (STT 14) bắt đầu từ ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2020-11-15",
+    "answer": "Kii Dental (STT 14) bắt đầu hợp đồng vào ngày 15 / 11 / 2020【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp chính xác với thông tin trong chunk: ngày bắt đầu hợp đồng là 15/11/2020 và đề cập đúng đối tượng Kii Dental (STT 14).",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Thương hiệu MEDiCARE (STT 16) thuộc lĩnh vực nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "NEW CATEGORY (VN): Thời trang - Mỹ phẩm - Sách",
+    "answer": "Thương hiệu MEDiCARE (STT 16) thuộc lĩnh vực “Thời trang - Mỹ phẩm - Sách”【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp chính xác với nội dung trong chunk, cung cấp đúng lĩnh vực “Thời trang - Mỹ phẩm - Sách” cho thương hiệu MEDiCARE (STT 16).",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Chiết khấu của MEDiCARE (STT 16) cho Cash voucher là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "CHIẾT KHẤU: 4.55% tổng doanh thu THÁNG (đã VAT)",
+    "answer": "MEDiCARE (STT 16) áp dụng chiết khấu 4,55 % tổng doanh thu tháng (đã VAT) cho Cash voucher【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác thông tin chiết khấu 4,55 % tổng doanh thu tháng (đã VAT) từ chunk và bổ sung “cho Cash voucher” dựa trên ngữ cảnh câu hỏi, không có thông tin nào mâu thuẫn hoặc không được hỗ trợ.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Thời gian hợp đồng của MEDiCARE (STT 16) bắt đầu từ ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2020-06-01",
+    "answer": "MEDiCARE (STT 16) bắt đầu hợp đồng từ ngày 01 / 06 / 2020【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời cung cấp đúng ngày bắt đầu hợp đồng (01/06/2020) như trong chunk và nhắc lại thực thể MEDiCARE (STT 16) hợp lệ.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Trạng thái (STATUS) của thương hiệu innisfree (STT 17) là gì?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "STATUS: Onboarding",
+    "answer": "Thought for 1 seconds\n\nTrong dữ liệu mà bạn cung cấp không có thông tin về trạng thái (STATUS) của thương hiệu innisfree (STT 17). Nếu bạn có thêm chi tiết hoặc tài liệu liên quan, vui lòng chia sẻ để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp STATUS: Onboarding, trong khi câu trả lời khẳng định không có thông tin, mâu thuẫn với nội dung chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "DANH SÁCH MERCHARNT TIER 2_pdk4e66g.md"
+    ]
+  },
+  {
+    "question": "Thời gian hợp đồng của innisfree (STT 17) bắt đầu từ ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2020-12-31",
+    "answer": "Trong dữ liệu mà bạn cung cấp không có thông tin về thời gian bắt đầu hợp đồng của innisfree (STT 17). Nếu bạn có thêm chi tiết hoặc tài liệu liên quan, vui lòng chia sẻ để tôi có thể hỗ trợ chính xác hơn.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp ngày bắt đầu hợp đồng là 2020‑12‑31, nhưng câu trả lời khẳng định không có thông tin, mâu thuẫn trực tiếp với nội dung trong chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Chiết khấu của thương hiệu Guardian (STT 19) cho Cash voucher là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "CHIẾT KHẤU: Tổng doanh thu THÁNG = (1) + (2)\n- (1) Chiết khấu cho UrBox\n 0-500tr: 3%\n Trên 500tr: 3% (phần doanh thu 500tr) + 5% (phần doanh thu vượt trên 500tr)",
+    "answer": "Thought for 1 seconds\n\nGuardian (STT 19) áp dụng chiết khấu cho Cash voucher dựa trên doanh thu tháng như sau:\n\nDoanh thu 0 – 500 triệu: 3%\nDoanh thu trên 500 triệu: 3% cho 500 triệu đầu và 5% cho phần doanh thu vượt trên 500 triệu\n\nNgoài ra, UrBox sẽ thu một khoản chi phí cố định tương đương 4% tổng giá trị cash voucher đã phân phối trên các sàn TMĐT Guardian【1】.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chỉ cung cấp chiết khấu cho UrBox, không đề cập tới thương hiệu Guardian. Câu trả lời gán chiết khấu của UrBox cho Guardian và thêm thông tin phí cố định 4% không có trong chunk, vì vậy sai lệch nghiêm trọng.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Thời gian hợp đồng của thương hiệu Guardian (STT 19) kết thúc vào ngày nào?",
+    "file": "20251225_PRT_DanhSach_Danh_sach_MC_final.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (KẾT THÚC): 2021-11-04",
+    "answer": "Thời gian hợp đồng của thương hiệu Guardian (STT 19) kết thúc vào ngày 2021‑11‑04【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác ngày kết thúc hợp đồng được nêu trong chunk và phù hợp với câu hỏi.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Tổng số thương hiệu được liệt kê trong tài liệu là bao nhiêu?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1.txt",
+    "chunk": "Tổng số: 90 thương hiệu.",
+    "answer": "Tổng cộng có 247 thương hiệu được liệt kê trong tài liệu【1】.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cho biết tổng số thương hiệu là 90, nhưng câu trả lời khẳng định 247, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_gut8eogq.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Ngành hàng chính của các đối tác chiến lược Tier 1 là gì?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1.txt",
+    "chunk": "Ngành hàng chính: F&B chuỗi lớn, E-commerce, Di chuyển, Siêu thị.",
+    "answer": "Các đối tác chiến lược Tier 1 tập trung vào các ngành hàng chính là F&B chuỗi lớn, E‑commerce, Di chuyển và Siêu thị【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác danh sách ngành hàng trong chunk và liên kết đúng với đối tượng Tier 1 trong câu hỏi, không có thông tin sai hay thừa.",
+    "source": [
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Chiết khấu cho thương hiệu Guardian được tính như thế nào?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1.txt",
+    "chunk": "CHIẾT KHẤU: Tổng doanh thu THÁNG = (1) + (2)\n         * (1) Chiết khấu cho UrBox\n0-500tr: 3%\nTrên 500tr: 3% (phần doanh thu 500tr) + 5% (phần doanh thu vượt trên 500tr)\n         * (2) Tổng chi phí UrBox phân phối voucher qua sàn TMĐT\nGuardian thanh toán 1 khoản chi phí cố định tương đương 4% tổng giá trị cash voucher mà UrBox đã phân phối cho KH trên các sản TMĐT",
+    "answer": "Chiết khấu cho thương hiệu Guardian được tính dựa trên doanh thu tháng như sau:\n\nChiết khấu doanh thu\n\nDoanh thu từ 0 – 500 triệu VND: 3 %\nDoanh thu trên 500 triệu VND: phần 500 triệu đầu vẫn tính 3 %, phần vượt trên 500 triệu tính 5 %\n\nPhí cố định của UrBox\n\nUrBox thu một khoản phí cố định tương đương 4 % tổng giá trị cash voucher đã phân phối cho khách hàng trên các sàn TMĐT Guardian.\n\n=> Tổng chiết khấu = (chiết khấu doanh thu) + (phí cố định 4 % trên giá trị cash voucher)【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời phản ánh đầy đủ các thông tin trong chunk: mức chiết khấu doanh thu 0‑500 triệu 3%, trên 500 triệu 3% + 5% cho phần vượt, và khoản phí cố định 4% giá trị cash voucher do Guardian thanh toán. Không có thông tin nào không có trong chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Thời gian bắt đầu hợp tác với thương hiệu Guardian là ngày nào?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (BẮT ĐẦU): 2020-11-05",
+    "answer": "Thời gian bắt đầu hợp tác với thương hiệu Guardian là ngày 05 / 11 / 2020【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời cung cấp đúng ngày bắt đầu hợp tác (05/11/2020) như trong chunk, không có thông tin sai hay thừa.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_MC_Tier1_wxyawx81.md"
+    ]
+  },
+  {
+    "question": "Thương hiệu nào có trạng thái OFFSITE, thuộc danh mục Dịch vụ ăn uống – Nhà hàng, và có Brand ID là 33?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1.txt",
+    "chunk": "STT: 32\nTIER: Tier 1\nMST: 0102721191\nCÔNG TY CHỦ QUẢN: GGG - CÔNG TY CỔ PHẦN TẬP ĐOÀN GOLDEN GATE\nTHƯƠNG HIỆU: Cowboy Jack&#39;s\nBrand ID: 33\nSTATUS: OFFSITE\nNEW CATEGORY (VN): Dịch vụ ăn uống\nNEW SUB-CATEGORY (VN): Nhà hàng",
+    "answer": "Based on the provided data, there is no brand with Brand ID 33 that has a status of OFFSITE and belongs to the category Dịch vụ ăn uống – Nhà hàng.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk clearly xác định thương hiệu Cowboy Jack's có Brand ID 33, STATUS OFFSITE và thuộc danh mục Dịch vụ ăn uống – Nhà hàng, trong khi Answer khẳng định không có thương hiệu nào đáp ứng các tiêu chí này, mâu thuẫn hoàn toàn với thông tin trong Chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Hình thức vận hành theo hợp đồng của thương hiệu iSushi là gì?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1.txt",
+    "chunk": "HÌNH THỨC VẬN HÀNH THEO HỢP ĐỒNG: UrBox sinh code - API",
+    "answer": "Hình thức vận hành theo hợp đồng của thương hiệu iSushi là UrBox sinh code – API【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác thông tin trong chunk và đáp ứng câu hỏi về hình thức vận hành theo hợp đồng của iSushi.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Chiết khấu của iSushi có áp dụng từ ngày nào?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1.txt",
+    "chunk": "Lưu ý: Mức chiết khấu này áp dụng từ 01/10/2025",
+    "answer": "Chiết khấu của iSushi áp dụng bắt đầu từ 01/03/2023【1】.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk nêu mức chiết khấu áp dụng từ 01/10/2025, trong khi Answer đưa ra ngày 01/03/2023, mâu thuẫn với thông tin cốt lõi.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Trong danh sách, thương hiệu nào có mức chiết khấu \"5 tỷ: 7.5%\"?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1.txt",
+    "chunk": "* 5 tỷ: 7.5%",
+    "answer": "Thought for 1 seconds\n\nTrong các thông tin được cung cấp, không có thương hiệu nào có mức chiết khấu “5 tỷ: 7.5 %”. Các bảng chiết khấu được liệt kê (ví dụ 300 tr – 1 tỷ: 8 %, 5 tỷ – 8 tỷ: 2.9 %…) không chứa mức “5 tỷ: 7.5 %”. Vì vậy, danh sách hiện tại không bao gồm thương hiệu với mức chiết khấu này.",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk chứa mục \"5 tỷ: 7.5%\" xác nhận tồn tại mức chiết khấu này, trong khi Answer khẳng định không có và cho rằng danh sách không bao gồm mức này, mâu thuẫn với thông tin trong Chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "DANH SÁCH MERCHARNT TIER 2_pdk4e66g.md"
+    ]
+  },
+  {
+    "question": "Hình thức vận hành theo hợp đồng của đối tác đầu tiên (CTCP XÍCH VIỆT) là gì?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1.txt",
+    "chunk": "HÌNH THỨC VẬN HÀNH THEO HỢP ĐỒNG: MC sinh code - API",
+    "answer": "Theo nội dung đã cung cấp, không có thông tin nào về “CTCP XÍCH VIỆT” và hình thức vận hành theo hợp",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp rõ ràng hình thức vận hành theo hợp đồng là “MC sinh code - API”, trong khi Answer khẳng định không có thông tin nào về CTCP XÍCH VIỆT và hình thức vận hành, mâu thuẫn với nội dung Chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Ngày kết thúc hợp tác của iSushi là ngày nào?",
+    "file": "20251225_PRT_DanhSach_MC_Tier1.txt",
+    "chunk": "THỜI HẠN HỢP TÁC (KẾT THÚC): 2024-03-01",
+    "answer": "Ngày kết thúc hợp tác của iSushi là 01/03/2024【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời cung cấp đúng ngày kết thúc hợp tác (01/03/2024) như trong chunk, không có thông tin sai hay thừa.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Tài khoản cá nhân nào sẽ ngưng sử dụng để nhận thanh toán?",
+    "file": "20260128_BD_OPS_BD_Training_Thongbao_Thong_bao_chuyen_doi_tai_khoan.md",
+    "chunk": "Chủ tài khoản: Trưởng Cổng Hiếu Số tài khoản: 02324849001 Ngân hàng: LPB",
+    "answer": "Tài khoản cá nhân sẽ ngưng sử dụng là:\n\nChủ tài khoản: Trưởng Cổng Hiếu\nSố tài khoản: 02324849001\nNgân hàng: LPB【1】",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác thông tin trong chunk (chủ tài khoản, số tài khoản, ngân hàng) và đáp ứng câu hỏi về tài khoản cá nhân sẽ ngưng sử dụng.",
+    "source": [
+      "20260128_BD_OPS_BD Training_ Thongbao_Thong bao chuyen doi tai khoan nhan thanh toan_o35inlve.md",
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Tên chủ tài khoản mới là gì?",
+    "file": "20260128_BD_OPS_BD_Training_Thongbao_Thong_bao_chuyen_doi_tai_khoan.md",
+    "chunk": "Tên chủ tài khoản: CÔNG TY CỔ PHẦN TIẾP THỊ SỐ QUÀ",
+    "answer": "Tên chủ tài khoản mới là CÔNG TY CỔ PHẦN TIẾP THỊ SỐ QUÀ【1】.",
+    "evaluate": "correct",
+    "score": 9,
+    "check": "Câu trả lời cung cấp đúng tên chủ tài khoản như trong chunk. Từ “mới” chỉ phản ánh câu hỏi, không mâu thuẫn hay thêm thông tin không có trong chunk.",
+    "source": [
+      "20260128_BD_OPS_BD Training_ Thongbao_Thong bao chuyen doi tai khoan nhan thanh toan_o35inlve.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md"
+    ]
+  },
+  {
+    "question": "Giai đoạn chuyển giao sẽ diễn ra trong khoảng thời gian nào?",
+    "file": "20260128_BD_OPS_BD_Training_Thongbao_Thong_bao_chuyen_doi_tai_khoan.md",
+    "chunk": "Giai đoạn chuyển giao (20/05 - 31/05/2024):",
+    "answer": "Thought for 2 seconds\n\nTheo tài liệu “Quy trình chuyển đổi vận hành từ MC xuất code sang UrBox xuất code” không có thông tin cụ",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Chunk cung cấp thời gian cụ thể của giai đoạn chuyển giao (20/05 - 31/05/2024), nhưng câu trả lời lại khẳng định không có thông tin, mâu thuẫn với nội dung chunk.",
+    "source": [
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md"
+    ]
+  },
+  {
+    "question": "Tài khoản cá nhân nào sẽ ngừng tiếp nhận thanh toán?",
+    "file": "20260128_BD_OPS_BD_Training_Thongbao_Thong_bao_chuyen_doi_tai_khoan.md",
+    "chunk": "Chủ tài khoản: Trưởng Cổng Hiếu Số tài khoản: 02324849001 Ngân hàng: LPB",
+    "answer": "Tài khoản cá nhân sẽ ngừng tiếp nhận thanh toán là tài khoản của Trưởng Cổng Hiếu:\n\nSố tài khoản: 02324849001\nNgân hàng: LPB\n\n(Thông tin này được nêu trong tài liệu thông báo chuyển đổi tài khoản nhận thanh toán)【1】",
+    "evaluate": "correct",
+    "score": 9,
+    "check": "Câu trả lời lặp lại đầy đủ thông tin về chủ tài khoản, số tài khoản và ngân hàng được nêu trong chunk, phù hợp với câu hỏi. Thêm ghi chú nguồn không gây mâu thuẫn, do đó đáp án được hỗ trợ hoàn toàn.",
+    "source": [
+      "20260128_BD_OPS_BD Training_ Thongbao_Thong bao chuyen doi tai khoan nhan thanh toan_o35inlve.md",
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md",
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Mục đích của việc thay đổi thông tin tài khoản nhận thanh toán là gì?",
+    "file": "20260128_BD_OPS_BD_Training_Thongbao_Thong_bao_chuyen_doi_tai_khoan.md",
+    "chunk": "Để thuận tiện hơn trong việc trao đổi với Khách hàng cũng như kiểm tra và quản lý khoản tiền KH đã thanh toán, Phòng Kế toán thông báo về việc thay đổi thông tin tài khoản nhận thanh toán của KH",
+    "answer": "Việc chuyển sang tài khoản công ty CÔNG TY CỔ PHẦN TIẾP THỊ SỐ QUÀ nhằm:\n\nThuận tiện hơn trong việc trao đổi, kiểm tra và quản lý các khoản tiền khách hàng đã thanh toán.\nĐảm bảo tính minh bạch, an toàn tài chính và tránh rủi ro pháp lý khi còn dùng tài khoản cá nhân.\nChuyên nghiệp hoá quy trình thanh toán để phòng kế toán có thể đối soát, quản lý dòng tiền một cách hiệu quả.\n\n(Thông tin dựa trên tài liệu thông báo thay đổi tài khoản nhận thanh toán)【1】",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Câu trả lời nêu đúng mục đích thay đổi tài khoản (thuận tiện trong trao đổi, kiểm tra, quản lý tiền) như trong chunk, nhưng thêm thông tin cụ thể về tên tài khoản công ty và các lợi ích chi tiết không có trong chunk, là thông tin mới không được hỗ trợ.",
+    "source": [
+      "20260128_BD_OPS_BD Training_ Thongbao_Thong bao chuyen doi tai khoan nhan thanh toan_o35inlve.md",
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md",
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md"
+    ]
+  },
+  {
+    "question": "Tài khoản cá nhân nào sẽ ngưng sử dụng?",
+    "file": "20260128_BD_OPS_BD_Training_Thongbao_Thong_bao_chuyen_doi_tai_khoan.md",
+    "chunk": "Chủ tài khoản: Trưởng Cổng Hiếu Số tài khoản: 02324849001 Ngân hàng: LPB",
+    "answer": "Tài khoản cá nhân sẽ ngưng sử dụng là tài khoản của Trưởng Cổng Hiếu:\n\nSố tài khoản: 02324849001\nNgân hàng: LPB\n\n(Thông tin được nêu trong tài liệu thông báo thay đổi tài khoản nhận thanh toán)【1】",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác thông tin trong đoạn trích: chủ tài khoản là Trưởng Cổng Hiếu, số tài khoản 02324849001, ngân hàng LPB, đáp ứng đúng câu hỏi về tài khoản cá nhân sẽ ngưng sử dụng.",
+    "source": [
+      "20260128_BD_OPS_BD Training_ Thongbao_Thong bao chuyen doi tai khoan nhan thanh toan_o35inlve.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Quy chế lương và thu nhập có hiệu lực từ ngày nào?",
+    "file": "6-quy-che-luong-va-thu-nhap-240325_legal-revised_20251212_033301.md",
+    "chunk": "Quy chế có hiệu lực từ 25/03/2025",
+    "answer": "Quy chế lương và thu nhập có hiệu lực từ ngày 25 / 03 / 2025【1】",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác thông tin ngày hiệu lực trong chunk và phù hợp với ngữ cảnh câu hỏi.",
+    "source": [
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Quy chế này áp dụng cho đối tượng nào?",
+    "file": "6-quy-che-luong-va-thu-nhap-240325_legal-revised_20251212_033301.md",
+    "chunk": "áp dụng cho toàn thể nhân viên có hợp đồng lao động tại UrBox.",
+    "answer": "Quy chế áp dụng cho tất cả người lao động có Hợp đồng lao động hoặc Hợp đồng thử việc với Công ty Cổ Phần Tiếp Thị Số Tô Quà (UrBox)【1】.",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Câu trả lời đúng về đối tượng chính (toàn thể nhân viên có hợp đồng lao động) như trong chunk, nhưng bổ sung thông tin \"hoặc Hợp đồng thử việc\" không được nêu trong chunk, vì vậy chỉ được hỗ trợ một phần.",
+    "source": [
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Hệ thống lương và thu nhập được xây dựng dựa trên những nguyên tắc nào?",
+    "file": "6-quy-che-luong-va-thu-nhap-240325_legal-revised_20251212_033301.md",
+    "chunk": "Hệ thống lương và thu nhập dựa trên các nguyên tắc \"Cạnh tranh, công bằng, hợp lý\" và đảm bảo tính minh bạch.",
+    "answer": "Hệ thống lương và thu nhập của UrBox được xây dựng dựa trên các nguyên tắc:\n\nCạnh tranh – mức thu nhập tham chiếu thị trường.\nCông bằng – các công việc có giá trị tương đương có thang lương giống nhau.\nHợp lý – phù hợp với kế hoạch kinh doanh và quy định kế toán.\nMinh bạch – quy trình, cách tính và các thành phần thu nhập được công khai, rõ ràng【1】.",
+    "evaluate": "correct",
+    "score": 8,
+    "check": "Câu trả lời giữ nguyên ba nguyên tắc chính (Cạnh tranh, Công bằng, Hợp lý) đúng như chunk và bổ sung chi tiết hợp lý, trong đó việc đưa “Minh bạch” như một nguyên tắc là suy luận hợp lý từ việc chunk nói “đảm bảo tính minh bạch”. Không có thông tin nào mâu thuẫn.",
+    "source": [
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Mức lương cơ bản tối đa theo cấp bậc là bao nhiêu?",
+    "file": "6-quy-che-luong-va-thu-nhap-240325_legal-revised_20251212_033301.md",
+    "chunk": "Lương cơ bản theo cấp bậc được quy định khoảng 60% tổng thu nhập hoặc tối đa 46.800.000 VNĐ.",
+    "answer": "Mức lương cơ bản tối đa theo cấp bậc là 46.800.000 VNĐ【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời nêu đúng mức lương cơ bản tối đa 46.800.000 VNĐ, thông tin này xuất hiện trong chunk và không có sai lệch.",
+    "source": [
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Công ty thực hiện rà soát và điều chỉnh thu nhập vào tháng nào mỗi năm?",
+    "file": "6-quy-che-luong-va-thu-nhap-240325_legal-revised_20251212_033301.md",
+    "chunk": "Công ty rà soát thu nhập vào tháng 04 hàng năm.",
+    "answer": "Công ty thực hiện rà soát và điều chỉnh thu nhập vào tháng 4 hàng năm【1】.",
+    "evaluate": "correct",
+    "score": 8,
+    "check": "Câu trả lời khớp với thông tin cốt lõi trong chunk (tháng 4) và bổ sung “điều chỉnh” là suy luận hợp lý từ “ra soát thu nhập”, không mâu thuẫn và diễn đạt rõ ràng.",
+    "source": [
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Những phòng ban, bộ phận nào chịu trách nhiệm thực hiện quy chế lương và thu nhập?",
+    "file": "6-quy-che-luong-va-thu-nhap-240325_legal-revised_20251212_033301.md",
+    "chunk": "Ban Giám đốc, Người đại diện theo pháp luật, Quản lý phòng ban, Phòng Nhân sự và Phòng Tài chính Kế toán",
+    "answer": "Các phòng ban, bộ phận chịu trách nhiệm thực hiện Quy chế lương và thu nhập gồm:\n\nBan Giám đốc – xét duyệt thu nhập.\nNgười đại diện theo pháp luật – ký quyết định, phân phối quỹ, giải quyết vướng mắc.\nQuản lý phòng ban – đánh giá kết quả làm việc của nhân viên.\nPhòng Nhân sự – giải thích quy chế, kiểm tra, tổng hợp, tính toán và chi trả lương.\nPhòng Tài chính – Kế toán – hạch toán, kiểm soát và chi trả thu nhập【1】.",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Câu trả lời liệt kê đúng các phòng ban, bộ phận như trong chunk, nhưng bổ sung các mô tả trách nhiệm chi tiết không có trong chunk, vì vậy chỉ phần cốt lõi được hỗ trợ, phần bổ sung không được chứng minh.",
+    "source": [
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Người lao động có bao nhiêu ngày làm việc để khiếu nại về lương, thưởng, thu nhập?",
+    "file": "6-quy-che-luong-va-thu-nhap-240325_legal-revised_20251212_033301.md",
+    "chunk": "Người lao động có 07 ngày làm việc để khiếu nại về lương, thưởng, thu nhập.",
+    "answer": "Người lao động có 07 ngày làm việc để khiếu nại về lương, thưởng, thu nhập kể từ ngày nhận thông báo【1】.",
+    "evaluate": "correct",
+    "score": 8,
+    "check": "Câu trả lời giữ nguyên thông tin cốt lõi từ chunk (07 ngày làm việc) và bổ sung “kể từ ngày nhận thông báo”, một mốc thời gian phổ biến trong quy trình doanh nghiệp, không mâu thuẫn và được chấp nhận như suy luận hợp lý.",
+    "source": [
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Tỷ lệ đóng bảo hiểm xã hội của người lao động là bao nhiêu phần trăm?",
+    "file": "6-quy-che-luong-va-thu-nhap-240325_legal-revised_20251212_033301.md",
+    "chunk": "Tỷ lệ đóng BHXH của NLĐ: 10.5%.",
+    "answer": "Tỷ lệ đóng bảo hiểm xã hội của người lao động là 10,5 %【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác tỷ lệ 10,5 % được nêu trong đoạn trích, không có thông tin sai lệch hay thừa.",
+    "source": [
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Mức giảm trừ gia cảnh thuế thu nhập cá nhân cho bản thân và người phụ thuộc là bao nhiêu?",
+    "file": "6-quy-che-luong-va-thu-nhap-240325_legal-revised_20251212_033301.md",
+    "chunk": "Mức giảm trừ gia cảnh TNCN: Bản thân 11 triệu/tháng, người phụ thuộc 4.4 triệu/tháng.",
+    "answer": "Mức giảm trừ gia cảnh thuế thu nhập cá nhân là:\n\nBản thân: 11 triệu VNĐ mỗi tháng\nMỗi người phụ thuộc: 4,4 triệu VNĐ mỗi tháng\n\n(Theo quy chế lương và thu nhập của UrBox)【1】",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác các mức giảm trừ gia cảnh cho bản thân (11 triệu/tháng) và người phụ thuộc (4,4 triệu/tháng) như trong đoạn trích, không có thông tin sai lệch hay không được hỗ trợ.",
+    "source": [
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Thu nhập tháng được chi trả vào ngày nào?",
+    "file": "6-quy-che-luong-va-thu-nhap-240325_legal-revised_20251212_033301.md",
+    "chunk": "Thu nhập tháng được chi trả vào ngày cuối cùng của tháng (hoặc ngày làm việc tiếp theo nếu trùng cuối tuần/lễ).",
+    "answer": "Thu nhập tháng được chi trả vào ngày cuối cùng của tháng; nếu ngày cuối tháng trùng với cuối tuần hoặc ngày lễ, sẽ được chuyển vào ngày làm việc tiếp theo【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời diễn đạt đúng và đầy đủ thông tin trong chunk: chi trả vào ngày cuối tháng, nếu trùng cuối tuần/lễ thì chuyển sang ngày làm việc tiếp theo.",
+    "source": [
+      "6 Quy chế lương và thu nhập 240325_legal revised_20251212_033301_h11lz7ys.md"
+    ]
+  },
+  {
+    "question": "Quy trình chuyển đổi vận hành từ MC xuất code sang UrBox xuất code gồm bao nhiêu bước?",
+    "file": "quy-trinh-chuyen-doi-van-hanh-tu-mc-xuat-code-sang-urbox-xuat-code_20251212_032831.md",
+    "chunk": "Tài liệu này phác thảo quy trình 9 bước để chuyển đổi mô hình vận hành của một Merchant đang hoạt động từ việc tự xuất code (MC xuất code) sang việc UrBox xuất code (UB xuất code).",
+    "answer": "Quy trình chuyển đổi vận hành từ MC xuất code sang UrBox xuất code bao gồm 9 bước【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp chính xác với thông tin trong chunk: quy trình có 9 bước, không có thông tin nào thiếu hay sai.",
+    "source": [
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md",
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_gut8eogq.md"
+    ]
+  },
+  {
+    "question": "Nếu thiếu sự thống nhất về điều khoản thương mại, rủi ro nào có thể xảy ra?",
+    "file": "quy-trinh-chuyen-doi-van-hanh-tu-mc-xuat-code-sang-urbox-xuat-code_20251212_032831.md",
+    "chunk": "Thiếu sự thống nhất về điều khoản thương mại hoặc sai sót trong hợp đồng có thể gây ra tranh chấp.",
+    "answer": "Thought for 1 seconds\n\nNếu không thống nhất được các điều khoản thương mại, công ty có thể gặp rủi ro pháp lý và tài chính – chẳng hạn tranh chấp hợp đồng, mất doanh thu, hoặc phải chịu chi phí bồi thường do các điều khoản chưa được đồng ý rõ ràng. Điều này cũng dẫn đến không đồng nhất trong quy trình triển khai, gây chậm trễ, sai sót trong việc tích hợp và truyền thông, và cuối cùng ảnh hưởng đến uy tín của UrBox với đối tác và khách hàng【3】.",
+    "evaluate": "correct",
+    "score": 8,
+    "check": "Câu trả lời nêu rõ rủi ro tranh chấp, phù hợp với chunk. Các chi tiết bổ sung (rủi ro pháp lý, tài chính, mất doanh thu, chậm trễ, ảnh hưởng uy tín) là suy luận hợp lý, phổ biến trong kinh doanh và không mâu thuẫn với nội dung gốc, nên được xem là hỗ trợ tốt nhưng không hoàn toàn nguyên văn.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md",
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md"
+    ]
+  },
+  {
+    "question": "Quản lý không hiệu quả code tồn kho hoặc voucher đang chạy có thể dẫn đến hậu quả gì?",
+    "file": "quy-trinh-chuyen-doi-van-hanh-tu-mc-xuat-code-sang-urbox-xuat-code_20251212_032831.md",
+    "chunk": "Quản lý không hiệu quả code tồn kho hoặc voucher đang chạy có thể dẫn đến thất thoát hoặc ảnh hưởng đến trải nghiệm người dùng.",
+    "answer": "Quản lý không hiệu quả code tồn kho hoặc voucher đang chạy có thể gây thất thoát tài sản và ảnh hưởng tiêu cực đến trải nghiệm người dùng (ví dụ: mất mã, voucher không hoạt động đúng, gây nhầm lẫn và giảm hài lòng của khách hàng)【2】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại đầy đủ nội dung chính của chunk (thất thoát và ảnh hưởng tới trải nghiệm người dùng) và bổ sung các ví dụ hợp lý, không mâu thuẫn với thông tin trong chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md"
+    ]
+  },
+  {
+    "question": "Quy trình chuyển đổi vận hành này bao gồm bao nhiêu bước?",
+    "file": "quy-trinh-chuyen-doi-van-hanh-tu-mc-xuat-code-sang-urbox-xuat-code_20251212_032831.md",
+    "chunk": "Tài liệu này phác thảo quy trình 9 bước để chuyển đổi mô hình vận hành của một Merchant đang hoạt động từ việc tự xuất code (MC xuất code) sang việc UrBox xuất code (UB xuất code).",
+    "answer": "Quy trình chuyển đổi vận hành từ MC xuất code sang UrBox xuất code bao gồm 9 bước【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khẳng định quy trình chuyển đổi vận hành có 9 bước, đúng với thông tin trong chunk và không có sai sót.",
+    "source": [
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md",
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md",
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md"
+    ]
+  },
+  {
+    "question": "Bước nào chịu trách nhiệm thống nhất Điều khoản Thương mại?",
+    "file": "quy-trinh-chuyen-doi-van-hanh-tu-mc-xuat-code-sang-urbox-xuat-code_20251212_032831.md",
+    "chunk": "1. **Thống nhất Điều khoản Thương mại:**\n   * **Phòng ban:** Partnership\n   * **Mô tả:** Đàm phán và thống nhất lại các điều khoản thương mại với Merchant nếu có thay đổi sau chuyển đổi.",
+    "answer": "Bước 1 – “Thống nhất Điều khoản Thương mại” chịu trách nhiệm bởi Phòng Ban Partnership【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp hoàn toàn với nội dung trong chunk: bước được liệt kê là “Thống nhất Điều khoản Thương mại”, chịu trách nhiệm bởi Phòng Ban Partnership. Việc thêm “Bước 1” là hợp lý vì chunk bắt đầu bằng số 1, nên không gây sai lệch.",
+    "source": [
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md",
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md",
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md"
+    ]
+  },
+  {
+    "question": "Trong bước rà soát hợp đồng, những phòng ban nào tham gia?",
+    "file": "quy-trinh-chuyen-doi-van-hanh-tu-mc-xuat-code-sang-urbox-xuat-code_20251212_032831.md",
+    "chunk": "2. **Rà soát Hợp đồng:**\n   * **Phòng ban:** Partnership, Legal\n   * **Mô tả:** Kiểm tra và cập nhật Hợp đồng hoặc Phụ lục Hợp đồng để phản ánh sự thay đổi trong vận hành.",
+    "answer": "Trong bước Rà soát Hợp đồng, các phòng ban tham gia là Phòng Ban Partnership và Phòng Ban Legal【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời liệt kê đúng các phòng ban Partnership và Legal như trong đoạn trích, không có thông tin sai hay thừa.",
+    "source": [
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md",
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md"
+    ]
+  },
+  {
+    "question": "Ai chịu trách nhiệm thông báo kế hoạch chuyển đổi cho các team KAM, OPS, DATA?",
+    "file": "quy-trinh-chuyen-doi-van-hanh-tu-mc-xuat-code-sang-urbox-xuat-code_20251212_032831.md",
+    "chunk": "3. **Thông báo Kế hoạch Chuyển đổi:**\n   * **Phòng ban:** Partnership\n   * **Mô tả:** Thông báo cho các team KAM, OPS, DATA về thời gian dự kiến chuyển đổi.",
+    "answer": "Trong quy trình, Phòng Ban Partnership chịu trách nhiệm thông báo kế hoạch chuyển đổi cho các team KAM, OPS và DATA【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp hoàn toàn với thông tin trong chunk: Phòng Ban Partnership chịu trách nhiệm thông báo kế hoạch chuyển đổi cho các team KAM, OPS, DATA.",
+    "source": [
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md",
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_gut8eogq.md"
+    ]
+  },
+  {
+    "question": "Các phòng ban nào tham gia vào việc kiểm tra và xử lý dữ liệu code?",
+    "file": "quy-trinh-chuyen-doi-van-hanh-tu-mc-xuat-code-sang-urbox-xuat-code_20251212_032831.md",
+    "chunk": "4. **Kiểm tra & Xử lý Dữ liệu Code:**\n   * **Phòng ban:** Data, Operation, Engineer, Kế toán\n   * **Mô tả:**\n     * Kiểm tra số lượng code còn tồn trong kho của Merchant.\n     * Quyết định tái sử dụng code cũ hay tạo mới trên hệ thống UrBox.\n     * Đối soát dữ liệu giữa luồng cũ và mới.",
+    "answer": "Kiểm tra và xử lý dữ liệu code được thực hiện bởi các phòng ban Data, Operation, Engineer và Kế toán【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời liệt kê đúng các phòng ban (Data, Operation, Engineer, Kế toán) như trong đoạn trích, không có thông tin sai lệch hay thừa.",
+    "source": [
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_gut8eogq.md"
+    ]
+  },
+  {
+    "question": "Khi xử lý voucher đang chạy, có những phương án nào được đề xuất?",
+    "file": "quy-trinh-chuyen-doi-van-hanh-tu-mc-xuat-code-sang-urbox-xuat-code_20251212_032831.md",
+    "chunk": "5. **Thống nhất Phương án Xử lý Voucher Đang Chạy:**\n   * **Phòng ban:** Partnership\n   * **Mô tả:** Quyết định cách xử lý các voucher đã phát hành nhưng chưa dùng:\n     * **Phương án 1 (5.1):** Yêu cầu Merchant xuất code bàn giao để hủy/deactivate.\n     * **Phương án 2 (6):** Chạy song song cả hai hệ thống trong một thời gian.",
+    "answer": "Thought for 4 seconds\n\nKhi voucher đã được phát hành và đang “chạy”, quy trình xử lý thường đề xuất các phương án sau:\n\nKiểm đếm – Xuất kho – Top‑up tiền vào voucher\nSau khi kiểm đếm và xuất kho, OP thực hiện nạp (top‑up) thêm tiền vào voucher【2】.\n\nIn lại (customize) nếu cần thay đổi số lượng hoặc thiết kế\n\nNội bộ: nếu số lượng ≤ 2",
+    "evaluate": "incorrect",
+    "score": 2,
+    "check": "Câu trả lời liệt kê các bước như kiểm đếm, xuất kho, top‑up, in lại, … không có trong đoạn trích. Đoạn trích chỉ nêu hai phương án: yêu cầu merchant hủy/deactivate hoặc chạy song song hai hệ thống. Vì vậy nội dung trả lời không được hỗ trợ bởi chunk.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "20260127_BD_OPS_BD Training_ QuyTrinh_SLA process đơn hàng của BD AdminKAM_e3sc4wfj.md"
+    ]
+  },
+  {
+    "question": "Bước tích hợp API với Merchant được thực hiện bởi phòng ban nào?",
+    "file": "quy-trinh-chuyen-doi-van-hanh-tu-mc-xuat-code-sang-urbox-xuat-code_20251212_032831.md",
+    "chunk": "6. **Tích hợp API với Merchant:**\n   * **Phòng ban:** Relevant Depts (Phòng ban liên quan, chủ yếu là Engineer)\n   * **Mô tả:** Thực hiện kết nối và tích hợp hệ thống API giữa UrBox và Merchant.",
+    "answer": "Bước tích hợp API với Merchant được thực hiện chủ yếu bởi phòng Engineer (cùng với phòng Operation trong một số trường hợp)【3】.",
+    "evaluate": "correct",
+    "score": 6,
+    "check": "Câu trả lời đúng phần lớn (phòng Engineer) nhưng bổ sung thông tin \"cùng với phòng Operation trong một số trường hợp\" không có trong đoạn trích, vì vậy chỉ được hỗ trợ một phần.",
+    "source": [
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md",
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md"
+    ]
+  },
+  {
+    "question": "Trong trường hợp Merchant không đáp ứng ba tiêu chí ON, điều gì cho phép họ vẫn được ON?",
+    "file": "quy-trinh-on-off-doi-tac_20251212_033226.md",
+    "chunk": "* Có thể ON nếu theo nhu cầu từ Client và có cam kết doanh thu đầu ra cố định (áp dụng cho Merchant không đáp ứng 3 tiêu chí trên).",
+    "answer": "Nếu Merchant không đáp ứng đủ ba tiêu chí ON, họ vẫn có thể được ON khi có yêu cầu từ Client và Merchant cam kết doanh thu đầu ra cố định (điều này được xem là trường hợp ngoại lệ)【2】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại đầy đủ nội dung trong chunk: Merchant có thể ON khi có yêu cầu từ Client và cam kết doanh thu đầu ra cố định. Thêm cụm “điều này được xem là trường hợp ngoại lệ” là suy luận hợp lý, không mâu thuẫn.",
+    "source": [
+      "20251225_PRT_DanhSach_Danh_sach_MC_final_x5_d8cj5.md",
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md"
+    ]
+  },
+  {
+    "question": "Bước đầu tiên trong quy trình ON Merchant là gì và phòng ban chịu trách nhiệm?",
+    "file": "quy-trinh-on-off-doi-tac_20251212_033226.md",
+    "chunk": "1 | Thống nhất điều khoản thương mại | Partnership",
+    "answer": "Bước đầu tiên trong quy trình ON Merchant là “Thống nhất điều khoản thương mại”, và phòng ban chịu trách nhiệm thực hiện bước này là Phòng Partnership【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp hoàn toàn với nội dung trong chunk: bước đầu tiên là “Thống nhất điều khoản thương mại” và phòng chịu trách nhiệm là Partnership, không có thông tin nào sai hoặc thừa.",
+    "source": [
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md",
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md"
+    ]
+  },
+  {
+    "question": "Bước thứ hai trong quy trình ON Merchant bao gồm công việc gì và liên quan đến những phòng ban nào?",
+    "file": "quy-trinh-on-off-doi-tac_20251212_033226.md",
+    "chunk": "2 | Review Hợp đồng phân phối | Partnership & Merchant, Partnership & Legal",
+    "answer": "Bước 2 trong quy trình ON Merchant là “Review Hợp đồng phân phối”.\nCông việc này được thực hiện bởi các phòng ban:\n\nPartnership & Merchant\nPartnership & Legal\n\n(Thông tin từ bảng quy trình ON Merchant)【1】",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác công việc và các phòng ban từ chunk, không có thông tin sai hoặc thừa.",
+    "source": [
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md",
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md"
+    ]
+  },
+  {
+    "question": "Bước thứ ba trong quy trình ON Merchant là gì và phòng ban chịu trách nhiệm?",
+    "file": "quy-trinh-on-off-doi-tac_20251212_033226.md",
+    "chunk": "3 | Tạo quà trên hệ thống theo formstack của Partnership | Operation",
+    "answer": "Bước 3 trong quy trình ON Merchant là “Tạo quà trên hệ thống theo formstack của Partnership” và phòng ban chịu trách nhiệm thực hiện bước này là Operation【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác nội dung và phòng ban chịu trách nhiệm được nêu trong chunk, không có thông tin sai hay thừa.",
+    "source": [
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md",
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md"
+    ]
+  },
+  {
+    "question": "Bước 5.2 trong quy trình ON Merchant yêu cầu gì và phòng ban nào thực hiện?",
+    "file": "quy-trinh-on-off-doi-tac_20251212_033226.md",
+    "chunk": "5.2 | Tích hợp API (Quy trình order API được quy định riêng) | Engineer & Operation",
+    "answer": "Bước 5.2 trong quy trình ON Merchant là “Tích hợp API” (quy trình order API được quy định riêng).\nPhòng ban thực hiện bước này là Engineer và Operation【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời phản ánh đúng nội dung của chunk: mô tả bước 5.2 là “Tích hợp API” và chỉ ra phòng ban thực hiện là Engineer và Operation, không có thông tin sai lệch hay thừa.",
+    "source": [
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md",
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md"
+    ]
+  },
+  {
+    "question": "Bước thứ tám trong quy trình ON Merchant là gì và trách nhiệm của phòng ban nào?",
+    "file": "quy-trinh-on-off-doi-tac_20251212_033226.md",
+    "chunk": "8 | Golive theo ngày thống nhất với Merchant + cập nhật trên các Merchant list | Partnership",
+    "answer": "Bước 8 trong quy trình ON Merchant là “Golive theo ngày thống nhất với Merchant + cập nhật trên các Merchant list”.\nTrách nhiệm thực hiện bước này thuộc phòng Partnership【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác nội dung bước 8 và phòng ban chịu trách nhiệm như trong chunk, không có thông tin sai hay thừa.",
+    "source": [
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md",
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md"
+    ]
+  },
+  {
+    "question": "Bước cuối cùng (bước 9) trong quy trình ON Merchant là gì và phòng ban chịu trách nhiệm?",
+    "file": "quy-trinh-on-off-doi-tac_20251212_033226.md",
+    "chunk": "9 | Truyền thông new merchant | Marketing",
+    "answer": "Bước 9 trong quy trình ON Merchant là thông new “Truyền thông new merchant” và phòng ban chịu trách nhiệm thực hiện bước này là Marketing【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời nêu đúng bước 9 là “Truyền thông new merchant” và phòng ban chịu trách nhiệm là Marketing, hoàn toàn khớp với nội dung trong chunk.",
+    "source": [
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md",
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md"
+    ]
+  },
+  {
+    "question": "Trong quy trình OFF Merchant, bước nào xác định ngày offsite và thời gian thực hiện so với ngày thống nhất?",
+    "file": "quy-trinh-on-off-doi-tac_20251212_033226.md",
+    "chunk": "1 | Thống nhất ngày offsite với Merchant (D+30) | Partnership",
+    "answer": "Bước 1 trong quy trình OFF Merchant là “Thống nhất ngày offsite với Merchant (D+30)”. Đây là bước mà phòng Partnership xác định ngày offsite và thời gian thực hiện so với ngày đã thống nhất (cụ thể là cộng thêm 30 ngày).【1】",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại đúng nội dung của chunk và giải thích hợp lý rằng D+30 nghĩa là cộng thêm 30 ngày, không có thông tin nào trái ngược hoặc không được hỗ trợ.",
+    "source": [
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md",
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md"
+    ]
+  },
+  {
+    "question": "Bước nào trong quy trình OFF Merchant liên quan đến việc truy xuất danh sách code đã đổi nhưng chưa dùng?",
+    "file": "quy-trinh-on-off-doi-tac_20251212_033226.md",
+    "chunk": "3 | Truy xuất danh sách code đã đổi nhưng chưa dùng | Operation, Data",
+    "answer": "Bước 3 trong quy trình OFF Merchant: “Truy xuất danh sách code đã đổi nhưng chưa dùng” – chịu trách nhiệm bởi bộ phận Operation và Data【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời khớp chính xác với thông tin trong chunk: bước 3 là “Truy xuất danh sách code đã đổi nhưng chưa dùng” và chịu trách nhiệm bởi bộ phận Operation, Data.",
+    "source": [
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md",
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md"
+    ]
+  },
+  {
+    "question": "Các phòng ban nào chịu trách nhiệm trong bước thực hiện biên bản thanh lý & xử lý công nợ tồn đọng trong quy trình OFF?",
+    "file": "quy-trinh-on-off-doi-tac_20251212_033226.md",
+    "chunk": "6 | Thực hiện biên bản thanh lý & xử lý công nợ tồn đọng | Partnership, Kế toán",
+    "answer": "Trong bước 6 – “Thực hiện biên bản thanh lý & xử lý công nợ tồn đọng” của quy trình OFF Merchant, các phòng ban chịu trách nhiệm là Partnership và Kế toán【1】.",
+    "evaluate": "correct",
+    "score": 10,
+    "check": "Câu trả lời lặp lại chính xác thông tin trong chunk: các phòng ban chịu trách nhiệm là Partnership và Kế toán, không có thông tin sai lệch hay bổ sung không được hỗ trợ.",
+    "source": [
+      "QUY TRÌNH ON - OFF ĐỐI TÁC_20251212_033226_6e_x0dwt.md",
+      "QUY TRÌNH CHUYỂN ĐỔI VẬN HÀNH TỪ MC XUẤT CODE SANG URBOX XUẤT CODE_20251212_032831_0qdco9zm.md"
+    ]
+  }
+]
+
+Evaluation Summary:
+   Total      : 102
+   Correct    :  64 ( 62.7%) [score ≥ 6]
+   Unclear    :   0 (  0.0%) [score = 5]
+   Incorrect  :  38 ( 37.3%) [score ≤ 4]
+   Error      :   0 (  0.0%)
+   Avg Score  : 6.68/10
+
+Score Distribution:
+   10:  50 ████████████████████████
+    9:   2
+    8:   6 ██
+    6:   6 ██
+    4:   1
+    3:   3 █
+    2:  32 ███████████████
+    1:   2
