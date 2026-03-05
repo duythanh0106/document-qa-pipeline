@@ -37,9 +37,14 @@ Determine whether the Answer is semantically supported by the Chunk, WITH consid
 
 CRITICAL UNDERSTANDING:
 - The Chunk was retrieved specifically for the Question (via anchor/RAG system)
-- If Question asks about entity X and Chunk provides the answer, it's VALID for Answer to mention entity X
-- Example: Q: "Chiết khấu của Vietlott?" + Chunk: "3%" → A: "Chiết khấu Vietlott là 3%" is CORRECT
-- The retrieval system guarantees Chunk is from the correct context/section
+- **Question cung cấp ĐIỀU KIỆN/NGỮ CẢNH lọc, Chunk cung cấp DỮ LIỆU phù hợp**
+- Nếu Question hỏi về entity/tình trạng X và Chunk được truy xuất cho Question đó → Chunk NGẦM ĐỊNH thuộc về context X
+- Example 1: Q: "Chiết khấu của Vietlott?" + Chunk: "3%" → A: "Chiết khấu Vietlott là 3%" is CORRECT
+- Example 2: Q: "Ai làm Y?" + Chunk: "KAM/BD làm Y" → A: "KAM/BD làm Y" is CORRECT  
+- Example 3: Q: "Tài khoản cá nhân nào đang được ngưng sử dụng?" + Chunk: "Chủ TK: X, Số TK: 123, Ngân hàng: ABC" → A: "Tài khoản của X số 123 ngân hàng ABC đang được ngưng sử dụng" is CORRECT
+  → Chunk được truy xuất VÌ nó thỏa điều kiện "đang được ngưng sử dụng" trong Question
+- **The retrieval system guarantees Chunk is from the correct context/section matching the Question's filter**
+- Answer có thể và NÊN kết hợp điều kiện từ Question + data từ Chunk
 
 Classify into EXACTLY one label with appropriate score:
 
@@ -95,9 +100,12 @@ CONTRADICTED (Answer conflicts with Chunk):
   * Hoặc 100% mâu thuẫn với chunk
 
 Evaluation Rules:
-1. **Question Context Matters**: Question cung cấp context về entity/topic. Answer có thể nhắc lại entity từ question nếu chunk cung cấp giá trị đúng.
-   - Q: "X của Vietlott?" + Chunk: "X là 3%" → A: "X của Vietlott là 3%"  VALID
-   - Q: "Ai làm Y?" + Chunk: "KAM/BD làm Y" → A: "KAM/BD làm Y"  VALID
+1. **Question Context Matters**: Question cung cấp context về entity/topic/điều kiện lọc. Answer có thể và NÊN kết hợp context từ question + data từ chunk.
+   - Q: "X của Vietlott?" + Chunk: "X là 3%" → A: "X của Vietlott là 3%"  ✅ VALID
+   - Q: "Ai làm Y?" + Chunk: "KAM/BD làm Y" → A: "KAM/BD làm Y"  ✅ VALID
+   - Q: "Tài khoản nào đang ngưng sử dụng?" + Chunk: "TK 123, Chủ TK: ABC" → A: "Tài khoản 123 của ABC đang ngưng sử dụng"  ✅ VALID
+   - Q: "Thương hiệu nào thuộc Tier 3?" + Chunk: "Brand X, Brand Y" → A: "Brand X và Brand Y thuộc Tier 3"  ✅ VALID
+   → **Chunk được retrieve VÌ nó match điều kiện trong Question. Answer kết hợp cả hai là ĐÚNG.**
 
 2. **Core Information Priority**: Thông tin cốt lõi (số liệu, thời gian, tên riêng, địa điểm) trong chunk phải chính xác 100%
 
@@ -158,6 +166,12 @@ Q: "Chiết khấu của Vietlott cho Cash voucher?"
 Chunk: "CHIẾT KHẤU: 3% tổng doanh thu THÁNG"
 A: "Chiết khấu của Vietlott cho Cash voucher là 3% tổng doanh thu tháng"
 → Score 9-10 (PERFECT/EXCELLENT): Answer nhắc lại entity từ question, giá trị 3% đúng với chunk 
+
+Example 1.5 - Filter Condition from Question (VALID):
+Q: "Tài khoản cá nhân nào đang được ngưng sử dụng?"
+Chunk: "Chủ tài khoản: Trưởng Cổng Hiếu Số tài khoản: 02324849001 Ngân hàng: LPB"
+A: "Ngân hàng LPB, tài khoản cá nhân của Trưởng Cổng Hiếu – số tài khoản 02324849001 đang được ngưng sử dụng"
+→ Score 9-10 (PERFECT/EXCELLENT): Chunk được retrieve vì match điều kiện "đang ngưng sử dụng" trong Question. Answer kết hợp điều kiện từ Question + data từ Chunk là HOÀN TOÀN ĐÚNG. 
 
 Example 2 - Reasonable Inference (VALID):
 Q: "Công ty rà soát thu nhập vào tháng nào?"
